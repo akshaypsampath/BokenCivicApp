@@ -1,8 +1,74 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Alert, Component, TouchableOpacity, Image} from 'react-native';
+import { createStackNavigator, createAppContainer} from "react-navigation";
+
+var Datastore = require('react-native-local-mongodb'),
+    db = new Datastore({ filename: 'asyncStorageKey', autoload: true });
+
+class HomeScreen extends React.Component {
+  static navigationOptions = {
+   title: 'Thanksgiving',
+ };
+
+  render() {
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Home Screen</Text>
+        <Button
+          title="Go to Details"
+          onPress={() => this.props.navigation.navigate('Details', {newTitle: 'FLOB',})}
+        />
+      </View>
+    );
+  }
+}
+class DetailsScreen extends React.Component {
+  static navigationOptions = ({ navigation }) => {
+    return{
+      title: navigation.getParam('newTitle'),
+      headerStyle: {
+      backgroundColor: '#f4511e',
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+    },
+    };
+  };
+
+  render() {
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Details Screen</Text>
+      </View>
+    );
+  }
+}
+class SettingsScreen extends React.Component {
+
+}
 
 
-export default class ButtonBasics extends React.Component {
+const AppNavigator =  createStackNavigator(
+  {
+    Home: HomeScreen,
+    Settings: SettingsScreen,
+    Details: DetailsScreen,
+    /*Leagues: LeaguesScreen,
+    Calendar: CalendarScreen,
+    Roster: RosterScreen,*/
+  },
+  {
+    initialRouteName: 'Home',
+  }
+);
+export default createAppContainer(AppNavigator);
+
+
+
+
+
+class ButtonBasics extends React.Component {
   constructor(props) {
     super(props)
     this.state = { count: 0 }
@@ -11,14 +77,36 @@ export default class ButtonBasics extends React.Component {
 
   _onPressButton() {
     Alert.alert('You tapped the button!')
+    db.insert([{ a: 5 }, { a: 42 }], function (err, newDocs) {
+        // Two documents were inserted in the database
+    });
   }
-_onPressButtonAlt = () => {
+ _onPressButtonAlt = () => {
     Alert.alert('you\'re different'+this.state.count)
     this.setState({ count: this.state.count+1 })
     if(this.state.count==4)
         this.setState({ count: 0 })
 
+        db.insert([{ a: this.state.count }, { a: 42 }], function (err, newDocs) {
+      // Two documents were inserted in the database
+      // newDocs is an array with these documents, augmented with their _id
+    });
+
   }
+  _onPressButtonAlt2 = () => {
+    db.find()
+     Alert.alert('the db has'+this.state.count)
+     this.setState({ count: this.state.count+1 })
+     if(this.state.count==4)
+         this.setState({ count: 0 })
+
+         db.insert([{ a: this.state.count }, { a: 42 }], function (err, newDocs) {
+       // Two documents were inserted in the database
+       // newDocs is an array with these documents, augmented with their _id
+     });
+
+   }
+
   _doNothing() {
 
   }
@@ -45,7 +133,7 @@ _onPressButtonAlt = () => {
         </View>
         <View style={styles.alternativeLayoutButtonContainer}>
           <Button
-            onPress={this._onPressButtonAlt}
+            onPress={this._onPressButton}
             title="This looks great!"
           />
           <TouchableOpacity onPress={this._onPressButtonAlt} onLongPress={this._onPressButton}>
