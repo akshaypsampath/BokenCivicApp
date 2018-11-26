@@ -2,27 +2,15 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, Alert, Component, TouchableOpacity, Image} from 'react-native';
 import { createStackNavigator, createAppContainer} from "react-navigation";
 
-var Datastore = require('react-native-local-mongodb'),
-    db = new Datastore({ filename: 'asyncStorageKey', autoload: true });
+import Routes from "./Routes";
 
-class HomeScreen extends React.Component {
-  static navigationOptions = {
-   title: 'Thanksgiving',
- };
+const App = () => <Routes/>
+export default App;
 
-  render() {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Home Screen</Text>
-        <Button
-          title="Go to Details"
-          onPress={() => this.props.navigation.navigate('Details', {newTitle: 'FLOB',})}
-        />
-      </View>
-    );
-  }
-}
-class DetailsScreen extends React.Component {
+/*var Datastore = require('react-native-local-mongodb'),
+    db = new Datastore({ filename: 'asyncStorageKey', autoload: true });*/
+
+/*class Details extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return{
       title: navigation.getParam('newTitle'),
@@ -46,27 +34,27 @@ class DetailsScreen extends React.Component {
 }
 class SettingsScreen extends React.Component {
 
-}
+}*/
 
-
+/*
 const AppNavigator =  createStackNavigator(
   {
-    Home: HomeScreen,
+    Home: Home,
     Settings: SettingsScreen,
     Details: DetailsScreen,
-    /*Leagues: LeaguesScreen,
+    Leagues: LeaguesScreen,
     Calendar: CalendarScreen,
-    Roster: RosterScreen,*/
+    Roster: RosterScreen,
   },
   {
     initialRouteName: 'Home',
   }
 );
-export default createAppContainer(AppNavigator);
+export default createAppContainer(AppNavigator);*/
 
 
 
-
+/*
 
 class ButtonBasics extends React.Component {
   constructor(props) {
@@ -138,11 +126,11 @@ class ButtonBasics extends React.Component {
           />
           <TouchableOpacity onPress={this._onPressButtonAlt} onLongPress={this._onPressButton}>
           <Image source={pic} style={{width: 250, height: 160}}/>
-          {/*<Button
+          <Button
             onPress={this._doNothing}
             title="HI"
             color="#841584"
-          />*/}
+          />
           </TouchableOpacity>
         </View>
       </View>
@@ -159,3 +147,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+*/
