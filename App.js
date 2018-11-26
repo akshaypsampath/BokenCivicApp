@@ -4,8 +4,8 @@ import { createStackNavigator, createAppContainer} from "react-navigation";
 
 import Routes from "./Routes";
 
-const App = () => <Routes/>
-export default App;
+const App = () => <Routes/>;
+export default App extends React.Component;
 
 /*var Datastore = require('react-native-local-mongodb'),
     db = new Datastore({ filename: 'asyncStorageKey', autoload: true });*/
