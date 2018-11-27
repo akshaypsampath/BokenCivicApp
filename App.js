@@ -1,14 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Alert, Component, TouchableOpacity, Image} from 'react-native';
+import { StyleSheet, Text, View, Button, Alert, Component, TouchableOpacity, Image, FlatList} from 'react-native';
 import { createStackNavigator, createAppContainer} from "react-navigation";
 
-var Datastore = require('react-native-local-mongodb'),
-    db = new Datastore({ filename: 'asyncStorageKey', autoload: true });
+import Data from "./data/basketballData";
 
 class HomeScreen extends React.Component {
   static navigationOptions = {
-   title: 'Thanksgiving',
- };
+   title: 'Monday',
+  };
+
+
 
   render() {
     return (
@@ -17,6 +18,10 @@ class HomeScreen extends React.Component {
         <Button
           title="Go to Details"
           onPress={() => this.props.navigation.navigate('Details', {newTitle: 'FLOB',})}
+        />
+        <Button
+          title="Team A Schedule"
+          onPress={() => this.props.navigation.navigate('Schedule', {team: 'Team A',})}
         />
       </View>
     );
@@ -47,15 +52,41 @@ class DetailsScreen extends React.Component {
 class SettingsScreen extends React.Component {
 
 }
+class ScheduleScreen extends React.Component { /* Display each of the games for a team, when and where*/
+  static navigationOptions = ({ navigation }) => {
+    let titleText = navigation.getParam('team')+' Schedule';
 
+    return{
+      title: titleText,
+    };
+  };
+
+
+
+  render() {
+    let temp = Data;
+
+    return(
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        {/*<FlatList
+          data = JSON.Parse(Data);
+
+
+        />*/}
+        <Text> {Data} </Text>
+
+      </View>
+    );
+  }
+}
 
 const AppNavigator =  createStackNavigator(
   {
     Home: HomeScreen,
     Settings: SettingsScreen,
     Details: DetailsScreen,
+    Schedule: ScheduleScreen,
     /*Leagues: LeaguesScreen,
-    Calendar: CalendarScreen,
     Roster: RosterScreen,*/
   },
   {
@@ -65,97 +96,14 @@ const AppNavigator =  createStackNavigator(
 export default createAppContainer(AppNavigator);
 
 
-
-
-
-class ButtonBasics extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { count: 0 }
-  }
-
-
-  _onPressButton() {
-    Alert.alert('You tapped the button!')
-    db.insert([{ a: 5 }, { a: 42 }], function (err, newDocs) {
-        // Two documents were inserted in the database
-    });
-  }
- _onPressButtonAlt = () => {
-    Alert.alert('you\'re different'+this.state.count)
-    this.setState({ count: this.state.count+1 })
-    if(this.state.count==4)
-        this.setState({ count: 0 })
-
-        db.insert([{ a: this.state.count }, { a: 42 }], function (err, newDocs) {
-      // Two documents were inserted in the database
-      // newDocs is an array with these documents, augmented with their _id
-    });
-
-  }
-  _onPressButtonAlt2 = () => {
-    db.find()
-     Alert.alert('the db has'+this.state.count)
-     this.setState({ count: this.state.count+1 })
-     if(this.state.count==4)
-         this.setState({ count: 0 })
-
-         db.insert([{ a: this.state.count }, { a: 42 }], function (err, newDocs) {
-       // Two documents were inserted in the database
-       // newDocs is an array with these documents, augmented with their _id
-     });
-
-   }
-
-  _doNothing() {
-
-  }
-
-  render() {
-    let pic = {
-      uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
-    };
-
-    return (
-      <View style={styles.container}>
-        <View style={styles.buttonContainer}>
-          <Button
-            onPress={this._onPressButton}
-            title="Press Me"
-          />
-        </View>
-        <View style={styles.buttonContainer}>
-          <Button
-            onPress={this._onPressButton}
-            title="Press Me"
-            color="#841584"
-          />
-        </View>
-        <View style={styles.alternativeLayoutButtonContainer}>
-          <Button
-            onPress={this._onPressButton}
-            title="This looks great!"
-          />
-          <TouchableOpacity onPress={this._onPressButtonAlt} onLongPress={this._onPressButton}>
-          <Image source={pic} style={{width: 250, height: 160}}/>
-          {/*<Button
-            onPress={this._doNothing}
-            title="HI"
-            color="#841584"
-          />*/}
-          </TouchableOpacity>
-        </View>
-      </View>
-    );
-  }
-}
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+FlatListItemSeparator = () => {
+   return (
+     <View
+       style={{
+         height: .5,
+         width: "100%",
+         backgroundColor: "#000",
+       }}
+     />
+   );
+ }
