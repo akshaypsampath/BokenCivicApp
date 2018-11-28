@@ -1,8 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Alert, Component, TouchableOpacity, Image, FlatList, ScrollView, TouchableWithoutFeedback} from 'react-native';
+import { StyleSheet, View, Alert, Component, TouchableOpacity, Image, FlatList, ScrollView, TouchableWithoutFeedback} from 'react-native';
 import { createStackNavigator, createAppContainer} from "react-navigation";
+import {Container, Header, Content, List, ListItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle} from "native-base";
+//import getTheme from './native-base-theme/components';
+//import material from './native-base-theme/variables/material';
 
-import Data from "./data/basketballData";
+//import Data from "./data/basketballData";
+var Data = require('./data/basketballData.json');
 
 
 class HomeScreen extends React.Component {
@@ -14,21 +18,26 @@ class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Home Screen</Text>
-        <Button
-          title="Go to League Screen"
-          onPress={() => this.props.navigation.navigate('Leagues')}
-        />
-        <Button
-          title="Go to Details"
-          onPress={() => this.props.navigation.navigate('Details', {newTitle: 'FLOB',})}
-        />
-        <Button
-          title="Team A Schedule"
-          onPress={() => this.props.navigation.navigate('Schedule', {team: 'Team A',})}
-        />
-      </View>
+      //<StyleProvider style={getTheme(material)}>
+      <Container>
+        <Header />
+          <Content>
+            <Text>Home Screen</Text>
+            <Button info
+              onPress={() => this.props.navigation.navigate('Leagues')}>
+              <Text>Go to League Screen</Text>
+            </Button>
+            <Button
+              onPress={() => this.props.navigation.navigate('Details', {newTitle: 'FLOB',})}>
+              <Text>Go to Details</Text>
+            </Button>
+            <Button
+              onPress={() => this.props.navigation.navigate('Schedule', {team: 'Team A',})}>
+              <Text>Team A Schedule</Text>
+            </Button>
+          </Content>
+        </Container>
+      //</StyleProvider>
     );
   }
 }
@@ -68,21 +77,59 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
     };
   };
 
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {dataSource: Data[2].teams[0].schedule}
+  // }
 
+  _getDay(dateStr) {
+    let dateObj = Date.parse(dateStr);
+    //let dayOfMonth = dateObj.getDate();
+
+    return dateObj;
+  }
+  _getBadgeColor(typeStr) {
+    if(typeStr=="Game")
+    {
+      return {
+        backgroundColor: '#4bbb87',
+      };
+    }
+    if(typeStr=="Practice")
+    {
+      return {
+        backgroundColor: '#fdac4f',
+
+      };
+    }
+  }
 
   render() {
-    let temp = Data;
+    let temp = Data[2].teams[0].schedule;
+    //let dayOfMonth = this._getDay(temp.date);
+    //let dateObj = Date.parse(temp.);
 
     return(
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        {/*<FlatList
-          data = JSON.Parse(Data);
-
-
-        />*/}
-        <Text> {Data} </Text>
-
-      </View>
+      <Container>
+        // <Header />
+        <Content>
+          <List dataArray={temp}
+            renderRow={(temp) =>
+            <ListItem>
+              <Left>
+                <Badge style={this._getBadgeColor(temp.type)}>
+                  <Text>{temp.type} </Text>
+                </Badge>
+              </Left>
+              <Body>
+                <Subtitle> {temp.date}</Subtitle>
+                <Title> {temp.location}, {temp.address} </Title>
+              </Body>
+            </ListItem>
+          }>
+          </List>
+        </Content>
+      </Container>
     );
   }
 }
