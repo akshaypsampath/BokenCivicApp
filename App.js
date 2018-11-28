@@ -11,7 +11,7 @@ var Data = require('./data/basketballData.json');
 
 class HomeScreen extends React.Component {
   static navigationOptions = {
-   title: 'Monday',
+   header: null
   };
 
 
@@ -112,7 +112,7 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
     return(
       <Container>
         // <Header />
-        <Content>
+        <Content >
           <List dataArray={temp}
             renderRow={(temp) =>
             <ListItem>
