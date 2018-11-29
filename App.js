@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, View, Alert, Component, TouchableOpacity, Image, FlatList, ScrollView, TouchableWithoutFeedback} from 'react-native';
 import { createStackNavigator, createAppContainer} from "react-navigation";
 import {Container, Header, Content, List, ListItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle} from "native-base";
+import { Font, AppLoading } from "expo";
+
 //import getTheme from './native-base-theme/components';
 //import material from './native-base-theme/variables/material';
 
@@ -15,30 +17,49 @@ class HomeScreen extends React.Component {
   };
 
 
+  constructor(props) {
+    super(props);
+    this.state = { loading: true };
+  }
+
+  async componentWillMount() {
+    await Font.loadAsync({
+      Roboto: require("native-base/Fonts/Roboto.ttf"),
+      Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
+    });
+  this.setState({ loading: false });
+}
 
   render() {
-    return (
-      //<StyleProvider style={getTheme(material)}>
-      <Container>
-        <Header />
-          <Content>
-            <Text>Home Screen</Text>
-            <Button info
-              onPress={() => this.props.navigation.navigate('Leagues')}>
-              <Text>Go to League Screen</Text>
-            </Button>
-            <Button
-              onPress={() => this.props.navigation.navigate('Details', {newTitle: 'FLOB',})}>
-              <Text>Go to Details</Text>
-            </Button>
-            <Button
-              onPress={() => this.props.navigation.navigate('Schedule', {team: 'Team A',})}>
-              <Text>Team A Schedule</Text>
-            </Button>
-          </Content>
-        </Container>
-      //</StyleProvider>
-    );
+    if (!this.state.loading) {
+      return (
+        //<StyleProvider style={getTheme(material)}>
+        <Container>
+          <Header />
+            <Content>
+              <Text>Home Screen</Text>
+              <Button info
+                onPress={() => this.props.navigation.navigate('Leagues')}>
+                <Text>Go to League Screen</Text>
+              </Button>
+              <Button
+                onPress={() => this.props.navigation.navigate('Details', {newTitle: 'FLOB',})}>
+                <Text>Go to Details</Text>
+              </Button>
+              <Button
+                onPress={() => this.props.navigation.navigate('Schedule', {team: 'Team A',})}>
+                <Text>Team A Schedule</Text>
+              </Button>
+            </Content>
+          </Container>
+        //</StyleProvider>
+      );
+    }
+    else {
+      return(
+        null
+      );
+    }
   }
 }
 
@@ -112,7 +133,7 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
     return(
       <Container>
         // <Header />
-        <Content >
+        <Content>
           <List dataArray={temp}
             renderRow={(temp) =>
             <ListItem>
@@ -158,66 +179,62 @@ class LeaguesScreen extends React.Component {
   }
 
   _onPressSNC = () => {
-    this.setState({ count2: !this.state.count2 })
-    Alert.alert('pressed special needs clinic '+this.state.count2)
+    this.setState({ SNCteams: !this.state.SNCteams })
+    Alert.alert('pressed special needs clinic '+this.state.SNCteams)
   }
   _onPressIns = () => {
-    this.setState({ count3: !this.state.count3 })
-    Alert.alert('pressed Instructional league '+this.state.count3)
+    this.setState({ Insteams: !this.state.Insteams })
+    Alert.alert('pressed Instructional league '+this.state.Insteams)
   }
-  _onPressSFL() {
-    Alert.alert('pressed Small Fry League')
+  _onPressSFL = () => {
+    this.setState({ SFLteams: !this.state.SFLteams })
+    Alert.alert('pressed Small Fry League ' + this.state.SFLteams)
   }
-  _onPressMBL() {
-    Alert.alert('pressed Middle Basketball League')
+  _onPressMBL = () => {
+    this.setState({ MBLteams: !this.state.MBLteams })
+    Alert.alert('pressed Middle Basketball League ' + this.state.MBLteams)
   }
-  _onPressGSL() {
-    Alert.alert('pressed Grammar School League')
+  _onPressGSL = () => {
+    this.setState({ GSLteams: !this.state.GSLteams })
+    Alert.alert('pressed Grammar School League ' + this.state.GSLteams)
   }
 
   render() {
     return (
-      <View style={{ flex: 1, flexDirection: 'column', alignItems: 'stretch', justifyContent: 'center'}}>
-        <Text style={{justifyContent:'center',alignItems:'center'}}>Get ya leagues here</Text>
-        <ScrollView>
-          <TouchableWithoutFeedback
-              onPress={this._onPressSNC}
-          >
-            <View>
-              <Text>TouchableWithoutFeedback</Text>
-            </View>
-          </TouchableWithoutFeedback>
-          <View style={{padding:5}}>
-            <Button style={{padding: 5}}
-              onPress={this._onPressSNC}
-              title="Special Needs Clinic"
-            />
-          </View>
-          {this.state.SNCteams &&
-            (<View>
-
-            </View>)}
-
-          }
-          <Button
-            title="Instructional"
-            onPress={this._onPressIns}
-          />
-          <Button
-            title="Small Fry League"
-            onPress={this._onPressSFL}
-          />
-          <Button
-            title="Middle Basketball League"
-            onPress={this._onPressMBL}
-          />
-          <Button
-            title="Grammar School League"
-            onPress={this._onPressGSL}
-          />
-        </ScrollView>
-      </View>
-
+      <Container>
+        <Content>
+          <Text style={{justifyContent:'center',alignItems:'center'}}>Get ya leagues here</Text>
+          <Content>
+            <Content style={{padding:5}}>
+              <Button style={{padding: 5}}
+                onPress={this._onPressSNC}
+              >
+                <Text>SpecialNeedsClinic</Text>
+              </Button>
+            </Content>
+            <Button
+              onPress={this._onPressIns}
+            >
+              <Text>Instructional</Text>
+            </Button>
+            <Button
+              onPress={this._onPressSFL}
+            >
+              <Text>Small Fry League</Text>
+            </Button>
+            <Button
+              onPress={this._onPressMBL}
+            >
+              <Text>Middle Basketball League</Text>
+            </Button>
+            <Button
+              onPress={this._onPressGSL}
+            >
+              <Text>Grammar School League</Text>
+            </Button>
+          </Content>
+        </Content>
+      </Container>
     );
   }
 }
