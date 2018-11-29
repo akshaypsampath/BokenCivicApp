@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Alert, Component, TouchableOpacity, Image, FlatList, ScrollView, TouchableWithoutFeedback} from 'react-native';
+import { StyleSheet, View, Alert, Component, TouchableOpacity, Image, FlatList, ScrollView, TouchableWithoutFeedback, AsyncStorage} from 'react-native';
 import { createStackNavigator, createAppContainer} from "react-navigation";
 import {Container, Header, Content, List, ListItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle} from "native-base";
 //import getTheme from './native-base-theme/components';
@@ -8,6 +8,25 @@ import {Container, Header, Content, List, ListItem, Text, Button, Left, Right, B
 //import Data from "./data/basketballData";
 var Data = require('./data/basketballData.json');
 
+_storeData = async (key, value) => {
+  try {
+    await AsyncStorage.setItem(key, value);
+  } catch (error) {
+    // Error saving data
+  }
+}
+_retrieveData = async (key) => {
+try {
+  const value = await AsyncStorage.getItem(key);
+  if (value !== null) {
+    // We have data!!
+    console.log(value);
+
+  }
+ } catch (error) {
+   // Error retrieving data
+ }
+}
 
 class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -20,7 +39,9 @@ class HomeScreen extends React.Component {
     return (
       //<StyleProvider style={getTheme(material)}>
       <Container>
-        <Header />
+        <Header>
+          <Title> make this sexier </Title>
+        </Header>
           <Content>
             <Text>Home Screen</Text>
             <Button info
@@ -45,23 +66,44 @@ class HomeScreen extends React.Component {
 
 class DetailsScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
+    _storeData('title', navigation.getParam('newTitle'));
     return{
-      title: navigation.getParam('newTitle'),
-      headerStyle: {
-      backgroundColor: '#f4511e',
-    },
-    headerTintColor: '#fff',
-    headerTitleStyle: {
-      fontWeight: 'bold',
-    },
+      header: null,
+    //   title: navigation.getParam('newTitle'),
+    //   headerStyle: {
+    //   backgroundColor: '#f4511e',
+    // },
+    // headerTintColor: '#fff',
+    // headerTitleStyle: {
+    //   fontWeight: 'bold',
+    //},
     };
   };
 
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }b
+
+  async componentWillMount() {
+    AsyncStorage.getItem("title").then((value) => {
+        this.setState({"titleText": value});
+    }).done();
+  }
+
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Details Screen</Text>
-      </View>
+      <Container>
+         <Header>
+            <Title>{this.state.titleText}</Title>
+          </Header>
+        <Content >
+          <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+            <Text>Details Screen</Text>
+          </View>
+        </Content>
+      </Container>
+
     );
   }
 }
@@ -70,24 +112,30 @@ class SettingsScreen extends React.Component {
 }
 class ScheduleScreen extends React.Component { /* Display each of the games for a team, when and where*/
   static navigationOptions = ({ navigation }) => {
-    let titleText = navigation.getParam('team')+' Schedule';
+    let teamName = navigation.getParam('team');
+    _storeData('team', teamName);
+     // try {
+     //   await AsyncStorage.setItem('teamName', teamName);
+     // } catch (error) {
+     // // Error saving data
+     // }
 
     return{
-      title: titleText,
+      header: null,
     };
   };
 
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {dataSource: Data[2].teams[0].schedule}
-  // }
-
-  _getDay(dateStr) {
-    let dateObj = Date.parse(dateStr);
-    //let dayOfMonth = dateObj.getDate();
-
-    return dateObj;
+  constructor(props) {
+    super(props)
+    this.state = {}
   }
+
+  async componentWillMount() {
+    AsyncStorage.getItem("team").then((value) => {
+        this.setState({"teamName": value});
+    }).done();
+  }
+
   _getBadgeColor(typeStr) {
     if(typeStr=="Game")
     {
@@ -106,12 +154,16 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
 
   render() {
     let temp = Data[2].teams[0].schedule;
+    // let dateTemp = Data[2].teams[0].schedule[0].date;
+    // let dateObj = Date.parse(dateTemp).getDate();
     //let dayOfMonth = this._getDay(temp.date);
     //let dateObj = Date.parse(temp.);
 
     return(
       <Container>
-        // <Header />
+         <Header>
+            <Title>{this.state.teamName}</Title>
+          </Header>
         <Content >
           <List dataArray={temp}
             renderRow={(temp) =>
@@ -121,10 +173,11 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
                   <Text>{temp.type} </Text>
                 </Badge>
               </Left>
-              <Body>
+              <Body style={{ marginLeft: 0 }}>
                 <Subtitle> {temp.date}</Subtitle>
                 <Title> {temp.location}, {temp.address} </Title>
               </Body>
+              <Right />
             </ListItem>
           }>
           </List>
