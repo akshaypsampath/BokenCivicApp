@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet, View, Alert, Component, TouchableOpacity, Image, FlatList, ScrollView, TouchableWithoutFeedback, AsyncStorage} from 'react-native';
+import { StyleSheet, View, Alert, Component, TouchableOpacity, Image, FlatList, ScrollView, TouchableWithoutFeedback, AsyncStorage, Clipboard} from 'react-native';
 import { createStackNavigator, createAppContainer} from "react-navigation";
-import {Container, Header, Content, List, ListItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle} from "native-base";
+import {Container, Header, Content, List, ListItem, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Icon, Root, Toast} from "native-base";
 import { Font, AppLoading } from "expo";
 
 //import getTheme from './native-base-theme/components';
@@ -28,6 +28,21 @@ try {
  } catch (error) {
    // Error retrieving data
  }
+}
+
+_getTeamObj = (leagueObj, teamName) => {
+  //return sub-Ojbect of given Team from given League //its broken idk why
+
+  //const teamArray = leagueObj.teams;
+  //return teamArray.length;
+
+  for (let i=0; i<leagueObj.teams.length; i++) {
+
+    if(leagueObj.teams[i].team == teamName)
+      return leagueObj.teams[i];
+  }
+  return leagueObj.teams[0];
+  // return leagueObj.teams[0].team;
 }
 
 class HomeScreen extends React.Component {
@@ -71,6 +86,14 @@ class HomeScreen extends React.Component {
               onPress={() => this.props.navigation.navigate('Schedule', {team: 'Team A',})}>
               <Text>Team A Schedule</Text>
             </Button>
+            <Button
+              onPress={() => this.props.navigation.navigate('TeamHome', {teamName: 'Team A',})}>
+              <Text>Team A Home</Text>
+            </Button>
+            <Button
+              onPress={() => this.props.navigation.navigate('Menu', {category: 'Small Fry League',})}>
+              <Text>Menu (Small Fry League)</Text>
+            </Button>
           </Content>
         </Container>
         //</StyleProvider>
@@ -90,27 +113,28 @@ class DetailsScreen extends React.Component {
     _storeData('title', navigation.getParam('newTitle'));
     return{
       header: null,
-    //   title: navigation.getParam('newTitle'),
-    //   headerStyle: {
-    //   backgroundColor: '#f4511e',
-    // },
-    // headerTintColor: '#fff',
-    // headerTitleStyle: {
-    //   fontWeight: 'bold',
-    //},
     };
   };
 
   constructor(props) {
     super(props)
     this.state = {}
-  }b
+  }
 
   async componentWillMount() {
     AsyncStorage.getItem("title").then((value) => {
         this.setState({"titleText": value});
     }).done();
   }
+
+  //   title: navigation.getParam('newTitle'),
+  //   headerStyle: {
+  //   backgroundColor: '#f4511e',
+  // },
+  // headerTintColor: '#fff',
+  // headerTitleStyle: {
+  //   fontWeight: 'bold',
+  //},
 
   render() {
     return (
@@ -135,11 +159,6 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
   static navigationOptions = ({ navigation }) => {
     let teamName = navigation.getParam('team');
     _storeData('team', teamName);
-     // try {
-     //   await AsyncStorage.setItem('teamName', teamName);
-     // } catch (error) {
-     // // Error saving data
-     // }
 
     return{
       header: null,
@@ -148,7 +167,9 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
 
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {
+      showToast: false
+    }
   }
 
   async componentWillMount() {
@@ -173,6 +194,14 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
     }
   }
 
+  _copyAdr2Clip(adrStr) {
+    Clipboard.setString(adrStr);
+    // Toast.show({
+    //   text: 'Address Copied to Clipboard!',
+    //   buttonText: 'Okay',
+    // });
+  }
+
   render() {
     let temp = Data[2].teams[0].schedule;
     // let dateTemp = Data[2].teams[0].schedule[0].date;
@@ -183,25 +212,30 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
     return(
       <Container>
          <Header>
-            <Title>{this.state.teamName}</Title>
+            <Title>{this.state.teamName} Schedule</Title>
           </Header>
         <Content >
-          <List dataArray={temp}
-            renderRow={(temp) =>
-            <ListItem>
-              <Left>
-                <Badge style={this._getBadgeColor(temp.type)}>
-                  <Text>{temp.type} </Text>
-                </Badge>
-              </Left>
-              <Body style={{ marginLeft: 0 }}>
-                <Subtitle> {temp.date}</Subtitle>
-                <Title> {temp.location}, {temp.address} </Title>
-              </Body>
-              <Right />
-            </ListItem>
-          }>
-          </List>
+          {
+           temp.map((item, index)=>{
+              return (
+                <Card key={index}>
+                   <CardItem onPress={this._copyAdr2Clip(item.address)}>
+                     <Left style={{ paddingRight: 2 }}>
+                       <Badge style={this._getBadgeColor(item.type)}>
+                         <Text>{item.type} </Text>
+                       </Badge>
+                      </Left>
+                     <Body>
+                       <Text note>{item.date} at {item.time}</Text>
+                       <Text>{item.location}, {item.address} </Text>
+                     </Body>
+
+                  </CardItem>
+                 </Card>
+               )
+             })
+           }
+
         </Content>
       </Container>
     );
@@ -292,6 +326,179 @@ class LeaguesScreen extends React.Component {
   }
 }
 
+class TeamHomeScreen extends React.Component {
+  static navigationOptions = ({ navigation }) => {
+    _storeData('teamNameTitle', navigation.getParam('teamName'));
+    return{
+      header: null,
+    };
+  };
+
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  async componentWillMount() {
+    AsyncStorage.getItem("teamNameTitle").then((value) => {
+        this.setState({"teamName": value});
+    }).done();
+  }
+
+
+
+
+  render() {
+    let temp = Data[2];
+    //let teamObj = temp["teams"].Where(d => d["team"] == "Team A").First();
+    //let teamObj = temp["teams"].filter(d => d.team == "Team A");
+    var teamObj = _getTeamObj(temp, this.state.teamName);
+
+
+    return (
+      <Container>
+         <Header>
+            <Title>{teamObj.team} Home</Title>
+          </Header>
+        <Content >
+          <Card style={{flex: 0}}>
+            <CardItem>
+              <Body>
+                <Text style={{fontSize:20, fontWeight:'bold'}}>Coach: {teamObj.coach}</Text>
+                <Text note>Phone: {teamObj.phone}</Text>
+                <Text note>Email: {teamObj.email}</Text>
+              </Body>
+            </CardItem>
+            <CardItem>
+              <Body>
+                <Text bold>Record: {teamObj.wins}-{teamObj.losses}-{teamObj.ties}</Text>
+              </Body>
+            </CardItem>
+          </Card>
+          <Card style={{alignItems: 'left'}}>
+            <CardItem>
+              <Button
+                onPress={() => this.props.navigation.navigate('Schedule', {team: 'Team A',})}>
+                <Text>Team A Schedule</Text>
+              </Button>
+            </CardItem>
+          </Card>
+          <Card style={{alignItems: 'left', paddingLeft:5,}}>
+
+            <CardItem>
+              <Body>
+                <Text style={{fontSize:20, fontWeight:'bold'}}>Roster</Text>
+                {
+                  teamObj.roster.map((item, index)=> {
+                    return (
+                      <Text>{item}</Text>
+                    )
+                  })
+                }
+              </Body>
+            </CardItem>
+            <CardItem>
+              <Button small onPress={() => this.props.navigation.navigate('Stats', {teamName: "{teamObj.team}",})}>
+                <Text bold>Click to view stats by player</Text>
+              </Button>
+            </CardItem>
+          </Card>
+        </Content>
+      </Container>
+
+    );
+  }
+}
+class MenuScreen extends React.Component {
+  static navigationOptions = ({ navigation }) => {
+    _storeData('catTitle', navigation.getParam('category'));
+    return{
+      header: null,
+    };
+  };
+
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  async componentWillMount() {
+    AsyncStorage.getItem("CatTitle").then((value) => {
+        this.setState({"category": value});
+    }).done();
+  }
+
+  //   title: navigation.getParam('newTitle'),
+  //   headerStyle: {
+  //   backgroundColor: '#f4511e',
+  // },
+  // headerTintColor: '#fff',
+  // headerTitleStyle: {
+  //   fontWeight: 'bold',
+  //},
+
+  render() {
+    return (
+      <Container>
+         <Header>
+            <Title>{this.state.category}</Title>
+          </Header>
+        <Content >
+          <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+            <Text>Stats Screen</Text>
+          </View>
+        </Content>
+      </Container>
+
+    );
+  }
+}
+
+class StatsScreen extends React.Component {
+  static navigationOptions = ({ navigation }) => {
+    _storeData('teamNameTitle', navigation.getParam('teamName'));
+    return{
+      header: null,
+    };
+  };
+
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  async componentWillMount() {
+    AsyncStorage.getItem("teamNameTitle").then((value) => {
+        this.setState({"teamName": value});
+    }).done();
+  }
+
+  //   title: navigation.getParam('newTitle'),
+  //   headerStyle: {
+  //   backgroundColor: '#f4511e',
+  // },
+  // headerTintColor: '#fff',
+  // headerTitleStyle: {
+  //   fontWeight: 'bold',
+  //},
+
+  render() {
+    return (
+      <Container>
+         <Header>
+            <Title>{this.state.titleText}</Title>
+          </Header>
+        <Content >
+          <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+            <Text>Details Screen</Text>
+          </View>
+        </Content>
+      </Container>
+
+    );
+  }
+}
+
 const AppNavigator =  createStackNavigator(
   {
     Home: HomeScreen,
@@ -299,6 +506,9 @@ const AppNavigator =  createStackNavigator(
     Details: DetailsScreen,
     Schedule: ScheduleScreen,
     Leagues: LeaguesScreen,
+    TeamHome: TeamHomeScreen,
+    Menu: MenuScreen,
+    Stats: StatsScreen,
     /*Calendar: CalendarScreen,
     Roster: RosterScreen,*/
   },
@@ -306,8 +516,12 @@ const AppNavigator =  createStackNavigator(
     initialRouteName: 'Home',
   }
 );
-export default createAppContainer(AppNavigator);
-
+//export default createAppContainer(AppNavigator);
+const App = createAppContainer(AppNavigator);
+export default () =>
+  <Root>
+    <App />
+  </Root>;
 
 
 FlatListItemSeparator = () => {

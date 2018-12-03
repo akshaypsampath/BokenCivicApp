@@ -10,6 +10,9 @@
     "teams": [
       {
         "team": "Team A",
+        "coach": "Mr. John Hoops",
+        "email": "example@gmail.com",
+        "phone": "201-456-7890",
         "roster": [
           "kid A",
           "kid B",
@@ -21,37 +24,43 @@
         "schedule": [
           {
             "type": "Practice",
-            "date": "5PM, Jan 1, 2019",
+            "date": "Jan 1, 2019",
+            "time": "5:00PM",
             "location": "Hoboken High School",
             "address": "1 Castle Point"
           },
           {
             "type": "Game",
-            "date": "2019-01-02T19:00:00-05:00",
+            "date": "Jan 2, 2019",
+            "time": "6:00PM",
             "location": "Parking Lot",
             "address": "5th & Park"
           },
           {
             "type": "Practice",
-            "date": "2019-01-05T20:00:00-05:00",
+            "date": "Jan 5, 2019",
+            "time": "7:00PM",
             "location": "Hoboken High School",
             "address": "1 Castle Point"
           },
           {
             "type": "Game",
-            "date": "2019-01-10T19:00:00-05:00",
+            "date": "Jan 10, 2019",
+            "time": "8:00PM",
             "location": "Hoboken High School",
             "address": "1 Castle Point"
           },
           {
             "type": "Practice",
-            "date": "2019-01-14T20:00:00-05:00",
+            "date": "Jan 14, 2019",
+            "time": "9:00PM",
             "location": "Hoboken High School",
             "address": "1 Castle Point"
           },
           {
             "type": "Game",
-            "date": "2019-01-19T19:00:00-05:00",
+            "date": "Jan 19, 2019",
+            "time": "10:00PM",
             "location": "Hoboken High School",
             "address": "1 Castle Point"
           }
@@ -59,6 +68,9 @@
       },
       {
         "team": "Team B",
+        "coach": "Lavar Ball",
+        "email": "example@gmail.com",
+        "phone": "201-456-7890",
         "roster": [
           "kid D",
           "kid E",
