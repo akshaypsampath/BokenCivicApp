@@ -1,6 +1,80 @@
 [
   {
-    "league": "Special Needs Clinic"
+    "league": "Special Needs Clinic",
+    "teams": [
+      {
+        "team": "Team A",
+        "roster": [
+          "kid A",
+          "kid B",
+          "kid C"
+        ],
+        "wins": 3,
+        "losses": 1,
+        "ties": 0,
+        "schedule": [
+          {
+            "type": "Practice",
+            "date": "5PM, Jan 1, 2019",
+            "location": "Hoboken High School",
+            "address": "1 Castle Point"
+          },
+          {
+            "type": "Game",
+            "date": "2019-01-02T19:00:00-05:00",
+            "location": "Parking Lot",
+            "address": "5th & Park"
+          },
+          {
+            "type": "Practice",
+            "date": "2019-01-05T20:00:00-05:00",
+            "location": "Hoboken High School",
+            "address": "1 Castle Point"
+          },
+          {
+            "type": "Game",
+            "date": "2019-01-10T19:00:00-05:00",
+            "location": "Hoboken High School",
+            "address": "1 Castle Point"
+          },
+          {
+            "type": "Practice",
+            "date": "2019-01-14T20:00:00-05:00",
+            "location": "Hoboken High School",
+            "address": "1 Castle Point"
+          },
+          {
+            "type": "Game",
+            "date": "2019-01-19T19:00:00-05:00",
+            "location": "Hoboken High School",
+            "address": "1 Castle Point"
+          }
+        ]
+      },
+      {
+        "team": "Team B",
+        "roster": [
+          "kid D",
+          "kid E",
+          "kid F"
+        ],
+        "wins": 1,
+        "losses": 3,
+        "ties": 0,
+        "schedule": [
+          {
+            "date": "2019-01-01T20:00:00-05:00",
+            "location": "Hoboken High School",
+            "address": "1 Castle Point"
+          },
+          {
+            "date": "2019-02-02T19:00:00-05:00",
+            "location": "Hoboken High School",
+            "address": "1 Castle Point"
+          }
+        ]
+      }
+    ]
   },
   {
     "league": "Instructional"

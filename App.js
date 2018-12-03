@@ -1,8 +1,10 @@
 import React from 'react';
 import { StyleSheet, View, Alert, Component, TouchableOpacity, Image, FlatList, ScrollView, TouchableWithoutFeedback, AsyncStorage} from 'react-native';
 import { createStackNavigator, createAppContainer} from "react-navigation";
-import {Container, Header, Content, List, ListItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle} from "native-base";
+import {Container, Header, Content, List, ListItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Accordion, Card, CardItem} from "native-base";
 import { Font, AppLoading } from "expo";
+import renderIf from './renderIf';
+
 
 //import getTheme from './native-base-theme/components';
 //import material from './native-base-theme/variables/material';
@@ -194,9 +196,9 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
                   <Text>{temp.type} </Text>
                 </Badge>
               </Left>
-              <Body style={{ marginLeft: 0 }}>
-                <Subtitle> {temp.date}</Subtitle>
+              <Body>
                 <Title> {temp.location}, {temp.address} </Title>
+                <Subtitle> {temp.date}</Subtitle>
               </Body>
               <Right />
             </ListItem>
@@ -224,7 +226,8 @@ class LeaguesScreen extends React.Component {
   };
   constructor(props) {
     super(props)
-    this.state = {SNCteams: false,
+    this.state = {testNum: 0,
+                  SNCteams: false,
                   Insteams: false,
                   SFLteams: false,
                   MBLteams: false,
@@ -252,40 +255,85 @@ class LeaguesScreen extends React.Component {
     Alert.alert('pressed Grammar School League ' + this.state.GSLteams)
   }
 
+  _renderSubcard = (temp) => {
+    let subTemp = temp.teams;
+    this.setState({ testNum: 2})
+    return(subTemp);
+  }
+
+  _testInsideLoop = (temp) => {
+    this.setState({testNum: 2})
+    var a = this.state.testNum;
+    var b = temp[0].teams[0].wins;
+    console.log(a)
+    Alert.alert('is this number working ' +a+ ' ' + b)
+  }
+
   render() {
+    let temp = Data;
+    let teamTemp = temp.teams;
+
+
     return (
       <Container>
-        <Content>
-          <Text style={{justifyContent:'center',alignItems:'center'}}>Get ya leagues here</Text>
-          <Content>
-            <Content style={{padding:5}}>
-              <Button style={{padding: 5}}
-                onPress={this._onPressSNC}
-              >
-                <Text>SpecialNeedsClinic</Text>
-              </Button>
-            </Content>
-            <Button
-              onPress={this._onPressIns}
-            >
-              <Text>Instructional</Text>
-            </Button>
-            <Button
-              onPress={this._onPressSFL}
-            >
-              <Text>Small Fry League</Text>
-            </Button>
-            <Button
-              onPress={this._onPressMBL}
-            >
-              <Text>Middle Basketball League</Text>
-            </Button>
-            <Button
-              onPress={this._onPressGSL}
-            >
-              <Text>Grammar School League</Text>
-            </Button>
-          </Content>
+        <Header style={{justifyContent: 'center', alignItems: 'center'}}>
+          <Title>Select teams to subscribe to</Title>
+        </Header>
+        <Content padder>
+        <Button onPress = {this._testInsideLoop.bind(this, temp)}>
+          <Text>Try the code</Text>
+        </Button>
+        <List dataArray={temp}
+          renderRow={(temp) =>
+          <Card>
+            <CardItem header bordered>
+              <Text>{temp.league}</Text>
+            </CardItem>
+            <CardItem>
+              <Text>{temp.teams.wins}</Text>
+            </CardItem>
+            <Body>
+
+            <List dataArray={() => this._renderSubcard(temp)}
+              renderRow={(item) =>
+                <CardItem>
+                  <Text>
+                    {item.wins}
+                  </Text>
+                </CardItem>
+            }>
+            </List>
+            </Body>
+            <CardItem footer bordered>
+              {/*<Text>{temp.teams[0].wins}</Text>*/}
+            </CardItem>
+          </Card>
+          }>
+          </List>
+          {/*<List dataArray={temp}
+            renderRow={(temp) =>
+              <ListItem>
+                <Body>
+                  <Button full style={{paddingRight: 5, paddingLeft: 5}}
+                    onPress={this._onPressSNC}
+                  >
+                    <Text>{temp.league}</Text>
+                  </Button>
+                {this.state.SNCteams && (
+                  <List dataArray={temp}
+                    renderRow={(temp) =>
+                    <ListItem>
+                      <Body>
+                          <Text>{temp.league}</Text>
+                      </Body>
+                    </ListItem>
+                  }>
+                </List>
+              )}
+                </Body>
+              </ListItem>
+          }>
+          </List>*/}
         </Content>
       </Container>
     );
