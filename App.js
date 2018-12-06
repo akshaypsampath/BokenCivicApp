@@ -101,8 +101,12 @@ class HomeScreen extends React.Component {
                 <CardItem header>
                   <Text>My Teams </Text>
                 </CardItem>
+<<<<<<< HEAD
                 <CardItem>
                 </CardItem>
+=======
+
+>>>>>>> e2a5e9dd02f6afad4fef7d3a59ad8f9534fbd036
               </Card>
             </Row>
             <Row style={{ backgroundColor: '#000000', flex: 4, flexDirection: 'column'}}>
@@ -370,34 +374,23 @@ class LeaguesScreen extends React.Component {
   };
   constructor(props) {
     super(props)
-    this.state = {testNum: 0,
+    this.state ={testNum: 0,
                   SNCteams: false,
-                  Insteams: false,
-                  SFLteams: false,
-                  MBLteams: false,
-                  GSLteams: false}
+                }
   }
 
-  _onPressSNC = () => {
-    this.setState({ SNCteams: !this.state.SNCteams })
-    Alert.alert('pressed special needs clinic '+this.state.SNCteams)
+  _onPress = (item) => {
+    x = item.isSubscribed
+    y = item.coach
+    if (x == "false"){
+      item.isSubscribed = "true"
+    }
+    else {
+      item.isSubscribed = "false"
+    }
+    Alert.alert('pressed ' + y + ' ' + item.isSubscribed)
   }
-  _onPressIns = () => {
-    this.setState({ Insteams: !this.state.Insteams })
-    Alert.alert('pressed Instructional league '+this.state.Insteams)
-  }
-  _onPressSFL = () => {
-    this.setState({ SFLteams: !this.state.SFLteams })
-    Alert.alert('pressed Small Fry League ' + this.state.SFLteams)
-  }
-  _onPressMBL = () => {
-    this.setState({ MBLteams: !this.state.MBLteams })
-    Alert.alert('pressed Middle Basketball League ' + this.state.MBLteams)
-  }
-  _onPressGSL = () => {
-    this.setState({ GSLteams: !this.state.GSLteams })
-    Alert.alert('pressed Grammar School League ' + this.state.GSLteams)
-  }
+
 
   _renderSubcard = (temp) => {
     let subTemp = temp.teams;
@@ -414,7 +407,7 @@ class LeaguesScreen extends React.Component {
   }
 
   render() {
-    let temp = Data;
+    var temp = Data;
     let teamTemp = temp.teams;
 
 
@@ -424,60 +417,32 @@ class LeaguesScreen extends React.Component {
           <Title>Select teams to subscribe to</Title>
         </Header>
         <Content padder>
-        <Button onPress = {this._testInsideLoop.bind(this, temp)}>
-          <Text>Try the code</Text>
-        </Button>
-        <List dataArray={temp}
-          renderRow={(temp) =>
-          <Card>
-            <CardItem header bordered>
-              <Text>{temp.league}</Text>
-            </CardItem>
-            <CardItem>
-              <Text>{temp.teams.wins}</Text>
-            </CardItem>
-            <Body>
 
-            <List dataArray={() => this._renderSubcard(temp)}
-              renderRow={(item) =>
-                <CardItem>
-                  <Text>
-                    {item.wins}
-                  </Text>
-                </CardItem>
-            }>
-            </List>
-            </Body>
-            <CardItem footer bordered>
-              {/*<Text>{temp.teams[0].wins}</Text>*/}
-            </CardItem>
-          </Card>
-          }>
-          </List>
-          {/*<List dataArray={temp}
-            renderRow={(temp) =>
-              <ListItem>
-                <Body>
-                  <Button full style={{paddingRight: 5, paddingLeft: 5}}
-                    onPress={this._onPressSNC}
-                  >
-                    <Text>{temp.league}</Text>
-                  </Button>
-                {this.state.SNCteams && (
-                  <List dataArray={temp}
-                    renderRow={(temp) =>
-                    <ListItem>
-                      <Body>
-                          <Text>{temp.league}</Text>
-                      </Body>
-                    </ListItem>
-                  }>
-                </List>
-              )}
-                </Body>
-              </ListItem>
-          }>
-          </List>*/}
+          {
+            temp.map((item,index)=>{
+              return(
+                <Card key={index}>
+                  <CardItem bordered>
+                    <Text>{item.league}</Text>
+                  </CardItem>
+                  <CardItem>
+                  {
+                    item.teams.map((item2,index2)=>{
+                      return(
+                        <CardItem style={{flexGrow: 1}}bordered key={index2}>
+                          <Button onPress={() => this._onPress(item2)}>
+                            <Text>{item2.team}</Text>
+                            <Text>{item2.isSubscribed}</Text>
+                          </Button>
+                        </CardItem>
+                      )
+                    })
+                  }
+                  </CardItem>
+                </Card>
+              )
+            })
+          }
         </Content>
       </Container>
     );
