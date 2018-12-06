@@ -77,7 +77,93 @@
     ]
   },
   {
-    "league": "Instructional"
+    "league": "Instructional",
+    "teams": [
+      {
+        "team": "Team A",
+        "coach": "Mr. John Hoops",
+        "email": "example@gmail.com",
+        "phone": "201-456-7890",
+        "roster": [
+          "kid A",
+          "kid B",
+          "kid C"
+        ],
+        "wins": 3,
+        "losses": 1,
+        "ties": 0,
+        "schedule": [
+          {
+            "type": "Practice",
+            "date": "Jan 1, 2019",
+            "time": "5:00PM",
+            "location": "Hoboken High School",
+            "address": "1 Castle Point"
+          },
+          {
+            "type": "Game",
+            "date": "Jan 2, 2019",
+            "time": "6:00PM",
+            "location": "Parking Lot",
+            "address": "5th & Park"
+          },
+          {
+            "type": "Practice",
+            "date": "Jan 5, 2019",
+            "time": "7:00PM",
+            "location": "Hoboken High School",
+            "address": "1 Castle Point"
+          },
+          {
+            "type": "Game",
+            "date": "Jan 10, 2019",
+            "time": "8:00PM",
+            "location": "Hoboken High School",
+            "address": "1 Castle Point"
+          },
+          {
+            "type": "Practice",
+            "date": "Jan 14, 2019",
+            "time": "9:00PM",
+            "location": "Hoboken High School",
+            "address": "1 Castle Point"
+          },
+          {
+            "type": "Game",
+            "date": "Jan 19, 2019",
+            "time": "10:00PM",
+            "location": "Hoboken High School",
+            "address": "1 Castle Point"
+          }
+        ]
+      },
+      {
+        "team": "Team B",
+        "coach": "Lavar Ball",
+        "email": "example@gmail.com",
+        "phone": "201-456-7890",
+        "roster": [
+          "kid D",
+          "kid E",
+          "kid F"
+        ],
+        "wins": 1,
+        "losses": 3,
+        "ties": 0,
+        "schedule": [
+          {
+            "date": "2019-01-01T20:00:00-05:00",
+            "location": "Hoboken High School",
+            "address": "1 Castle Point"
+          },
+          {
+            "date": "2019-02-02T19:00:00-05:00",
+            "location": "Hoboken High School",
+            "address": "1 Castle Point"
+          }
+        ]
+      }
+    ]
   },
   {
     "league": "Small Fry League",
