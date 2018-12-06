@@ -102,7 +102,7 @@ class HomeScreen extends React.Component {
                   <Text>My Teams </Text>
                 </CardItem>
                 <CardItem>
-
+                </CardItem>
               </Card>
             </Row>
             <Row style={{ backgroundColor: '#000000', flex: 4, flexDirection: 'column'}}>
