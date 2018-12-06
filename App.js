@@ -1,9 +1,14 @@
 import React from 'react';
 import { StyleSheet, View, Alert, Component, TouchableOpacity, Image, FlatList, ScrollView, TouchableWithoutFeedback, AsyncStorage, Clipboard} from 'react-native';
 import { createStackNavigator, createAppContainer} from "react-navigation";
-import {Container, Header, Content, List, ListItem, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Icon, Root, Toast, Accordion, Card, CardItem} from "native-base";
+import { Container, Header, Content, List, ListItem, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Root, Toast, Accordion, Footer, FooterTab} from "native-base";
+import { Row, Grid } from 'react-native-easy-grid';
 import { Font, AppLoading } from "expo";
-import renderIf from './renderIf';
+//import renderIf from './renderIf';
+//import Icon from "./src/components/Icon";
+//import Icon from "react-native-vector-icons/MaterialIcons"
+import Icon from "react-native-vector-icons/FontAwesome"
+//import TeamHomeScreen from "./src/components/TeamHome" resolve routing later
 
 
 //import getTheme from './native-base-theme/components';
@@ -35,9 +40,6 @@ try {
 _getTeamObj = (leagueObj, teamName) => {
   //return sub-Ojbect of given Team from given League //its broken idk why
 
-  //const teamArray = leagueObj.teams;
-  //return teamArray.length;
-
   for (let i=0; i<leagueObj.teams.length; i++) {
 
     if(leagueObj.teams[i].team == teamName)
@@ -46,8 +48,66 @@ _getTeamObj = (leagueObj, teamName) => {
   return leagueObj.teams[0];
   // return leagueObj.teams[0].team;
 }
-
 class HomeScreen extends React.Component {
+  static navigationOptions = {
+   header: null
+  };
+
+
+  constructor(props) {
+    super(props);
+    this.state = { loading: true };
+  }
+
+  async componentWillMount() {
+    await Font.loadAsync({
+      Roboto: require("native-base/Fonts/Roboto.ttf"),
+      Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
+    });
+    this.setState({ loading: false });
+  }
+
+  render() {
+    if (!this.state.loading) {
+      return (
+        <Container>
+          <Header style={{backgroundColor:"#697e90"}}>
+            <Title style={{fontSize:24, color:"#FFFFFF"}}>Hoboken Basketball</Title>
+          </Header>
+          <Grid style={{flexDirection: 'column'}} >
+            <Row style={{ backgroundColor: '#635DB7', flex: 3 }}>
+              <Text> TEST </Text>
+            </Row>
+            <Row style={{ backgroundColor: '#00CE9F', flex: 4}}>
+              
+            </Row>
+          </Grid>
+            <Footer>
+              <FooterTab>
+                <Button>
+                  <Icon name="list-ul" size={20}/>
+
+                </Button>
+                <Button active>
+                  <Icon active name="home" size={20}/>
+                </Button>
+                <Button>
+                  <Icon name="calendar" size={20}/>
+                </Button>
+              </FooterTab>
+            </Footer>
+          </Container>
+        );
+      }
+      else {
+        return(
+          null
+        );
+      }
+  }
+}
+
+class HomeTempScreen extends React.Component {
   static navigationOptions = {
    header: null
   };
@@ -71,10 +131,10 @@ class HomeScreen extends React.Component {
       return (
         //<StyleProvider style={getTheme(material)}>
         <Container>
-          <Header>
-            <Title> make this sexier </Title>
+          <Header style={{backgroundColor:"#697e90"}}>
+            <Title style={{fontSize:24, color:"#FFFFFF"}}>Hoboken Basketball</Title>
           </Header>
-          <Content>
+          <Content padder >
             <Text>Home Screen</Text>
             <Button info
               onPress={() => this.props.navigation.navigate('Leagues')}>
@@ -95,6 +155,10 @@ class HomeScreen extends React.Component {
             <Button
               onPress={() => this.props.navigation.navigate('Menu', {category: 'Small Fry League',})}>
               <Text>Menu (Small Fry League)</Text>
+            </Button>
+            <Button dark large
+              onPress={() => this.props.navigation.navigate('newHome')}>
+              <Text>newHome</Text>
             </Button>
           </Content>
         </Container>
@@ -214,9 +278,9 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
     return(
       <Container>
          <Header>
-            <Title>{this.state.teamName} Schedule</Title>
+            <Title >{this.state.teamName} Schedule</Title>
           </Header>
-        <Content >
+        <Content padder style={{backgroundColor:"#f8f7f5"}}>
           {
            temp.map((item, index)=>{
               return (
@@ -405,11 +469,11 @@ class TeamHomeScreen extends React.Component {
 
     return (
       <Container>
-         <Header>
-            <Title>{teamObj.team} Home</Title>
+         <Header style={{backgroundColor:"#697e90"}}>
+            <Title style={{justifyContent:'center'}}>{teamObj.team} Home</Title>
           </Header>
-        <Content >
-          <Card style={{flex: 0}}>
+        <Content padder style={{backgroundColor:"##f8f7f5"}}>
+          <Card>
             <CardItem>
               <Body>
                 <Text style={{fontSize:20, fontWeight:'bold'}}>Coach: {teamObj.coach}</Text>
@@ -419,19 +483,22 @@ class TeamHomeScreen extends React.Component {
             </CardItem>
             <CardItem>
               <Body>
-                <Text bold>Record: {teamObj.wins}-{teamObj.losses}-{teamObj.ties}</Text>
+                <Text bold>Record: {teamObj.wins}W-{teamObj.losses}L-{teamObj.ties}T</Text>
               </Body>
             </CardItem>
           </Card>
-          <Card style={{alignItems: 'left'}}>
-            <CardItem>
-              <Button
+          <Card>
+            <CardItem button
                 onPress={() => this.props.navigation.navigate('Schedule', {team: 'Team A',})}>
-                <Text>Team A Schedule</Text>
-              </Button>
+              <Body style={{justifyContent:'center'}}>
+                <Text style={{fontSize:22, fontWeight:'bold', color:"#0000EE"}}>Team A Schedule</Text>
+              </Body>
+              <Right>
+                <Icon name="chevron-right" size={40} color="#0000EE" />
+              </Right>
             </CardItem>
           </Card>
-          <Card style={{alignItems: 'left', paddingLeft:5,}}>
+          <Card style={{paddingLeft:5,}}>
 
             <CardItem>
               <Body>
@@ -445,10 +512,13 @@ class TeamHomeScreen extends React.Component {
                 }
               </Body>
             </CardItem>
-            <CardItem>
-              <Button small onPress={() => this.props.navigation.navigate('Stats', {teamName: "{teamObj.team}",})}>
+            <CardItem footer button onPress={() => this.props.navigation.navigate('Stats', {teamName: "{teamObj.team}",})}>
+
                 <Text bold>Click to view stats by player</Text>
-              </Button>
+
+              <Right>
+                <Icon name="chevron-right" size={30} color="#0000EE" />
+              </Right>
             </CardItem>
           </Card>
         </Content>
@@ -549,7 +619,8 @@ class StatsScreen extends React.Component {
 
 const AppNavigator =  createStackNavigator(
   {
-    Home: HomeScreen,
+    Home: HomeTempScreen,
+    newHome: HomeScreen,
     Settings: SettingsScreen,
     Details: DetailsScreen,
     Schedule: ScheduleScreen,
