@@ -66,8 +66,29 @@ class HomeScreen extends React.Component {
     });
     this.setState({ loading: false });
   }
+  _getBadgeColor(typeStr) {
+    if(typeStr=="Game")
+    {
+      return {
+        backgroundColor: '#4bbb87',
+      };
+    }
+    if(typeStr=="Practice")
+    {
+      return {
+        backgroundColor: '#fdac4f',
+
+      };
+    }
+  }
+
+  _copyAdr2Clip(adrStr) {
+    Clipboard.setString(adrStr);
+  }
 
   render() {
+    let temp = Data[2].teams[0].schedule;
+
     if (!this.state.loading) {
       return (
         <Container>
@@ -75,11 +96,36 @@ class HomeScreen extends React.Component {
             <Title style={{fontSize:24, color:"#FFFFFF"}}>Hoboken Basketball</Title>
           </Header>
           <Grid style={{flexDirection: 'column'}} >
-            <Row style={{ backgroundColor: '#635DB7', flex: 3 }}>
-              <Text> TEST </Text>
-            </Row>
-            <Row style={{ backgroundColor: '#00CE9F', flex: 4}}>
+            <Row style={{ backgroundColor: '#635DB7', flex: 3, flexDirection: 'column'}}>
+              <Card>
+                <CardItem header>
+                  <Text>My Teams </Text>
+                </CardItem>
+                <CardItem>
 
+              </Card>
+            </Row>
+            <Row style={{ backgroundColor: '#000000', flex: 4, flexDirection: 'column'}}>
+            {
+             temp.map((item, index)=>{
+                return (
+                  <Card key={index}>
+                     <CardItem onPress={this._copyAdr2Clip(item.address)}>
+                       <Left style={{ paddingRight: 2 }}>
+                         <Badge style={this._getBadgeColor(item.type)}>
+                           <Text>{item.type} </Text>
+                         </Badge>
+                        </Left>
+                       <Body>
+                         <Text note>{item.date} at {item.time}</Text>
+                         <Text>{item.location}, {item.address} </Text>
+                       </Body>
+
+                    </CardItem>
+                   </Card>
+                 )
+               })
+             }
             </Row>
           </Grid>
             <Footer>
@@ -324,23 +370,34 @@ class LeaguesScreen extends React.Component {
   };
   constructor(props) {
     super(props)
-    this.state ={testNum: 0,
+    this.state = {testNum: 0,
                   SNCteams: false,
-                }
+                  Insteams: false,
+                  SFLteams: false,
+                  MBLteams: false,
+                  GSLteams: false}
   }
 
-  _onPress = (item) => {
-    x = item.isSubscribed
-    y = item.coach
-    if (x == "false"){
-      item.isSubscribed = "true"
-    }
-    else {
-      item.isSubscribed = "false"
-    }
-    Alert.alert('pressed ' + y + ' ' + item.isSubscribed)
+  _onPressSNC = () => {
+    this.setState({ SNCteams: !this.state.SNCteams })
+    Alert.alert('pressed special needs clinic '+this.state.SNCteams)
   }
-
+  _onPressIns = () => {
+    this.setState({ Insteams: !this.state.Insteams })
+    Alert.alert('pressed Instructional league '+this.state.Insteams)
+  }
+  _onPressSFL = () => {
+    this.setState({ SFLteams: !this.state.SFLteams })
+    Alert.alert('pressed Small Fry League ' + this.state.SFLteams)
+  }
+  _onPressMBL = () => {
+    this.setState({ MBLteams: !this.state.MBLteams })
+    Alert.alert('pressed Middle Basketball League ' + this.state.MBLteams)
+  }
+  _onPressGSL = () => {
+    this.setState({ GSLteams: !this.state.GSLteams })
+    Alert.alert('pressed Grammar School League ' + this.state.GSLteams)
+  }
 
   _renderSubcard = (temp) => {
     let subTemp = temp.teams;
@@ -357,7 +414,7 @@ class LeaguesScreen extends React.Component {
   }
 
   render() {
-    var temp = Data;
+    let temp = Data;
     let teamTemp = temp.teams;
 
 
@@ -367,32 +424,60 @@ class LeaguesScreen extends React.Component {
           <Title>Select teams to subscribe to</Title>
         </Header>
         <Content padder>
+        <Button onPress = {this._testInsideLoop.bind(this, temp)}>
+          <Text>Try the code</Text>
+        </Button>
+        <List dataArray={temp}
+          renderRow={(temp) =>
+          <Card>
+            <CardItem header bordered>
+              <Text>{temp.league}</Text>
+            </CardItem>
+            <CardItem>
+              <Text>{temp.teams.wins}</Text>
+            </CardItem>
+            <Body>
 
-          {
-            temp.map((item,index)=>{
-              return(
-                <Card key={index}>
-                  <CardItem bordered>
-                    <Text>{item.league}</Text>
-                  </CardItem>
-                  <CardItem>
-                  {
-                    item.teams.map((item2,index2)=>{
-                      return(
-                        <CardItem style={{flexGrow: 1}}bordered key={index2}>
-                          <Button onPress={() => this._onPress(item2)}>
-                            <Text>{item2.team}</Text>
-                            <Text>{item2.isSubscribed}</Text>
-                          </Button>
-                        </CardItem>
-                      )
-                    })
-                  }
-                  </CardItem>
-                </Card>
-              )
-            })
-          }
+            <List dataArray={() => this._renderSubcard(temp)}
+              renderRow={(item) =>
+                <CardItem>
+                  <Text>
+                    {item.wins}
+                  </Text>
+                </CardItem>
+            }>
+            </List>
+            </Body>
+            <CardItem footer bordered>
+              {/*<Text>{temp.teams[0].wins}</Text>*/}
+            </CardItem>
+          </Card>
+          }>
+          </List>
+          {/*<List dataArray={temp}
+            renderRow={(temp) =>
+              <ListItem>
+                <Body>
+                  <Button full style={{paddingRight: 5, paddingLeft: 5}}
+                    onPress={this._onPressSNC}
+                  >
+                    <Text>{temp.league}</Text>
+                  </Button>
+                {this.state.SNCteams && (
+                  <List dataArray={temp}
+                    renderRow={(temp) =>
+                    <ListItem>
+                      <Body>
+                          <Text>{temp.league}</Text>
+                      </Body>
+                    </ListItem>
+                  }>
+                </List>
+              )}
+                </Body>
+              </ListItem>
+          }>
+          </List>*/}
         </Content>
       </Container>
     );
@@ -459,7 +544,7 @@ class TeamHomeScreen extends React.Component {
               </Right>
             </CardItem>
           </Card>
-          <Card style={{paddingLeft:5}}>
+          <Card style={{paddingLeft:5,}}>
 
             <CardItem>
               <Body>
