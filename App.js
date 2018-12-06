@@ -329,9 +329,16 @@ class LeaguesScreen extends React.Component {
                 }
   }
 
-  _onPressSNC = () => {
-    this.setState({ SNCteams: !this.state.SNCteams })
-    Alert.alert('pressed special needs clinic '+this.state.SNCteams)
+  _onPress = (item) => {
+    x = item.isSubscribed
+    y = item.coach
+    if (x == "false"){
+      item.isSubscribed = "true"
+    }
+    else {
+      item.isSubscribed = "false"
+    }
+    Alert.alert('pressed ' + y + ' ' + item.isSubscribed)
   }
 
 
@@ -350,7 +357,7 @@ class LeaguesScreen extends React.Component {
   }
 
   render() {
-    let temp = Data;
+    var temp = Data;
     let teamTemp = temp.teams;
 
 
@@ -373,7 +380,10 @@ class LeaguesScreen extends React.Component {
                     item.teams.map((item2,index2)=>{
                       return(
                         <CardItem style={{flexGrow: 1}}bordered key={index2}>
-                          <Text>{item2.team}</Text>
+                          <Button onPress={() => this._onPress(item2)}>
+                            <Text>{item2.team}</Text>
+                            <Text>{item2.isSubscribed}</Text>
+                          </Button>
                         </CardItem>
                       )
                     })

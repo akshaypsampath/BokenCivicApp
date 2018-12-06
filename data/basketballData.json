@@ -4,7 +4,7 @@
     "teams": [
       {
         "team": "Team A",
-        "isSubscribed": false,
+        "isSubscribed": "false",
         "coach": "Lavar Ball",
         "email": "example@gmail.com",
         "phone": "201-456-7890",
@@ -57,7 +57,7 @@
       },
       {
         "team": "Team B",
-        "isSubscribed": false,
+        "isSubscribed": "false",
         "coach": "Lavar Ball",
         "email": "example@gmail.com",
         "phone": "201-456-7890",
@@ -89,6 +89,7 @@
     "teams": [
       {
         "team": "Team A",
+        "isSubscribed": "false",
         "coach": "Mr. John Hoops",
         "email": "example@gmail.com",
         "phone": "201-456-7890",
@@ -147,6 +148,7 @@
       },
       {
         "team": "Team B",
+        "isSubscribed": "false",
         "coach": "Lavar Ball",
         "email": "example@gmail.com",
         "phone": "201-456-7890",
@@ -178,7 +180,7 @@
     "teams": [
       {
         "team": "Team A",
-        "isSubscribed": true,
+        "isSubscribed": "true",
         "coach": "Mr. John Hoops",
         "email": "example@gmail.com",
         "phone": "201-456-7890",
@@ -237,7 +239,7 @@
       },
       {
         "team": "Team B",
-        "isSubscribed": true,
+        "isSubscribed": "true",
         "coach": "Lavar Ball",
         "email": "example@gmail.com",
         "phone": "201-456-7890",
