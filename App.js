@@ -4,7 +4,6 @@ import { createStackNavigator, createAppContainer} from "react-navigation";
 import { Container, Header, Content, List, ListItem, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Root, Toast, Accordion, Footer, FooterTab} from "native-base";
 import { Row, Grid } from 'react-native-easy-grid';
 import { Font, AppLoading } from "expo";
-//import renderIf from './renderIf';
 //import Icon from "./src/components/Icon";
 //import Icon from "react-native-vector-icons/MaterialIcons"
 import Icon from "react-native-vector-icons/FontAwesome"
@@ -14,8 +13,8 @@ import Icon from "react-native-vector-icons/FontAwesome"
 //import getTheme from './native-base-theme/components';
 //import material from './native-base-theme/variables/material';
 
-//import Data from "./data/basketballData";
 var Data = require('./data/basketballData.json');
+var MiddleSchedule = require('./data/middleBasketballSchedule.json');
 
 _storeData = async (key, value) => {
   try {
@@ -190,10 +189,6 @@ class HomeTempScreen extends React.Component {
               <Text>Go to Details</Text>
             </Button>
             <Button
-              onPress={() => this.props.navigation.navigate('Schedule', {team: 'Team A',})}>
-              <Text>Team A Schedule</Text>
-            </Button>
-            <Button
               onPress={() => this.props.navigation.navigate('TeamHome', {teamName: 'Team A',})}>
               <Text>Team A Home</Text>
             </Button>
@@ -204,6 +199,10 @@ class HomeTempScreen extends React.Component {
             <Button dark large
               onPress={() => this.props.navigation.navigate('newHome')}>
               <Text>newHome</Text>
+            </Button>
+            <Button
+              onPress={() => this.props.navigation.navigate('TeamSelect')}>
+              <Text>team schedule select</Text>
             </Button>
           </Content>
         </Container>
@@ -263,14 +262,44 @@ class DetailsScreen extends React.Component {
     );
   }
 }
+
 class SettingsScreen extends React.Component {
 
 }
+
+class TeamSelectionScreen extends React.Component { /*Select team to display schedule for*/
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  render() {
+    let temp = MiddleSchedule;
+    return(
+    <Container>
+      <Content>
+        {
+          temp.map((item, index)=>{
+            return(
+              <Card style={styles.container} key={index}>
+                <CardItem button
+                  onPress={() => this.props.navigation.navigate('Schedule', {teamName: item.team, object: item})}>
+                  <Text>{item.team}</Text>
+                </CardItem>
+              </Card>
+            );
+          })
+        }
+      </Content>
+    </Container>
+    );
+  }
+}
+
 class ScheduleScreen extends React.Component { /* Display each of the games for a team, when and where*/
   static navigationOptions = ({ navigation }) => {
-    let teamName = navigation.getParam('team');
-    _storeData('team', teamName);
-
+    let team = navigation.getParam('teamName');
+    _storeData('team', team);
     return{
       header: null,
     };
@@ -285,7 +314,7 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
 
   async componentWillMount() {
     AsyncStorage.getItem("team").then((value) => {
-        this.setState({"teamName": value});
+      this.setState({"teamName": value});
     }).done();
   }
 
@@ -314,20 +343,21 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
   }
 
   render() {
-    let temp = Data[2].teams[0].schedule;
     // let dateTemp = Data[2].teams[0].schedule[0].date;
     // let dateObj = Date.parse(dateTemp).getDate();
     //let dayOfMonth = this._getDay(temp.date);
     //let dateObj = Date.parse(temp.);
-
+    const {navigation} = this.props;
+    let temp = navigation.getParam('object');
     return(
       <Container>
-         <Header>
+         <Header style={{paddingTop: 30}}>
             <Title >{this.state.teamName} Schedule</Title>
           </Header>
         <Content padder style={{backgroundColor:"#f8f7f5"}}>
+          <Text>{temp.games[0].opponent}</Text>
           {
-           temp.map((item, index)=>{
+            temp.games.map((item, index)=>{
               return (
                 <Card key={index}>
                    <CardItem onPress={this._copyAdr2Clip(item.address)}>
@@ -337,15 +367,16 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
                        </Badge>
                       </Left>
                      <Body>
-                       <Text note>{item.date} at {item.time}</Text>
-                       <Text>{item.location}, {item.address} </Text>
+                        <Text>{item.opponent}</Text>
+                        <Text note>{item.date} at {item.time}</Text>
+                        <Text>{item.location}</Text>
                      </Body>
 
                   </CardItem>
                  </Card>
                )
              })
-           }
+            }
 
         </Content>
       </Container>
@@ -367,11 +398,29 @@ class LeaguesScreen extends React.Component {
     },
     };
   };
+
   constructor(props) {
     super(props)
-    this.state ={testNum: 0,
-                  SNCteams: false,
-                }
+    this.state ={}
+  }
+
+  _subscribeStatus = (item) => {
+    if (item.isSubscribed == "true"){
+      return{
+        flexGrow: 1,
+        backgroundColor: 'yellow',
+      };
+    }
+    else{
+      return{
+        flexGrow: 1,
+        backgroundColor: 'red',
+      };
+    }
+  }
+
+  returnName = (item) => {
+    Alert.alert(item.team)
   }
 
   _onPress = (item) => {
@@ -383,49 +432,32 @@ class LeaguesScreen extends React.Component {
     else {
       item.isSubscribed = "false"
     }
+    this.forceUpdate()
     Alert.alert('pressed ' + y + ' ' + item.isSubscribed)
   }
 
 
-  _renderSubcard = (temp) => {
-    let subTemp = temp.teams;
-    this.setState({ testNum: 2})
-    return(subTemp);
-  }
-
-  _testInsideLoop = (temp) => {
-    this.setState({testNum: 2})
-    var a = this.state.testNum;
-    var b = temp[0].teams[0].wins;
-    console.log(a)
-    Alert.alert('is this number working ' +a+ ' ' + b)
-  }
-
   render() {
-    var temp = Data;
-    let teamTemp = temp.teams;
-
 
     return (
       <Container>
         <Header style={{justifyContent: 'center', alignItems: 'center'}}>
           <Title>Select teams to subscribe to</Title>
         </Header>
-        <Content padder>
+        <Content>
 
           {
-            temp.map((item,index)=>{
+            Data.map((item,index)=>{
               return(
                 <Card key={index}>
                   <CardItem bordered>
                     <Text>{item.league}</Text>
                   </CardItem>
-                  <CardItem>
                   {
                     item.teams.map((item2,index2)=>{
                       return(
-                        <CardItem style={{flexGrow: 1}}bordered key={index2}>
-                          <Button onPress={() => this._onPress(item2)}>
+                        <CardItem style={{flex:1}}bordered key={index2}>
+                          <Button style={this._subscribeStatus(item2)} onPress={() => this._onPress(item2)}>
                             <Text>{item2.team}</Text>
                             <Text>{item2.isSubscribed}</Text>
                           </Button>
@@ -433,11 +465,14 @@ class LeaguesScreen extends React.Component {
                       )
                     })
                   }
-                  </CardItem>
                 </Card>
               )
             })
           }
+          <Button
+            onPress={() => this.props.navigation.navigate('Details', {newTitle: 'FLOB',})}>
+            <Text>Go to Details</Text>
+          </Button>
         </Content>
       </Container>
     );
@@ -634,6 +669,7 @@ const AppNavigator =  createStackNavigator(
     TeamHome: TeamHomeScreen,
     Menu: MenuScreen,
     Stats: StatsScreen,
+    TeamSelect: TeamSelectionScreen,
     /*Calendar: CalendarScreen,
     Roster: RosterScreen,*/
   },
