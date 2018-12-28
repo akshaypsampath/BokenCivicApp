@@ -1,4 +1,13 @@
-class TeamHomeScreen extends React.Component {
+import React from 'react';
+import { Component, FlatList, ScrollView, AsyncStorage} from 'react-native';
+import { Container, Header, Content, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Root, Toast, Footer, FooterTab} from "native-base";
+import Icon from "react-native-vector-icons/FontAwesome"
+import { Row, Grid } from 'react-native-easy-grid';
+import styles from "./../styles";
+
+var Data = require('./../../data/basketballData.json');
+
+export default class TeamHomeScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     _storeData('teamNameTitle', navigation.getParam('teamName'));
     return{
@@ -29,8 +38,8 @@ class TeamHomeScreen extends React.Component {
 
     return (
       <Container>
-         <Header style={{backgroundColor:"#697e90"}}>
-            <Title style={{justifyContent:'center'}}>{teamObj.team} Home</Title>
+         <Header style={styles.header}>
+            <Title style={styles.title}>{teamObj.team} Home</Title>
           </Header>
         <Content padder style={{backgroundColor:"##f8f7f5"}}>
           <Card>

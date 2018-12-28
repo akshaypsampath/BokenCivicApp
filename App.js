@@ -4,11 +4,24 @@ import { createStackNavigator, createAppContainer} from "react-navigation";
 import { Container, Header, Content, List, ListItem, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Root, Toast, Accordion, Footer, FooterTab} from "native-base";
 import { Row, Grid } from 'react-native-easy-grid';
 import { Font, AppLoading } from "expo";
-//import Icon from "./src/components/Icon";
-//import Icon from "react-native-vector-icons/MaterialIcons"
-import Icon from "react-native-vector-icons/FontAwesome"
-//import TeamHomeScreen from "./src/components/TeamHome" resolve routing later
+import styles from "./src/styles";
 
+import Icon from "react-native-vector-icons/FontAwesome"
+import TeamHomeScreen from "./src/screens/TeamHome" //resolve routing later
+import DetailsScreen from "./src/screens/Details"
+import SettingsScreen from "./src/screens/Settings"
+import HomeScreen from "./src/screens/Home"
+import LeaguesScreen from "./src/screens/Leagues"
+import StatsScreen from "./src/screens/Stats"
+import MenuScreen from "./src/screens/Menu"
+import ScheduleScreen from "./src/screens/Schedule"
+
+
+import _storeData from "./src/actions/actions"
+import _retrieveData from "./src/actions/actions"
+
+
+//import ScheduleCards from "./src/components/scheduleCards";
 
 //import getTheme from './native-base-theme/components';
 //import material from './native-base-theme/variables/material';
@@ -16,140 +29,7 @@ import Icon from "react-native-vector-icons/FontAwesome"
 var Data = require('./data/basketballData.json');
 var MiddleSchedule = require('./data/middleBasketballSchedule.json');
 
-_storeData = async (key, value) => {
-  try {
-    await AsyncStorage.setItem(key, value);
-  } catch (error) {
-    // Error saving data
-  }
-}
-_retrieveData = async (key) => {
-try {
-  const value = await AsyncStorage.getItem(key);
-  if (value !== null) {
-    // We have data!!
-    console.log(value);
 
-  }
- } catch (error) {
-   // Error retrieving data
- }
-}
-
-_getTeamObj = (leagueObj, teamName) => {
-  //return sub-Ojbect of given Team from given League //its broken idk why
-
-  for (let i=0; i<leagueObj.teams.length; i++) {
-
-    if(leagueObj.teams[i].team == teamName)
-      return leagueObj.teams[i];
-  }
-  return leagueObj.teams[0];
-  // return leagueObj.teams[0].team;
-}
-class HomeScreen extends React.Component {
-  static navigationOptions = {
-   header: null
-  };
-
-
-  constructor(props) {
-    super(props);
-    this.state = { loading: true };
-  }
-
-  async componentWillMount() {
-    await Font.loadAsync({
-      Roboto: require("native-base/Fonts/Roboto.ttf"),
-      Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
-    });
-    this.setState({ loading: false });
-  }
-  _getBadgeColor(typeStr) {
-    if(typeStr=="Game")
-    {
-      return {
-        backgroundColor: '#4bbb87',
-      };
-    }
-    if(typeStr=="Practice")
-    {
-      return {
-        backgroundColor: '#fdac4f',
-
-      };
-    }
-  }
-
-  _copyAdr2Clip(adrStr) {
-    Clipboard.setString(adrStr);
-  }
-
-  render() {
-    let temp = Data[2].teams[0].schedule;
-
-    if (!this.state.loading) {
-      return (
-        <Container>
-          <Header style={{backgroundColor:"#697e90"}}>
-            <Title style={{fontSize:24, color:"#FFFFFF"}}>Hoboken Basketball</Title>
-          </Header>
-          <Grid style={{flexDirection: 'column'}} >
-            <Row style={{ backgroundColor: '#635DB7', flex: 3, flexDirection: 'column'}}>
-              <Card>
-                <CardItem header>
-                  <Text>My Teams </Text>
-                </CardItem>
-
-              </Card>
-            </Row>
-            <Row style={{ backgroundColor: '#000000', flex: 4, flexDirection: 'column'}}>
-            {
-             temp.map((item, index)=>{
-                return (
-                  <Card key={index}>
-                     <CardItem onPress={this._copyAdr2Clip(item.address)}>
-                       <Left style={{ paddingRight: 2 }}>
-                         <Badge style={this._getBadgeColor(item.type)}>
-                           <Text>{item.type} </Text>
-                         </Badge>
-                        </Left>
-                       <Body>
-                         <Text note>{item.date} at {item.time}</Text>
-                         <Text>{item.location}, {item.address} </Text>
-                       </Body>
-
-                    </CardItem>
-                   </Card>
-                 )
-               })
-             }
-            </Row>
-          </Grid>
-            <Footer>
-              <FooterTab>
-                <Button>
-                  <Icon name="list-ul" size={20}/>
-
-                </Button>
-                <Button active>
-                  <Icon active name="home" size={20}/>
-                </Button>
-                <Button>
-                  <Icon name="calendar" size={20}/>
-                </Button>
-              </FooterTab>
-            </Footer>
-          </Container>
-        );
-      }
-      else {
-        return(
-          null
-        );
-      }
-  }
-}
 
 class HomeTempScreen extends React.Component {
   static navigationOptions = {
@@ -171,6 +51,10 @@ class HomeTempScreen extends React.Component {
 }
 
   render() {
+    console.log("hey");
+
+
+
     if (!this.state.loading) {
       return (
         //<StyleProvider style={getTheme(material)}>
@@ -179,7 +63,7 @@ class HomeTempScreen extends React.Component {
             <Title style={{fontSize:24, color:"#FFFFFF"}}>Hoboken Basketball</Title>
           </Header>
           <Content padder >
-            <Text>Home Screen</Text>
+            <Text>Home Screen ... cool</Text>
             <Button info
               onPress={() => this.props.navigation.navigate('Leagues')}>
               <Text>Go to League Screen</Text>
@@ -305,12 +189,6 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
     };
   };
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      showToast: false
-    }
-  }
 
   async componentWillMount() {
     AsyncStorage.getItem("team").then((value) => {
@@ -334,13 +212,6 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
     }
   }
 
-  _copyAdr2Clip(adrStr) {
-    Clipboard.setString(adrStr);
-    // Toast.show({
-    //   text: 'Address Copied to Clipboard!',
-    //   buttonText: 'Okay',
-    // });
-  }
 
   render() {
     // let dateTemp = Data[2].teams[0].schedule[0].date;
@@ -696,24 +567,3 @@ FlatListItemSeparator = () => {
      />
    );
  }
-
-
-
-
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  leagueTypes: {
-    flex: 1,
-    backgroundColor: '#1b97b2',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: 25,
-  }
-});
