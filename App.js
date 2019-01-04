@@ -7,16 +7,17 @@ import { Font, AppLoading } from "expo";
 import styles from "./src/styles";
 
 import Icon from "react-native-vector-icons/FontAwesome"
+{/*
 import TeamHomeScreen from "./src/screens/TeamHome" //resolve routing later
 import DetailsScreen from "./src/screens/Details"
 import SettingsScreen from "./src/screens/Settings"
-import HomeScreen from "./src/screens/Home"
+
 import LeaguesScreen from "./src/screens/Leagues"
 import StatsScreen from "./src/screens/Stats"
 import MenuScreen from "./src/screens/Menu"
 import ScheduleScreen from "./src/screens/Schedule"
-
-
+*/}
+import HomeScreen from "./src/screens/Home"
 import _storeData from "./src/actions/actions"
 import _retrieveData from "./src/actions/actions"
 
@@ -182,8 +183,7 @@ class TeamSelectionScreen extends React.Component { /*Select team to display sch
 
 class ScheduleScreen extends React.Component { /* Display each of the games for a team, when and where*/
   static navigationOptions = ({ navigation }) => {
-    let team = navigation.getParam('teamName');
-    _storeData('team', team);
+  let team = navigation.getParam('teamName');
     return{
       header: null,
     };
@@ -195,6 +195,7 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
       this.setState({"teamName": value});
     }).done();
   }
+
 
   _getBadgeColor(typeStr) {
     if(typeStr=="Game")
@@ -214,24 +215,20 @@ class ScheduleScreen extends React.Component { /* Display each of the games for 
 
 
   render() {
-    // let dateTemp = Data[2].teams[0].schedule[0].date;
-    // let dateObj = Date.parse(dateTemp).getDate();
-    //let dayOfMonth = this._getDay(temp.date);
-    //let dateObj = Date.parse(temp.);
     const {navigation} = this.props;
     let temp = navigation.getParam('object');
+    let title = navigation.getParam('teamName');
     return(
       <Container>
          <Header style={{paddingTop: 30}}>
-            <Title >{this.state.teamName} Schedule</Title>
+            <Title >{title} Schedule</Title>
           </Header>
         <Content padder style={{backgroundColor:"#f8f7f5"}}>
-          <Text>{temp.games[0].opponent}</Text>
           {
             temp.games.map((item, index)=>{
               return (
                 <Card key={index}>
-                   <CardItem onPress={this._copyAdr2Clip(item.address)}>
+                   <CardItem>
                      <Left style={{ paddingRight: 2 }}>
                        <Badge style={this._getBadgeColor(item.type)}>
                          <Text>{item.type} </Text>
