@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, AsyncStorage, Clipboard} from 'react-native';
+import { StyleSheet, View, AsyncStorage, Clipboard, Alert} from 'react-native';
 import { createStackNavigator, createAppContainer} from "react-navigation";
 import { Container, Header, Content, Title, Text, Card, CardItem, Button } from "native-base";
 import { Row, Grid } from 'react-native-easy-grid';
@@ -10,6 +10,8 @@ import styles from "./../styles";
 import Icon from "react-native-vector-icons/FontAwesome"
 
 var Data = require('../../data/basketballData.json');//hoist state so this isn't necessary
+var teamList = require('../../data/teamList.json');
+
 
 export default class LeaguesScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
@@ -32,15 +34,15 @@ export default class LeaguesScreen extends React.Component {
   }
 
   _onPress = (item) => {
-    x = item.isSubscribed
+    x = item.myTeam
     y = item.coach
-    if (x == "false"){
-      item.isSubscribed = "true"
+    if (x == false){
+      item.myTeam = true
     }
     else {
-      item.isSubscribed = "false"
+      item.myTeam = false
     }
-    Alert.alert('pressed ' + y + ' ' + item.isSubscribed)
+    //Alert.alert('pressed ' + y + ' ' + item.isSubscribed)
   }
 
 
@@ -55,7 +57,7 @@ export default class LeaguesScreen extends React.Component {
     var a = this.state.testNum;
     var b = temp[0].teams[0].wins;
     console.log(a)
-    Alert.alert('is this number working ' +a+ ' ' + b)
+    //\Alert.alert('is this number working ' +a+ ' ' + b)
   }
 
   render() {
@@ -66,7 +68,7 @@ export default class LeaguesScreen extends React.Component {
     return (
       <Container>
         <Header style={{justifyContent: 'center', alignItems: 'center'}}>
-          <Title>Select teams to subscribe to</Title>
+          <Title>Manage MyTeams</Title>
         </Header>
         <Content padder>
 
@@ -77,20 +79,20 @@ export default class LeaguesScreen extends React.Component {
                   <CardItem bordered>
                     <Text>{item.league}</Text>
                   </CardItem>
-                  <CardItem>
+
                   {
                     item.teams.map((item2,index2)=>{
                       return(
-                        <CardItem style={{flexGrow: 1}}bordered key={index2}>
+                        <CardItem style={{flexGrow: 1}} bordered key={index2}>
                           <Button onPress={() => this._onPress(item2)}>
-                            <Text>{item2.team}</Text>
-                            <Text>{item2.isSubscribed}</Text>
+                            <Text>{item2.name}</Text>
+                            <Text>{item2.myTeam}</Text>
                           </Button>
                         </CardItem>
                       )
                     })
                   }
-                  </CardItem>
+
                 </Card>
               )
             })

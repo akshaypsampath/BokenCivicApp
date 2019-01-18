@@ -52,9 +52,6 @@ class HomeTempScreen extends React.Component {
 }
 
   render() {
-    console.log("hey");
-
-
 
     if (!this.state.loading) {
       return (
