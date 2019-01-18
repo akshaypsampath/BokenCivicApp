@@ -1,0 +1,326 @@
+[
+  {
+    "team": "Elysian Charter",
+    "games":[
+      {
+        "opponent": "Hoboken Charter",
+        "date": "Saturday, Jan 5, 2019",
+        "time": "1:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens White",
+        "date": "Saturday, Jan 12, 2019",
+        "time": "2:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Red",
+        "date": "Saturday, Jan 26, 2019",
+        "time": "3:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA",
+        "date": "Saturday, Feb 2, 2019",
+        "time": "1:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Middle School",
+        "date": "Saturday, Feb 2, 2019",
+        "time": "3:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Middle School",
+        "date": "Saturday, Feb 9, 2019",
+        "time": "3:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter",
+        "date": "Saturday, Feb 23, 2019",
+        "time": "3:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens White",
+        "date": "Saturday, Mar 2, 2019",
+        "time": "2:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Hoboken Charter",
+    "games":[
+      {
+        "opponent": "Elysian Charter",
+        "date": "Saturday, Jan 5, 2019",
+        "time": "1:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA",
+        "date": "Saturday, Jan 12, 2019",
+        "time": "1:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Middle School",
+        "date": "Saturday, Jan 26, 2019",
+        "time": "1:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens White",
+        "date": "Saturday, Feb 2, 2019",
+        "time": "2:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens White",
+        "date": "Saturday, Feb 9, 2019",
+        "time": "2:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter",
+        "date": "Saturday, Feb 23, 2019",
+        "time": "3:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA",
+        "date": "Saturday, Mar 2, 2019",
+        "time": "3:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Stevens Red",
+    "games":[
+      {
+        "opponent": "Stevens White",
+        "date": "Saturday, Jan 5, 2019",
+        "time": "3:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Middle School",
+        "date": "Saturday, Jan 12, 2019",
+        "time": "3:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter",
+        "date": "Saturday, Jan 26, 2019",
+        "time": "3:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA",
+        "date": "Saturday, Feb 9, 2019",
+        "time": "1:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens White",
+        "date": "Saturday, Feb 23, 2019",
+        "time": "1:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Middle School",
+        "date": "Saturday, Mar 2, 2019",
+        "time": "1:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Stevens White",
+    "games":[
+      {
+        "opponent": "Stevens Red",
+        "date": "Saturday, Jan 5, 2019",
+        "time": "3:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter",
+        "date": "Saturday, Jan 12, 2019",
+        "time": "2:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA",
+        "date": "Saturday, Jan 26, 2019",
+        "time": "2:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter",
+        "date": "Saturday, Feb 2, 2019",
+        "time": "2:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter",
+        "date": "Saturday, Feb 9, 2019",
+        "time": "2:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Red",
+        "date": "Saturday, Feb 23, 2019",
+        "time": "1:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter",
+        "date": "Saturday, Mar 2, 2019",
+        "time": "2:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "HOLA",
+    "games":[
+      {
+        "opponent": "Hoboken Middle School",
+        "date": "Saturday, Jan 5, 2019",
+        "time": "2:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter",
+        "date": "Saturday, Jan 12, 2019",
+        "time": "1:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens White",
+        "date": "Saturday, Jan 26, 2019",
+        "time": "2:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter",
+        "date": "Saturday, Feb 2, 2019",
+        "time": "1:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Red",
+        "date": "Saturday, Feb 9, 2019",
+        "time": "1:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Middle School",
+        "date": "Saturday, Feb 23, 2019",
+        "time": "2:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter",
+        "date": "Saturday, Mar 2, 2019",
+        "time": "3:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Hoboken Middle School",
+    "games":[
+      {
+        "opponent": "HOLA",
+        "date": "Saturday, Jan 5, 2019",
+        "time": "2:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Red",
+        "date": "Saturday, Jan 12, 2019",
+        "time": "3:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter",
+        "date": "Saturday, Jan 26, 2019",
+        "time": "1:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter",
+        "date": "Saturday, Feb 2, 2019",
+        "time": "3:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter",
+        "date": "Saturday, Feb 9, 2019",
+        "time": "3:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA",
+        "date": "Saturday, Feb 23, 2019",
+        "time": "2:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Red",
+        "date": "Saturday, Mar 2, 2019",
+        "time": "1:00 PM",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+]
