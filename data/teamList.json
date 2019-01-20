@@ -1,0 +1,227 @@
+[
+  {
+    "league": "Middle Division",
+    "teams": [
+      {
+        "key": "",
+        "name": "All Saints 5",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Elysian Charter Green 5",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Elysian Charter White 5",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Elysian Charter Green 6",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Hoboken Charter 5",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Hoboken Charter 6",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Connors/Calabro 5",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Connors/Calabro 6",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "HOLA 5",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "HOLA 6",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Hudson 6",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Wallace 6",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Stevens Purple 5",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Wallace Black 5",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Stevens Red 5",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Wallace Grey 5",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "All Saints 6",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Mustard Seed 6",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "Stevens 6",
+        "myTeam": false,
+      },
+    ]
+  },
+  {
+    "league": "Small Fry",
+    "teams": [
+      {
+        "key": "",
+        "name": "",
+        "myTeam": false,
+      },
+      {
+        "key": "",
+        "name": "",
+        "myTeam": false,
+      },
+    ]
+  },
+  {
+    "league": "Girls",
+    "teams": [
+      {
+        "key": "EC",
+        "name": "Elysian Charter",
+        "myTeam": false,
+      },
+      {
+        "key": "HC",
+        "name": "Hoboken Charter",
+        "myTeam": false,
+      },
+      {
+        "key": "HMS",
+        "name": "Hoboken Middle School",
+        "myTeam": false,
+      },
+      {
+        "key": "HOLA",
+        "name": "HOLA",
+        "myTeam": false,
+      },
+      {
+        "key": "SR",
+        "name": "Stevens Red",
+        "myTeam": false,
+      },
+      {
+        "key": "SW",
+        "name": "Stevens White",
+        "myTeam": false,
+      },
+    ]
+  },
+  {
+    "league": "Grammar",
+    "teams": [
+      {
+        "key": "ECG",
+        "name": "Elysian Charter Green",
+        "myTeam": false,
+      },
+      {
+        "key": "ECW",
+        "name": "Elysian Charter White",
+        "myTeam": false,
+      },
+      {
+        "key": "ECKG",
+        "name": "Elysian Charter Kelly Green",
+        "myTeam": false,
+      },
+      {
+        "key": "AS",
+        "name": "All Saints",
+        "myTeam": false,
+      },
+      {
+        "key": "HMSW",
+        "name": "Hoboken Middle School Warriors",
+        "myTeam": false,
+      },
+      {
+        "key": "HMSK",
+        "name": "Hoboken Middle School Knicks",
+        "myTeam": false,
+      },
+      {
+        "key": "HMSN",
+        "name": "Hoboken Middle School Nets",
+        "myTeam": false,
+      },
+      {
+        "key": "SR",
+        "name": "Stevens Red",
+        "myTeam": false,
+      },
+      {
+        "key": "SW",
+        "name": "Stevens White",
+        "myTeam": false,
+      },
+      {
+        "key": "HC",
+        "name": "Hoboken Charter",
+        "myTeam": false,
+      },
+      {
+        "key": "HT",
+        "name": "HOLA Teal",
+        "myTeam": false,
+      },
+      {
+        "key": "HB",
+        "name": "HOLA Black",
+        "myTeam": false,
+      },
+      {
+        "key": "HUD",
+        "name": "Hudson",
+        "myTeam": false,
+      },
+      {
+        "key": "MS",
+        "name": "Mustard Seed",
+        "myTeam": false,
+      },
+    ]
+  }
+]

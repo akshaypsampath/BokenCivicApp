@@ -27,7 +27,8 @@
             "type": "Game",
             "date": "2019-01-02T19:00:00-05:00",
             "location": "Parking Lot",
-            "address": "5th & Park"
+            "address": "5th & Park",
+            "vs": "Team B"
           },
           {
             "type": "Practice",

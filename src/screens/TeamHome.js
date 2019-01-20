@@ -83,7 +83,7 @@ export default class TeamHomeScreen extends React.Component {
             </CardItem>
             <CardItem footer button onPress={() => this.props.navigation.navigate('Stats', {teamName: "{teamObj.team}",})}>
 
-                <Text bold>Click to view stats by player</Text>
+                <Text bold>Click to view detailed stats</Text>
 
               <Right>
                 <Icon name="chevron-right" size={30} color="#0000EE" />

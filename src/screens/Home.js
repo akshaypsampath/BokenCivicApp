@@ -4,11 +4,15 @@ import { createStackNavigator, createAppContainer} from "react-navigation";
 import { Container, Header, Content, List, ListItem, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Root, Toast, Accordion, Footer, FooterTab} from "native-base";
 import { Row, Grid } from 'react-native-easy-grid';
 import { Font, AppLoading } from "expo";
+
 import styles from "./../styles";
+import ScheduleCards from "./../components/ScheduleCards";
+import MyTeamsList from "./../components/MyTeamsList";
 
 import Icon from "react-native-vector-icons/FontAwesome"
 
 var Data = require('../../data/basketballData.json');
+var teamListObj = require('../../data/teamList.json');
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -18,7 +22,9 @@ export default class HomeScreen extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { loading: true };
+    this.state = { loading: true,
+                    teamList: []
+                  };
   }
 
   async componentWillMount() {
@@ -27,6 +33,10 @@ export default class HomeScreen extends React.Component {
       Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
     });
     this.setState({ loading: false });
+
+    this.setState({
+      teamList: teamListObj
+    });
   }
   _getBadgeColor(typeStr) {
     if(typeStr=="Game")
@@ -52,8 +62,12 @@ export default class HomeScreen extends React.Component {
     Clipboard.setString(adrStr);
   }
 
+
+
   render() {
     let temp = Data[2].teams[0].schedule;
+    //console.log(this.state.teamList);
+    //console.log(teamListObj);
 
     if (!this.state.loading) {
       return (
@@ -63,6 +77,7 @@ export default class HomeScreen extends React.Component {
           </Header>
           <Grid style={styles.grid} >
             <Row style={styles.row}>
+              <MyTeamsList teamList={this.state.teamList}/>
               <Card>
                 <CardItem header>
                   <Text>My Teams </Text>
@@ -70,28 +85,6 @@ export default class HomeScreen extends React.Component {
                 <CardItem>
                 </CardItem>
               </Card>
-            </Row>
-            <Row style={{ backgroundColor: '#000000', flex: 4, flexDirection: 'column'}}>
-            {
-             temp.map((item, index)=>{
-                return (
-                  <Card key={index}>
-                     <CardItem onPress={this._copyAdr2Clip(item.address)}>
-                       <Left style={{ paddingRight: 2 }}>
-                         <Badge style={this._getBadgeColor(item.type)}>
-                           <Text>{item.type} </Text>
-                         </Badge>
-                        </Left>
-                       <Body>
-                         <Text note>{item.date} at {item.time}</Text>
-                         <Text>{item.location}, {item.address} </Text>
-                       </Body>
-
-                    </CardItem>
-                   </Card>
-                 )
-               })
-             }
             </Row>
           </Grid>
             <Footer>
