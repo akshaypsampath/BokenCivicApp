@@ -1,0 +1,2780 @@
+[
+  {
+    "team": "All Saints-Small Fry 3rd grade",
+    "league": "smallFry",
+    "roster": [
+      {
+        "Name": "Thomas Gray",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Kiran Khirova ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Jonathan Gels",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Michael Noto ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Connor Lalli",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Sujeev Kapur",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Rafay Khan ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Baron Dworzanski ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Leo Gigante ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Adiya Prasad",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Jack Preston ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Akul Menon ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Laura Scott ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Julia Everett",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Claire Conover ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Max Johnson ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Stella Halliburton ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      }
+    ],
+  },
+  {
+    "team": "All Saints-Small Fry 4th grade",
+    "league": "smallFry",
+    "roster": [
+      {
+        "Name": "Alex Nutt",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Forest Yee",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Chase Cammarota",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Nyasia Wheeler",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Araceli English ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Grayson Gao",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Enzo Mazzanti",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Emory Nam ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Robert Caulfield ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Lochlan Guenther",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Shane Feinstein ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Ethan Friel ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Neel Rathore ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Ava Thorp",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Harry Anderson ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Delia Lohan ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Victoria Esguerra",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Luke Radtke",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Beta Vino ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Mike Seaton ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "LJ Katz",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Griffin Burk ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      }
+    ],
+  },
+  {
+    "team": "Hoboken Middle School Knicks",
+    "league": "grammar",
+    "roster": [
+      {
+        "Name": "Anthony Diaz",
+        "Telephone Number": "201-496-0879",
+        "Date of Birth": 1108080000000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Joel Lopez",
+        "Telephone Number": "551-689-6725",
+        "Date of Birth": 1082073600000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Julian Guerra ",
+        "Telephone Number": "201-780-5150",
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Dorian Mooriman ",
+        "Telephone Number": "201-208-8870",
+        "Date of Birth": 1113868800000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Harleys Gonzales Mora ",
+        "Telephone Number": "508-598-2233",
+        "Date of Birth": 1106784000000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Jordan Spivey ",
+        "Telephone Number": "201-814-5182",
+        "Date of Birth": 1150848000000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Richard Wright ",
+        "Telephone Number": "201-702-0114",
+        "Date of Birth": 1121299200000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Damien Vizcarrondo ",
+        "Telephone Number": "201-610-0143",
+        "Date of Birth": 1132012800000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Bryson Lopez ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Ray Pegaro ",
+        "Telephone Number": "201-708-3510",
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Jospeh DeLaRosa ",
+        "Telephone Number": "201-966-7504",
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Angel Rivera ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null",
+      }
+    ],
+  },
+  {
+    "team": "Hoboken Middle School Warriors",
+    "league": "grammar",
+    "roster": [
+      {
+        "Name": "Angel Acosta ",
+        "Telephone Number": "551-267-0006",
+        "Date of Birth": 1145836800000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Damian Acosta ",
+        "Telephone Number": "551-267-0006",
+        "Date of Birth": 1145836800000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Sammy Garcia ",
+        "Telephone Number": "201-286-6028",
+        "Date of Birth": 1142553600000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Jasil Lane",
+        "Telephone Number": "201-705-9898",
+        "Date of Birth": 1112227200000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Ramon Perez ",
+        "Telephone Number": "201-471-1210 ",
+        "Date of Birth": 1119571200000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Manuel Reyes ",
+        "Telephone Number": "201-515-0787",
+        "Date of Birth": 1114560000000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Justin Villafane ",
+        "Telephone Number": "201-245-6794",
+        "Date of Birth": 1110758400000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Christopher Lopez ",
+        "Telephone Number": "201-428-4201",
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Fernando Guevara ",
+        "Telephone Number": "201-238-8104",
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Christian Colon ",
+        "Telephone Number": "201-737-5400",
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Devin Sosa",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Ray Horton ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Brandon Rodriguez ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      }
+    ],
+  },
+  {
+    "team": "Hoboken Middle School Nets",
+    "league": "grammar",
+    "roster": [
+      {
+        "Name": "Ryan Balouma ",
+        "Telephone Number": "908-420-9200",
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "DJ Campbell ",
+        "Telephone Number": "201-878-6310",
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Ibrahim Chowdhury ",
+        "Telephone Number": "347-274-5746",
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Joe Fiore ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Glenn Galapon ",
+        "Telephone Number": "201-320-4008",
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Elias Genao ",
+        "Telephone Number": "201-927-7542",
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Alexander Mauro ",
+        "Telephone Number": "201-397-2568",
+        "Date of Birth": 1123459200000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Gabriel Mestre",
+        "Telephone Number": "201-748-9553",
+        "Date of Birth": 1154995200000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Tahjmir Mitchell ",
+        "Telephone Number": "201-275-9128 ",
+        "Date of Birth": 1085875200000,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Jiel Mixson ",
+        "Telephone Number": "201-838-6731",
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Nile Rivera ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Vincenzo Torre",
+        "Telephone Number": "201-792-5102",
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Nick Petrocelli ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Santino Cortez Gil ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Benny Cecala ",
+        "Telephone Number": "201-989-9076",
+        "Date of Birth": 1134691200000,
+        "E-mail Address": "null"
+      }
+    ],
+  },
+  {
+    "team": "Small Fry - PAL 4",
+    "league": "smallFry",
+    "roster": [
+      {
+        "Name": "Baxter Hilton ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Dante Speranza",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Dominic Magaletta ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Max Goyal ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Laia Goyal ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Charlie Malizia Bowden ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Kai VanGarderen ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Ronan Finnegan ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Owen Stamplis ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Connor Heidel ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      },
+      {
+        "Name": "Owen Groff ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "null"
+      }
+    ],
+  },
+  {
+    "team": "Mustard Seed Junior",
+    "league": "grammar",
+    "roster": [
+      {
+        "Name": "Zane Fritz ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "heykaren@optonline.net "
+      },
+      {
+        "Name": "Sasha Tyazhelkova ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "mtyazhelkova@gmail.com "
+      },
+      {
+        "Name": "Ali Veloce",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "tanchialynn@hotmail.com "
+      },
+      {
+        "Name": "Cooper Breene ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "alisas@optonline.net "
+      },
+      {
+        "Name": "Michael Eliot",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "adegorgey@yahoo.com "
+      },
+      {
+        "Name": "Bella Rostan ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "srostan@lgrliterary.com "
+      },
+      {
+        "Name": "Danny Markferding ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "dmarkferding@optonline.net "
+      },
+      {
+        "Name": "Anthony Duarte ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "chelitasmall@aol.com "
+      },
+      {
+        "Name": "Kate Austin ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "christinedumas_a@yahoo.com "
+      },
+      {
+        "Name": "Caroline Ko ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "ko.peter.s@gmail.com "
+      },
+      {
+        "Name": "Tessa Kapsch ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "ckapsch@gmail.com "
+      },
+      {
+        "Name": "Veer Agarwal ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "sonal.a@gmail.com "
+      },
+      {
+        "Name": "Dylan Anderson-Bosco ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "denise@designdma.com "
+      },
+      {
+        "Name": "Annie McGraw ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "kpdmcgraw@gmail.com "
+      },
+      {
+        "Name": "Theo Ritter ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "ritternathan@gmail.com "
+      },
+      {
+        "Name": "Jackson Mulligan ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "dr.mulligan10@gmail.com "
+      },
+      {
+        "Name": "Giulio Andressi ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "cbaffa@cgps.org "
+      },
+      {
+        "Name": "Ian Orfolsky ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "danielle_demaria@yahoo.com "
+      },
+      {
+        "Name": "Roma Lekovish ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "nancygalanty@gmail.com "
+      }
+    ],
+  },
+  {
+    "team":"Mustard Seed  - Senior",
+    "league": "grammar",
+    "roster": [
+      {
+        "Name": "Esther Coronel ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "jnc12@hotmaila.com "
+      },
+      {
+        "Name": "Emma Coronel ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "jnc12@hotmaila.com "
+      },
+      {
+        "Name": "Browyn Kickasola",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "llkickasola@yahoo.com "
+      },
+      {
+        "Name": "Kathleen McGraw",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "kpdmcgraw@gmail.com "
+      },
+      {
+        "Name": "Shannon Wright ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "mswright@crcinas.com "
+      },
+      {
+        "Name": "Josh Liu ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "abigail.s.liu@gmail.com "
+      },
+      {
+        "Name": "Jett Franqui ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "mfranqui330@hotmail.com "
+      },
+      {
+        "Name": "Genesis Gasca ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "christopherigasca@gmail.com"
+      },
+      {
+        "Name": "Logan Brown ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "jmgwbrown@aol.com"
+      },
+      {
+        "Name": "Henry Parker ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "kwoodardparker@gmail.com "
+      },
+      {
+        "Name": "Michael Fasciano ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "fasciano.mike@gmail.com "
+      },
+      {
+        "Name": "Avery Tindale",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "snickyv@yahoo.com "
+      },
+      {
+        "Name": "Will Sytsma ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "emilyfsytsma@gmail.com "
+      },
+      {
+        "Name": "Justus Schmidt ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "schmidt.jocelyn@gmail.com "
+      },
+      {
+        "Name": "Anna Yaegashi ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "iyaegashi@gmail.com "
+      },
+      {
+        "Name": "Danny Russo ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "vidalrusso@gmail.com "
+      },
+      {
+        "Name": "Maya Perez ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "raulgperezjr@gmail.com "
+      }
+    ],
+  },
+  {
+    "team": "Hudson 6",
+    "league": "middle",
+    "roster": [
+      {
+        "Name": "Aidan Lamb",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Jeremy Warren ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Nathaniel Warren ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Nikhil Emmatty ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Eva Kondili",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Arjun Puri ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Pape Alioune Toure",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Madelie French ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Edward Perez ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Stav Amir ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Dinu Antonescu ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      }
+    ],
+  },
+  {
+    "team": "Hudson",
+    "league": "grammar",
+    "roster": [
+      {
+        "Name": "Rapha Momar Dieng ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Vanya Merkov ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Marius Kaljuvee",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Ryan Rizvi ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Emiliano Leal ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Alec Lucken ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Kanaan Guilford ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Simon Abrams ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Luke Schreiber",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Sabir Lesure ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Gary Gao",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Jayden Smith ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "James Cornell ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Boucar Mbaye ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Alp Ayata ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Ryan Duke ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Eashan Amin ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      }
+    ],
+  },
+  {
+    "team":"Elysian Charter School- Small Fry 3rd Grade Green",
+    "league": "smallFry",
+    "roster": [
+      {
+        "Name": "Alderson, Sebastian ",
+        "Telephone Number": "201-927-1137",
+        "Date of Birth": null,
+        "E-mail Address": "alexwilliams@hotmail.com "
+      },
+      {
+        "Name": "Blake, Milo ",
+        "Telephone Number": "201-230-2513 ",
+        "Date of Birth": null,
+        "E-mail Address": "bblake@greenkeylk.com"
+      },
+      {
+        "Name": "Elshafey, Athena ",
+        "Telephone Number": "201-561-6131",
+        "Date of Birth": null,
+        "E-mail Address": "elshafeyeman@gmail.com "
+      },
+      {
+        "Name": "Endico, Jack ",
+        "Telephone Number": "201-610-0101",
+        "Date of Birth": null,
+        "E-mail Address": "jendico@yahoo.com"
+      },
+      {
+        "Name": "Gazaleh, Greta",
+        "Telephone Number": "732-841-7439",
+        "Date of Birth": null,
+        "E-mail Address": "michael@cityrunningtours.com "
+      },
+      {
+        "Name": "Glynn, Reese",
+        "Telephone Number": "646-489-5187",
+        "Date of Birth": null,
+        "E-mail Address": "dgylnn02@gmail.com "
+      },
+      {
+        "Name": "Magazinnik, Ilya",
+        "Telephone Number": "917-586-9270",
+        "Date of Birth": null,
+        "E-mail Address": "mkotlin@aol.com"
+      },
+      {
+        "Name": "O'Callaghan, Brendan ",
+        "Telephone Number": "201-618-6834",
+        "Date of Birth": null,
+        "E-mail Address": "patrick.ocallaghan@gs.com"
+      },
+      {
+        "Name": "O'Connor, Carolyn ",
+        "Telephone Number": "631-807-4782",
+        "Date of Birth": null,
+        "E-mail Address": "andrea.m.oconnor1@gmail.com "
+      },
+      {
+        "Name": "Sow, Ismael ",
+        "Telephone Number": "917-696-1584",
+        "Date of Birth": null,
+        "E-mail Address": "rebecca_goodmanstephens@hotmail.com"
+      }
+    ],
+  },
+  {
+    "team": "Elysian Charter School - Small Fry 3rd grade White",
+    "league": "smallFry",
+    "roster": [
+      {
+        "Name": "Auld, Jack R. ",
+        "Telephone Number": "917-570-4546",
+        "Date of Birth": null,
+        "E-mail Address": "bobbyauld7@yahoo.com "
+      },
+      {
+        "Name": "Bachar, Ofek ",
+        "Telephone Number": "646-318-1692",
+        "Date of Birth": null,
+        "E-mail Address": "eran.bachar@gmail.com"
+      },
+      {
+        "Name": "Granit, Samuel ",
+        "Telephone Number": "201-683-8034",
+        "Date of Birth": null,
+        "E-mail Address": "granit@gmail.com "
+      },
+      {
+        "Name": "Lombera-Bejar, Emilio",
+        "Telephone Number": "201-216-5758",
+        "Date of Birth": null,
+        "E-mail Address": "cbejar19@yahoo.com "
+      },
+      {
+        "Name": "Mogollon, Ines ",
+        "Telephone Number": "512-981-9041",
+        "Date of Birth": null,
+        "E-mail Address": "ana.maria.benavented@gmail.com "
+      },
+      {
+        "Name": "Murray, Thomas",
+        "Telephone Number": "201-580-6018",
+        "Date of Birth": null,
+        "E-mail Address": "ava.johnson17@yahoo.com"
+      },
+      {
+        "Name": "Napolitani, Wren ",
+        "Telephone Number": "201-683-3652",
+        "Date of Birth": null,
+        "E-mail Address": "jacurtin86@yahoo.com"
+      },
+      {
+        "Name": "O'Callaghan, James ",
+        "Telephone Number": "201-618-6834",
+        "Date of Birth": null,
+        "E-mail Address": "6patoc@gmail.com"
+      },
+      {
+        "Name": "Simon, Grayson ",
+        "Telephone Number": "917-921-0743",
+        "Date of Birth": null,
+        "E-mail Address": "bradrsimon@yahoo.com"
+      },
+      {
+        "Name": "Stanin, Gabriella ",
+        "Telephone Number": "201-741-4721",
+        "Date of Birth": null,
+        "E-mail Address": "ajstanin@gmail.com"
+      }
+    ],
+  },
+  {
+    "team": "Elysian Charter School -Small Fry 4th grade White",
+    "league": "smallFry",
+    "roster": [
+      {
+        "Name": "Campbell, Charles ",
+        "Telephone Number": "917-406-8517",
+        "Date of Birth": null,
+        "E-mail Address": "carriecampbell76@yahoo.com"
+      },
+      {
+        "Name": "Conry, Helaina ",
+        "Telephone Number": "443-691-4520",
+        "Date of Birth": null,
+        "E-mail Address": "kistijo72@yahoo.com"
+      },
+      {
+        "Name": "Flood, Quinn",
+        "Telephone Number": "917-488-6200",
+        "Date of Birth": null,
+        "E-mail Address": "timothyflood@gmail.com"
+      },
+      {
+        "Name": "Gale, Hunter ",
+        "Telephone Number": "310-404-9071",
+        "Date of Birth": null,
+        "E-mail Address": "ticketljg33@yahoo.com "
+      },
+      {
+        "Name": "Gonzalez, Lucia ",
+        "Telephone Number": "201-683-7455",
+        "Date of Birth": null,
+        "E-mail Address": "fvgonzalez@yahoo.com"
+      },
+      {
+        "Name": "Linder, Noa ",
+        "Telephone Number": "917-284-2855",
+        "Date of Birth": null,
+        "E-mail Address": "craiglinder@gmail.com"
+      },
+      {
+        "Name": "Thomas, Aurelia ",
+        "Telephone Number": "801-971-7341",
+        "Date of Birth": null,
+        "E-mail Address": "jillanawatson@yahoo.com "
+      },
+      {
+        "Name": "Vassallo, Gabrielle ",
+        "Telephone Number": "516-314-4439",
+        "Date of Birth": null,
+        "E-mail Address": "danvassallo@gmail.com "
+      },
+      {
+        "Name": "Wholf, Kyle ",
+        "Telephone Number": "201-217-6867",
+        "Date of Birth": null,
+        "E-mail Address": "mwholf@yahoo.com "
+      }
+    ],
+  },
+  {
+    "team": "Elysian Charter School Small Fry 4th Grade Green",
+    "league": "smallFry",
+    "roster": [
+      {
+        "Name": "Casazza, Michael ",
+        "Telephone Number": "201-294-8360",
+        "Date of Birth": null,
+        "E-mail Address": "mcasazza121@gmail.com"
+      },
+      {
+        "Name": "Hamou, Lea",
+        "Telephone Number": "646-522-7687",
+        "Date of Birth": null,
+        "E-mail Address": "hamou_david@yahoo.com"
+      },
+      {
+        "Name": "Inbar, Uri ",
+        "Telephone Number": "201-300-4765",
+        "Date of Birth": null,
+        "E-mail Address": "guy.inbar@gmail.com"
+      },
+      {
+        "Name": "Jones, Rayquan ",
+        "Telephone Number": "201-877-8300",
+        "Date of Birth": null,
+        "E-mail Address": "debbiejones07030@yahoo.com"
+      },
+      {
+        "Name": "McCue, Mia ",
+        "Telephone Number": "201-658-7330",
+        "Date of Birth": null,
+        "E-mail Address": "michaelgmccue@gmail.com"
+      },
+      {
+        "Name": "McDermott, Keira ",
+        "Telephone Number": "201-238-2145",
+        "Date of Birth": null,
+        "E-mail Address": "brimcdermott@hotmail.co.uk"
+      },
+      {
+        "Name": "Spiegel, Evan ",
+        "Telephone Number": "201-417-5248",
+        "Date of Birth": null,
+        "E-mail Address": "spiegel.danny@gmail.com"
+      },
+      {
+        "Name": "Strell, Sylvie",
+        "Telephone Number": "201-401-1936",
+        "Date of Birth": null,
+        "E-mail Address": "pamelastrell@gmail.com"
+      },
+      {
+        "Name": "Verpeut, Jaden ",
+        "Telephone Number": "201-725-1073",
+        "Date of Birth": null,
+        "E-mail Address": "jen_la73@yahoo.com"
+      }
+    ],
+  },
+  {
+    "team": "Elysian Charter White 5",
+    "league": "middle",
+    "roster": [
+      {
+        "Name": "Choudhury, Sophia ",
+        "Telephone Number": "646-732-9833",
+        "Date of Birth": null,
+        "E-mail Address": "lee_milly@hotmail.com"
+      },
+      {
+        "Name": "Craft, Henry",
+        "Telephone Number": "347-219-9208",
+        "Date of Birth": null,
+        "E-mail Address": "craftsteph@gmail.com "
+      },
+      {
+        "Name": "Filipps, Addison ",
+        "Telephone Number": "201-315-1177",
+        "Date of Birth": null,
+        "E-mail Address": "toddfilipps@gmail.com "
+      },
+      {
+        "Name": "Filipps, Jackson ",
+        "Telephone Number": "201-315-1177",
+        "Date of Birth": null,
+        "E-mail Address": "toddfilipps@gmail.com "
+      },
+      {
+        "Name": "Goodman, Adam",
+        "Telephone Number": "571-215-2115",
+        "Date of Birth": null,
+        "E-mail Address": "sethrg@gmail.com "
+      },
+      {
+        "Name": "Jennings, Jack",
+        "Telephone Number": "917-304-5991",
+        "Date of Birth": null,
+        "E-mail Address": "pjjohoto@gmail.com "
+      },
+      {
+        "Name": "Lasaga, Charlotte",
+        "Telephone Number": "201-264-4388",
+        "Date of Birth": null,
+        "E-mail Address": "awhelton@optonline.net"
+      },
+      {
+        "Name": "Lombera-Bejar, Juan Pablo ",
+        "Telephone Number": "646-284-6721",
+        "Date of Birth": null,
+        "E-mail Address": "jlombera@hotmail.com "
+      },
+      {
+        "Name": "Pacheco-Berger, Jesse ",
+        "Telephone Number": "718-908-3533",
+        "Date of Birth": null,
+        "E-mail Address": "cathylberger@yahoo.com"
+      },
+      {
+        "Name": "Phalen, Megan Marie",
+        "Telephone Number": "347-661-4897",
+        "Date of Birth": null,
+        "E-mail Address": "brendanphalen@gmail.com"
+      },
+      {
+        "Name": "Touzalin, Brady",
+        "Telephone Number": "917-685-4439",
+        "Date of Birth": null,
+        "E-mail Address": "barbaravelez123@gmail.com "
+      },
+      {
+        "Name": "Vassallo, Benjamin ",
+        "Telephone Number": "516-314-4439",
+        "Date of Birth": null,
+        "E-mail Address": "danvassallo@gmail.com "
+      },
+      {
+        "Name": "Villatoro, Kenneth ",
+        "Telephone Number": "551-998-5859",
+        "Date of Birth": null,
+        "E-mail Address": "donato211@hotmail.com "
+      },
+      {
+        "Name": "Zoltak, Alexis ",
+        "Telephone Number": "201-705-9396",
+        "Date of Birth": null,
+        "E-mail Address": "svetlana.zoltak@gmail.com"
+      }
+    ],
+  },
+  {
+    "team": "Elysian Charter Green 5",
+    "league": "middle",
+    "roster": [
+      {
+        "Name": "Coppelli, Andres ",
+        "Telephone Number": "201-876-0101",
+        "Date of Birth": null,
+        "E-mail Address": "abritamay@gmail.com "
+      },
+      {
+        "Name": "DeFlippis, Olivia ",
+        "Telephone Number": "201-926-6916",
+        "Date of Birth": null,
+        "E-mail Address": "tcredavid@yahoo.com"
+      },
+      {
+        "Name": "DeFlippis, Stella",
+        "Telephone Number": "201-926-6916",
+        "Date of Birth": null,
+        "E-mail Address": "tcredavid@yahoo.com"
+      },
+      {
+        "Name": "Jeffers, Kokone",
+        "Telephone Number": "201-798-3821",
+        "Date of Birth": null,
+        "E-mail Address": "jeffersjw@gmail.com"
+      },
+      {
+        "Name": "Laden, Jeremy ",
+        "Telephone Number": "212-268-5730",
+        "Date of Birth": null,
+        "E-mail Address": "noam.laden@gmail.com"
+      },
+      {
+        "Name": "Lore, Mason ",
+        "Telephone Number": "201-647-3630",
+        "Date of Birth": null,
+        "E-mail Address": "ashley.depascale@gmail.com"
+      },
+      {
+        "Name": "Nakayama, Julia",
+        "Telephone Number": "212-282-3545",
+        "Date of Birth": null,
+        "E-mail Address": "mac_nak@yahoo.com"
+      },
+      {
+        "Name": "Napolitani, Grant ",
+        "Telephone Number": "732-996-8811",
+        "Date of Birth": null,
+        "E-mail Address": "steve.napolitani@gmail.com"
+      },
+      {
+        "Name": "Passarelli, Lea",
+        "Telephone Number": "917-841-8578",
+        "Date of Birth": null,
+        "E-mail Address": "jillschatz@yahoo.com"
+      },
+      {
+        "Name": "Prince, Gabriel ",
+        "Telephone Number": "917-334-3433",
+        "Date of Birth": null,
+        "E-mail Address": "princeopton@hotmail.com "
+      },
+      {
+        "Name": "Prince, Tyler",
+        "Telephone Number": "917-334-3433",
+        "Date of Birth": null,
+        "E-mail Address": "princeopton@hotmail.com "
+      },
+      {
+        "Name": "Schreiber, Luke ",
+        "Telephone Number": "201-600-6497",
+        "Date of Birth": null,
+        "E-mail Address": "annemarieplus3@gmail.com"
+      },
+      {
+        "Name": "Vasudevan, Anya ",
+        "Telephone Number": "201-289-6408",
+        "Date of Birth": null,
+        "E-mail Address": "katrinasrv@hotmail.com "
+      },
+      {
+        "Name": "Volpert, Elizabeth ",
+        "Telephone Number": "646-932-4763",
+        "Date of Birth": null,
+        "E-mail Address": "mashapyshkina@gmail.com "
+      }
+    ],
+  },
+  {
+    "team": "Elysian Charter Green 6",
+    "league": "middle",
+    "roster": [
+      {
+        "Name": "Alderson, Madeline",
+        "Telephone Number": "201-779-6545",
+        "Date of Birth": null,
+        "E-mail Address": "galderson2002@gmail.com "
+      },
+      {
+        "Name": "Blake, Luca",
+        "Telephone Number": "201-230-2513",
+        "Date of Birth": null,
+        "E-mail Address": "jpirozziblake@gmail.com "
+      },
+      {
+        "Name": "Casazza, Maximus",
+        "Telephone Number": "201-294-8360",
+        "Date of Birth": null,
+        "E-mail Address": "mcasazza121@gmail.com "
+      },
+      {
+        "Name": "DeFilippis, Anthony ",
+        "Telephone Number": "201-417-2929",
+        "Date of Birth": null,
+        "E-mail Address": "chris.defilippis@gmail.com "
+      },
+      {
+        "Name": "Guerra, Jaida",
+        "Telephone Number": "201-780-5150",
+        "Date of Birth": null,
+        "E-mail Address": "burgos.isadora7@gmail.com "
+      },
+      {
+        "Name": "Laskowski, Cole",
+        "Telephone Number": "201-222-0293",
+        "Date of Birth": null,
+        "E-mail Address": "marybetha@childapp.com "
+      },
+      {
+        "Name": "Mauseth, Victor",
+        "Telephone Number": "201-787-8953",
+        "Date of Birth": null,
+        "E-mail Address": "tedmauseth@gmail.com "
+      },
+      {
+        "Name": "Nakayama, Leo ",
+        "Telephone Number": "646-610-0194",
+        "Date of Birth": null,
+        "E-mail Address": "ecchamaat@gmail.com "
+      },
+      {
+        "Name": "Nemeth-Szerdai",
+        "Telephone Number": "201-533-9022",
+        "Date of Birth": null,
+        "E-mail Address": "zsolt1@optonline.net"
+      },
+      {
+        "Name": "Tuckman, Jack ",
+        "Telephone Number": "917-676-3895",
+        "Date of Birth": null,
+        "E-mail Address": "dmuradian@gmail.com "
+      },
+      {
+        "Name": "Vogel, Jake ",
+        "Telephone Number": "201-779-2127",
+        "Date of Birth": null,
+        "E-mail Address": "brittanylvogel@yahoo.com"
+      }
+    ],
+  },
+  {
+    "team": "ECS 7th Gd Grammar Div. Green",
+    "leageu": "grammar",
+    "roster": [
+      {
+        "Name": "Gonzalez,  Mateo V. ",
+        "Telephone Number": "917-647-7264",
+        "Date of Birth": null,
+        "E-mail Address": "fvielot@hotmail.com "
+      },
+      {
+        "Name": "Jeffers, Taiki V.",
+        "Telephone Number": "201-798-3821",
+        "Date of Birth": null,
+        "E-mail Address": "masamimi@gmail.com "
+      },
+      {
+        "Name": "Kaplun-Muller, Benjamin ",
+        "Telephone Number": "917-771-4229",
+        "Date of Birth": null,
+        "E-mail Address": "ines_muller@hotmail.com "
+      },
+      {
+        "Name": "Lore, Jackson ",
+        "Telephone Number": "201-726-0112",
+        "Date of Birth": null,
+        "E-mail Address": "jerrylore@gmail.com "
+      },
+      {
+        "Name": "Murray, Cian ",
+        "Telephone Number": "917-969-3836",
+        "Date of Birth": null,
+        "E-mail Address": "nmurray.70@gmail.com "
+      },
+      {
+        "Name": "Rodriguez, Riley ",
+        "Telephone Number": "646-388-0866",
+        "Date of Birth": null,
+        "E-mail Address": "mlee@kelleydrye.com"
+      },
+      {
+        "Name": "Rutledge, Gavin ",
+        "Telephone Number": "201-239-4445",
+        "Date of Birth": null,
+        "E-mail Address": "sgrutledge@me.com"
+      }
+    ],
+  },
+  {
+    "team": "ECS 7th Gd. Grammar White Team",
+    "league": "grammar",
+    "roster": [
+      {
+        "Name": "Badali, Adrian ",
+        "Telephone Number": "201-705-8945 ",
+        "Date of Birth": null,
+        "E-mail Address": "badali@icloud.com "
+      },
+      {
+        "Name": "Bruk, Peter ",
+        "Telephone Number": "917-613-6427",
+        "Date of Birth": null,
+        "E-mail Address": "admybruk@gmail.com "
+      },
+      {
+        "Name": "Dehghani, Devon ",
+        "Telephone Number": "650-224-3473",
+        "Date of Birth": null,
+        "E-mail Address": "msaffari2@yahoo.com "
+      },
+      {
+        "Name": "Giattino, Alexander",
+        "Telephone Number": "201-780-6779",
+        "Date of Birth": null,
+        "E-mail Address": "peep1016@gmail.com "
+      },
+      {
+        "Name": "O'Brien, Conlin ",
+        "Telephone Number": "201-401-2347",
+        "Date of Birth": null,
+        "E-mail Address": "scotchies@aol.com "
+      },
+      {
+        "Name": "O'Callaghan, Sean ",
+        "Telephone Number": "201-618-6835",
+        "Date of Birth": null,
+        "E-mail Address": "joc426@gmail.com"
+      },
+      {
+        "Name": "Orlando, Sergio ",
+        "Telephone Number": "917-626-7413",
+        "Date of Birth": null,
+        "E-mail Address": "claudia@orlandop.com"
+      },
+      {
+        "Name": "Rodriguez, Maximus ",
+        "Telephone Number": "609-635-5621",
+        "Date of Birth": null,
+        "E-mail Address": "migmontero08@aol.com"
+      }
+    ],
+  },
+  {
+    "team": "ECS 8th Grade - Grammar",
+    "league": "grammar",
+    "roster": [
+      {
+        "Name": "Aviles, Levi ",
+        "Telephone Number": "201-936-6373",
+        "Date of Birth": null,
+        "E-mail Address": "maritzalopezl@yahoo.com"
+      },
+      {
+        "Name": "Ballantyne, Christian ",
+        "Telephone Number": "917-992-9354",
+        "Date of Birth": null,
+        "E-mail Address": "psballantyne@gmail.com "
+      },
+      {
+        "Name": "D'Antonio, Michael ",
+        "Telephone Number": "201-966-8648",
+        "Date of Birth": null,
+        "E-mail Address": "susandantonio68@gmail.com "
+      },
+      {
+        "Name": "Fischer, Mason ",
+        "Telephone Number": "201-978-7582",
+        "Date of Birth": null,
+        "E-mail Address": "jfischer@urschel.com"
+      },
+      {
+        "Name": "Fischer, Zack",
+        "Telephone Number": "201-653-0198",
+        "Date of Birth": null,
+        "E-mail Address": "amziegler@yahoo.com"
+      },
+      {
+        "Name": "Harag, Oliver ",
+        "Telephone Number": "917-842-6749",
+        "Date of Birth": null,
+        "E-mail Address": "evaharag@gmail.com"
+      },
+      {
+        "Name": "Jones, Dasquan ",
+        "Telephone Number": "201-877-8300",
+        "Date of Birth": null,
+        "E-mail Address": "debbiejones07030@yahoo.com"
+      },
+      {
+        "Name": "Salinas Jonathan ",
+        "Telephone Number": "201-844-7097",
+        "Date of Birth": null,
+        "E-mail Address": "patti.torre02@gmail.com"
+      },
+      {
+        "Name": "Sanchez, Lucas",
+        "Telephone Number": "201-321-5296",
+        "Date of Birth": null,
+        "E-mail Address": "jacqui.sanchez73@gmail.com"
+      },
+      {
+        "Name": "Touzalin, Carter",
+        "Telephone Number": "917-685-4439",
+        "Date of Birth": null,
+        "E-mail Address": "barbaravelez123@gmail.com "
+      },
+      {
+        "Name": "Weinstein, Evan ",
+        "Telephone Number": "201-222-8404",
+        "Date of Birth": null,
+        "E-mail Address": "aliciaweinstein07030@gmail.com "
+      }
+    ],
+  },
+  {
+    "team": "Elysian Charter",
+    "league": "girls",
+    "roster": [
+      {
+        "Name": "Best, Leyla ",
+        "Telephone Number": "718-288-8857",
+        "Date of Birth": null,
+        "E-mail Address": "davidbestnyc@gmail.com"
+      },
+      {
+        "Name": "Craft, Nella",
+        "Telephone Number": "917-709-3371",
+        "Date of Birth": null,
+        "E-mail Address": "carter@outsidenewyork.net"
+      },
+      {
+        "Name": "Golubchik, Sasha ",
+        "Telephone Number": "646-239-5777",
+        "Date of Birth": null,
+        "E-mail Address": "stanley.golubchik@gmail.com"
+      },
+      {
+        "Name": "Hysen, Juliet ",
+        "Telephone Number": "201-653-2757",
+        "Date of Birth": null,
+        "E-mail Address": "lisachernick@optonline.net"
+      },
+      {
+        "Name": "Kanlic, Lana",
+        "Telephone Number": "201-920-0971",
+        "Date of Birth": null,
+        "E-mail Address": "zocykan@gmail.com"
+      },
+      {
+        "Name": "McCue, Siena",
+        "Telephone Number": "201-533-9796",
+        "Date of Birth": null,
+        "E-mail Address": "michelegmccue@gmail.com"
+      },
+      {
+        "Name": "Michaels, Frances ",
+        "Telephone Number": "201-602-4601",
+        "Date of Birth": null,
+        "E-mail Address": "michaelsregan@gmail.com"
+      },
+      {
+        "Name": "Michaels, Giselle",
+        "Telephone Number": "201-602-4601",
+        "Date of Birth": null,
+        "E-mail Address": "michaelsregan@gmail.com"
+      },
+      {
+        "Name": "Murray, Mariah",
+        "Telephone Number": "201-580-6018",
+        "Date of Birth": null,
+        "E-mail Address": "ava.johnson17@yahoo.com"
+      },
+      {
+        "Name": "O'Brien, Aimee",
+        "Telephone Number": "201-401-2347",
+        "Date of Birth": null,
+        "E-mail Address": "scotchies@aol.com"
+      }
+    ],
+  },
+  {
+    "team": "HCS -3rd Grade Small Fry",
+    "leauge": "smallFry",
+    "roster": [
+      {
+        "Name": "Alex Lefkowitz ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "rdf121@yahoo.com"
+      },
+      {
+        "Name": "Chavez, Avery ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "katepappas0927@gmail.com "
+      },
+      {
+        "Name": "Eric Guglberger",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "clausgu@gmail.com"
+      },
+      {
+        "Name": "Issac Grant ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "agrant5@verizon.net "
+      },
+      {
+        "Name": "LoBue Alexander",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "flobue@me.com"
+      },
+      {
+        "Name": "Loria, Francesca",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "caitlnreed@aol.com"
+      },
+      {
+        "Name": "Guiney, Shane ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "mguiney34@gmail.com "
+      },
+      {
+        "Name": "Snow, Ellie ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "michaelsnow165@gmail.com "
+      },
+      {
+        "Name": "Jake, Kelly",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "karenjkelly@gmail.com"
+      },
+      {
+        "Name": "James Albino ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "shannonjohnson528@gmail.com "
+      },
+      {
+        "Name": "Jason Higbee",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "shigbee517@gmail.com"
+      },
+      {
+        "Name": "Jackson Rudden Onono ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "babesofjo@yahoo.com"
+      },
+      {
+        "Name": "Julia Mylan ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "jane_mylan@discovery.com"
+      },
+      {
+        "Name": "Teagan O'Connell ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "julianne.oconnell@yahoo.com"
+      }
+    ],
+  },
+  {
+    "team": "HCS - 4th grade - Small Fry",
+    "league": "smallFry",
+    "roster": [
+      {
+        "Name": "Charlie O'Connell",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "julianne.oconnell@yahoo.com"
+      },
+      {
+        "Name": "Christina Johansen ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "karlam.johansen@gmail.com"
+      },
+      {
+        "Name": "Hayden Faricelli ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "dgfaricelli@gmail.com "
+      },
+      {
+        "Name": "Liam Malinsky ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "rebecca.malinsky@yahoo.com"
+      },
+      {
+        "Name": "Mark Pitino ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "prinsessanja@yahoo.com "
+      },
+      {
+        "Name": "Mia Noy ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "sivan.grossman@gmail.com "
+      },
+      {
+        "Name": "Noah Altberger ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "caltberger@gmail.com "
+      },
+      {
+        "Name": "Sophie Pitino ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "prinsessanja@yahoo.com "
+      }
+    ],
+  },
+  {
+    "team": "Hoboken Charter 5",
+    "league": "middle",
+    "roster": [
+      {
+        "Name": "Andrew Kelly ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "karenjkelly@gmail.com"
+      },
+      {
+        "Name": "Benjamin Smelyansky ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "elizam@gmail.com"
+      },
+      {
+        "Name": "Carlos Dominguez ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "dominguez.carlos.a@gmail.com "
+      },
+      {
+        "Name": "Evan Hofsess",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "joanne_hofsess@hotmail.com"
+      },
+      {
+        "Name": "Filip Loncar ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "ivan.loncar@cwt.com"
+      },
+      {
+        "Name": "Kane Sheridan ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "mphill80@gmail.com"
+      },
+      {
+        "Name": "Leo Barsky ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "nlevinzon@yahoo.com "
+      },
+      {
+        "Name": "Luna Cascetta",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "lindsey.bednar@gmail.com "
+      },
+      {
+        "Name": "Mai Yifrakh ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "saritsotto@gmail.com "
+      },
+      {
+        "Name": "Noah Gilberg Virgona ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "majagilberg@gmail.com"
+      },
+      {
+        "Name": "Gina Pasquariello ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "mpasq820@gmail.com "
+      },
+      {
+        "Name": "Spencer Neissen ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "sneissen@aol.com "
+      }
+    ],
+  },
+  {
+    "team": "Hoboken Charter 6",
+    "league": "middle",
+    "roster": [
+      {
+        "Name": "Finn Getz",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "sgetz@legal-aid.org"
+      },
+      {
+        "Name": "Sean Leith ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "robinhk1@icloud.com "
+      },
+      {
+        "Name": "Guiney, Molly",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "mguiney34@gmail.com "
+      },
+      {
+        "Name": "Narina Girotra ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "girotram@gmail.com "
+      },
+      {
+        "Name": "McLaughlin, Jessica ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "tara@cyberexpedient.com"
+      },
+      {
+        "Name": "James Harrison ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "dlharrison37@gmail.com"
+      },
+      {
+        "Name": "Daniella Usherovich ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "lisahanuka@gmail.com "
+      },
+      {
+        "Name": "Jordan Getz",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "sgetz@legal-aid.org"
+      },
+      {
+        "Name": "Joseph Krausch ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "hobokenmommy2@yahoo.com "
+      }
+    ],
+  },
+  {
+    "team": "Hoboken Charter - 7th grade",
+    "league": "grammar",
+    "roster": [
+      {
+        "Name": "Bram Hofsess",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "joanne_hofsess@hotmail.com"
+      },
+      {
+        "Name": "Brandon Vicioso",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "ebony.dejesus@yahoo.com"
+      },
+      {
+        "Name": "Emmett Greer",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "christinesheedy@yahoo.com"
+      },
+      {
+        "Name": "Sammy Tornabene ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "dtornabene@gmail.com"
+      },
+      {
+        "Name": "Ivan Rothkegel ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "ivan.rothkegel@gmail.com"
+      },
+      {
+        "Name": "Miles Hymes ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "fatouhymes@gmail.com"
+      },
+      {
+        "Name": "Tyler Cahn ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "dcahn@cahncomm.com"
+      },
+      {
+        "Name": "Jayden Hernandez ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "mariaesp_2000@yahoo.com"
+      },
+      {
+        "Name": "Rafael Rothkegel ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "ivan.rothkegel@gmail.com"
+      }
+    ],
+  },
+  {
+    "team": "Hoboken Charter - 8th Grade",
+    "league": "grammar",
+    "roster": [
+      {
+        "Name": "Ethan Modica ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "alissamodica@yahoo.com"
+      },
+      {
+        "Name": "Jacob Guglberger ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "clausgu@gmail.com"
+      },
+      {
+        "Name": "Sam Altberger ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "catlberger@gmail.com"
+      },
+      {
+        "Name": "Alex White ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "dbatavia@optonline.net"
+      },
+      {
+        "Name": "Ashleigh Phillips ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "csphillips08@gmail.com"
+      },
+      {
+        "Name": "Hannah Berman ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "tinaberman1@gmail.com"
+      },
+      {
+        "Name": "Sydney White ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "dbatavia@optonline.net"
+      }
+    ],
+  },
+  {
+    "team": "HOLA - 3rd Grade - Small Fry",
+    "league": "smallFry",
+    "roster": [
+      {
+        "Name": "Schultz, Riley ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "alison.schultz@rbccm.com "
+      },
+      {
+        "Name": "Coen, Drew",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "lexicoen@hotmail.com "
+      },
+      {
+        "Name": "Picciotto, Ethan ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "jenrubin1@gmail.com"
+      },
+      {
+        "Name": "Heidenry, James ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "lori@heidenry.com "
+      },
+      {
+        "Name": "Matos, Sebastian ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "rosemarie@nrmatos.com "
+      },
+      {
+        "Name": "Patel, Krish ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "ishi1277@yahoo.com "
+      },
+      {
+        "Name": "Whipple, Jude ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "jcwhip@gmail.com "
+      },
+      {
+        "Name": "Schneider, Adrian ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "eva.ads@gmx.de"
+      },
+      {
+        "Name": "Schneider, Alia ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "eva.ads@gmx.de"
+      },
+      {
+        "Name": "Schneider, Anna",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "eva.ads@gmx.de"
+      },
+      {
+        "Name": "Waldron, Sean ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "slund2@juno.com "
+      },
+      {
+        "Name": "Train, Otys ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "brientrain@gmail.com "
+      },
+      {
+        "Name": "Chillemi, Luca",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "antonellaspina11@gmail.com "
+      },
+      {
+        "Name": "Gurtman, Tyler ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "kidscommunicate@yahoo.com "
+      },
+      {
+        "Name": "Gurtman, Brayden ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "kidscommunicate@yahoo.com "
+      },
+      {
+        "Name": "Novosyolok, Zachary ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "anovosyolok@gmail.com "
+      },
+      {
+        "Name": "Fuller, Hudson ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "shari.fuller@carolehochman.com "
+      },
+      {
+        "Name": "Rajapakse, Senal ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "samadhini@gmail.com "
+      },
+      {
+        "Name": "Sanchez, Michelle ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "melanioabanto@yahoo.com "
+      },
+      {
+        "Name": "Galindez Vasquez, Sarah Georgina ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "donnavaz12@yahoo.com "
+      },
+      {
+        "Name": "Brauner, Gabriella",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "bmayerowitz@gmail.com "
+      }
+    ],
+  },
+  {
+    "team": "HOLA - 4th Grade - Small Fry",
+    "league": "smallFry",
+    "roster": [
+      {
+        "Name": "Greenberg, Zachary",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "kate.greenberg@yahoo.com "
+      },
+      {
+        "Name": "Kirk, Shane ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "brigitteakirk@msn.com "
+      },
+      {
+        "Name": "Dunbabin, Jack ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "elisecoiteux@hotmail.com "
+      },
+      {
+        "Name": "Sullivan, Cooper",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "erikasullivan@gmail.com "
+      },
+      {
+        "Name": "Giddens, Hudson ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "hello@tudiboo.com "
+      },
+      {
+        "Name": "Figueroa, Noah ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "neftalifigueroa05@gmail.com "
+      },
+      {
+        "Name": "Isenberg, Ethan",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "luzgallarday@yahoo.es "
+      },
+      {
+        "Name": "Fernadez, Xavier Issac ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "josefernandez8099@gmail.com "
+      },
+      {
+        "Name": "Newman, Jack ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "bnmkey@gmail.com "
+      },
+      {
+        "Name": "Camino, Andres ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "acamino@softek.com "
+      },
+      {
+        "Name": "O'Brien, Jake ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "chrissydw13@gmail.com "
+      },
+      {
+        "Name": "Sater, Alison ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "kelly.m.sater@gmail.com "
+      },
+      {
+        "Name": "Philipson, Jack ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "bri.philipson@gmail.com "
+      },
+      {
+        "Name": "Blaskewicz, Mason ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "cbrown@nyccharterschools.org"
+      },
+      {
+        "Name": "Davis, Madoxx",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "appice.davis@gmail.com "
+      },
+      {
+        "Name": "Van Der Kam, Minna Rose ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "rikke.frojk@hotmail.com "
+      },
+      {
+        "Name": "Olavarria, Gabriel ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Caraballo, Brandon ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Aniello, Isobel ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      },
+      {
+        "Name": "Stehli, Peter ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": null
+      }
+    ],
+  },
+  {
+    "team": "HOLA 5",
+    "league": "middle",
+    "roster": [
+      {
+        "Name": "Brody, Gabriel ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "jared@jaredbrody.com "
+      },
+      {
+        "Name": "Cillie, Gabriel ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "bcillie@yahoo.com "
+      },
+      {
+        "Name": "Leitner, Mac ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "kerry.rubin@turner.com "
+      },
+      {
+        "Name": "Buckley, James ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "bethcbuckley@me.com "
+      },
+      {
+        "Name": "Heidenry, Stephen ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "lori@heidenry.com "
+      },
+      {
+        "Name": "Mhajan, Raya ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "rubymhajan@gmail.com "
+      },
+      {
+        "Name": "Ojeda, Evan",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "aguiterrez929@yahoo.com "
+      },
+      {
+        "Name": "Schwartz, Nola ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "tonyacz@gmail.com "
+      },
+      {
+        "Name": "Heyman, Alexander ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "slheyman@gmail.com "
+      },
+      {
+        "Name": "Rivera, Ethan ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "garciasaer4@gmail.com "
+      },
+      {
+        "Name": "Fernandez, Damarys",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "josefernandez8099@gmail.com "
+      }
+    ],
+  },
+  {
+    "team": "HOLA 6",
+    "league": "middle",
+    "roster": [
+      {
+        "Name": "Tindale, Grady",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "snickyv@yahoo.com "
+      },
+      {
+        "Name": "Jensen, Dylan ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "kimberlybjensen@gmail.com "
+      },
+      {
+        "Name": "Schultz, Declan ",
+        "Telephone Number": null,
+        "Date of Birth": " ",
+        "E-mail Address": "alizon.schultz@rbccm.com "
+      },
+      {
+        "Name": "Coen, Maddy ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "lexicoen@hotmail.com "
+      },
+      {
+        "Name": "Cofre, Jr. Claurio ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "cmcofre@gmail.com "
+      },
+      {
+        "Name": "Tseng, Hudson ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "jillinka@gmial.com "
+      },
+      {
+        "Name": "Buckley, Nicholas ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "bethcbuckley@me.com "
+      },
+      {
+        "Name": "Serpa, Gianessa",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "mandichangela@gmail.com "
+      },
+      {
+        "Name": "Pfeiffer, Kodi ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "yukopfeiffer@gmail.com "
+      },
+      {
+        "Name": "Gibbs, Noah",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "christiangibbs72@gmail.com "
+      },
+      {
+        "Name": "Gettens, Stanley ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "guyg200@yahoo.com "
+      },
+      {
+        "Name": "Gerstenbluth, Gavin ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "jared.gerstenbluth@gmail.com "
+      },
+      {
+        "Name": "Madrid, Ariana ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "hlmadrid28@gmail.com "
+      },
+      {
+        "Name": "Roderick, Michael ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "andyr@ukelite.com "
+      }
+    ],
+  },
+  {
+    "team": "HOLA - Grammar",
+    "league": "grammar",
+    "roster": [
+      {
+        "Name": "Fuller, Dylan ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "shari.fuller@carolehochman.com "
+      },
+      {
+        "Name": "Heidenry, Jack ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "lori@heidenry.com "
+      },
+      {
+        "Name": "Malfatti-Appice, Dagostino ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "appice.davis@gmail.com "
+      },
+      {
+        "Name": "Mhajan, Jeeyan ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "rubymhajan@gmail.com "
+      },
+      {
+        "Name": "O'Brien, Luke ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "chrissydw13@gmail.com "
+      },
+      {
+        "Name": "Kirk, Maxwell ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "brigitteakirk@msn.com "
+      },
+      {
+        "Name": "Kirk, Chasen ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "brigitteakirk@msn.com "
+      },
+      {
+        "Name": "Neri, John ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "alexanderdneri@gmail.com "
+      },
+      {
+        "Name": "Rivera, Alvin ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "garciasaer4@gmail.com "
+      },
+      {
+        "Name": "Kolmer, Xavier",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "melaniealberto@aol.co, "
+      },
+      {
+        "Name": "Tseng, Niklas ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "jillinka@gmail.com "
+      },
+      {
+        "Name": "Sullivan, Jack ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "erickasullivan@gmail.com "
+      },
+      {
+        "Name": "Celiberti-Byam ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "dacnys@aol.com "
+      },
+      {
+        "Name": "Sapirstein, Micah ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "akexstomp@hotmail.com "
+      },
+      {
+        "Name": "Perez, Ruud",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "janice.madrid@gmail.com "
+      },
+      {
+        "Name": "Branco, Joseph ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "jenrock1@gmail.com "
+      },
+      {
+        "Name": "Petrocelli, Giulio ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "soniapetrocelli@gmail.com "
+      },
+      {
+        "Name": "Cando, Erick ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "zoilocando@hotmail.com "
+      },
+      {
+        "Name": "Sargent, Jude ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "jen_hindman@hotmail.com "
+      },
+      {
+        "Name": "Makoukian, Alex ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "viken_m@yahoo.com "
+      },
+      {
+        "Name": "Chernicoff, Alex ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "anchern67@gmail.com "
+      },
+      {
+        "Name": "Sanchez, Anthony ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "anthonymsanchez@optonline.net "
+      },
+      {
+        "Name": "Kellaghan, Ciaran ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "finiankellaghan@gmail.com "
+      },
+      {
+        "Name": "Figuroa, Neftali ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "neftalifigueroa05@gmail.com "
+      },
+      {
+        "Name": "Messner, Seijan",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "pmessner@optonline.net "
+      },
+      {
+        "Name": "Bettua, Nikhil ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "rmatthai@alum.mit.edu"
+      }
+    ],
+  },
+  {
+    "team": "HOLA",
+    "league": "girls",
+    "roster": [
+      {
+        "Name": "Gurtman, Sage ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "kidscommunicate@yahoo.com "
+      },
+      {
+        "Name": "Kellaghan, Catrina-Eva ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "finiankellaghan@gmail.com "
+      },
+      {
+        "Name": "Madrid, Ariana ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "hlmadrid28@gmail.com "
+      },
+      {
+        "Name": "Molero-Aksamit, Andria ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "m_aksamit@yahoo.com "
+      },
+      {
+        "Name": "Moran, Olivia ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "peta.moran@gmail.com "
+      },
+      {
+        "Name": "Philipson, Sydney ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "bri.philipson@gmail.com "
+      },
+      {
+        "Name": "Rotundo, Kate",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "docbones7@aol.com "
+      },
+      {
+        "Name": "Serpa, Gianessa ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "mandichangela@gmail.com "
+      },
+      {
+        "Name": "Naranjo, Mia ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "scostomiris@yahoo.com "
+      },
+      {
+        "Name": "Peralta, Lyzette",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "gisellebrown29@gmai.com "
+      },
+      {
+        "Name": "Connors, Dallas ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "dacquiri@hotmail.com "
+      },
+      {
+        "Name": "Coen, Maddy ",
+        "Telephone Number": null,
+        "Date of Birth": null,
+        "E-mail Address": "lexicoen@yahoo.com "
+      }
+    ]
+  }
+]
