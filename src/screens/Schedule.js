@@ -12,6 +12,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 
 var Data = require('./../../data/basketballData.json');
+var BBGirlsSched = require('./../../data/basketballGirlsSchedule.json');
 
 
 

@@ -13,22 +13,18 @@ testPress = (teamNameStr)=> {
 function MyTeamsList(teamList) {
   console.log(teamList);
   return(
-  teamList.map((leagueItem, index)=>{
-    return (
-      leagueItem.teams.map((teamItem, index2)=>{
+  teamList.map((teamItem, index)=>{
          return (
-           <Card key={index*teamList.length+index2}>
+           <Card key={index}>
               <CardItem onPress={this.testPress(teamItem.aname)}>
                 <Body>
                   <Text bold>{teamItem.name} </Text>
-                  <Text note>{leagueItem.league}</Text>
+                  <Text note>{teamItem.league}</Text>
                 </Body>
 
              </CardItem>
             </Card>
           )
-        })
-      )
     })
   )
 }

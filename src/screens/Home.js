@@ -13,6 +13,9 @@ import Icon from "react-native-vector-icons/FontAwesome"
 
 var Data = require('../../data/basketballData.json');
 var teamListObj = require('../../data/teamList.json');
+var BBgirls = require('../../data/basketballGirlsSchedule.json');
+var BBgrammar = require('../../data/basketballGrammarSchedule.json');
+var BBmiddle = require('../../data/basketballMiddleSchedule.json');
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -76,16 +79,7 @@ export default class HomeScreen extends React.Component {
             <Title style={styles.title}>Hoboken Basketball</Title>
           </Header>
           <Grid style={styles.grid} >
-            <Row style={styles.row}>
-              <MyTeamsList teamList={this.state.teamList}/>
-              <Card>
-                <CardItem header>
-                  <Text>My Teams </Text>
-                </CardItem>
-                <CardItem>
-                </CardItem>
-              </Card>
-            </Row>
+            
           </Grid>
             <Footer>
               <FooterTab>
@@ -111,3 +105,15 @@ export default class HomeScreen extends React.Component {
       }
   }
 }
+/** Old MyTeams view
+<Row style={styles.row}>
+  <MyTeamsList teamList={this.state.teamList}/>
+  <Card>
+    <CardItem header>
+      <Text>My Teams </Text>
+    </CardItem>
+    <CardItem>
+    </CardItem>
+  </Card>
+</Row>
+*/
