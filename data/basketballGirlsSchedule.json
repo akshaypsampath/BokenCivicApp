@@ -1,0 +1,240 @@
+[
+  {
+    "date": "2019-01-05",
+    "events": [{
+      "TEAM": "Elysian Charter vs. Hoboken Charter ",
+      "time": "13:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Elysian Charter",
+      "team2": "Hoboken Charter",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "TEAM": "Hoboken Middle School vs HOLA ",
+      "time": "14:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Hoboken Middle School",
+      "team2": "HOLA",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "TEAM": "Stevens Red vs. Stevens White ",
+      "time": "15:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Stevens Red",
+      "team2": "Stevens White",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }]
+  },
+  {
+    "date": "2019-01-12",
+    "events": [{
+      "TEAM": "Hoboken Charter vs. HOLA ",
+      "time": "13:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Hoboken Charter",
+      "team2": "HOLA",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "TEAM": "Elysian Charter vs. Stevens White ",
+      "time": "14:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Elysian Charter",
+      "team2": "Stevens White",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "TEAM": "Hoboken Middle School vs. Stevens Red ",
+      "time": "15:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Hoboken Middle School",
+      "team2": "Stevens Red",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }]
+  },
+  {
+    "date": "2019-01-26",
+    "events": [{
+      "TEAM": "Hoboken Charter Vs. Hoboken Middle School ",
+      "time": "13:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Hoboken Charter",
+      "team2": "Hoboken Middle School",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "TEAM": "HOLA vs. Stevens White ",
+      "time": "14:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "HOLA",
+      "team2": "Stevens White",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "TEAM": "Elysian Charter vs. Stevens Red ",
+      "time": "15:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Elysian Charter",
+      "team2": "Stevens Red",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }]
+  },
+  {
+    "date": "2019-02-02",
+    "events": [{
+      "TEAM": "Elysian Charter vs. HOLA ",
+      "time": "13:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Elysian Charter",
+      "team2": "HOLA",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "TEAM": "Hoboken Charter vs. Stevens White ",
+      "time": "14:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Hoboken Charter",
+      "team2": "Stevens White",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "TEAM": "Elysian Charter vs. Hoboken Middle School ",
+      "time": "15:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Elysian Charter",
+      "team2": "Hoboken Middle School",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }]
+  },
+  {
+    "date": "2019-02-09",
+    "events": [{
+      "TEAM": "HOLA vs. Stevens Red ",
+      "time": "13:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "HOLA",
+      "team2": "Stevens Red",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "TEAM": "Hoboken Charter vs. Stevens White ",
+      "time": "14:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Hoboken Charter",
+      "team2": "Stevens White",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "TEAM": "Elysian Charter vs. Hoboken Middle School ",
+      "time": "15:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Elysian Charter",
+      "team2": "Hoboken Middle School",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }]
+  },
+  {
+    "date": "2019-02-23",
+    "events": [{
+      "TEAM": "Stevens Red vs. Stevens White ",
+      "time": "13:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Stevens Red",
+      "team2": "Stevens White",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "TEAM": "Hoboken Middle School vs. HOLA ",
+      "time": "14:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Hoboken Middle School",
+      "team2": "HOLA",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "TEAM": "Elysian Charter vs. Hoboken Charter ",
+      "time": "15:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Elysian Charter",
+      "team2": "Hoboken Charter",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }]
+  },
+  {
+    "date": "2019-03-02",
+    "events": [{
+      "TEAM": "Stevens Red vs. Hoboken Middle School ",
+      "time": "13:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Stevens Red",
+      "team2": "Hoboken Middle School",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "TEAM": "Stevens White vs. Elysian Charter ",
+      "time": "14:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Stevens White",
+      "team2": "Elysian Charter",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "TEAM": "HOLA vs. Hoboken Charter ",
+      "time": "15:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "HOLA",
+      "team2": "Hoboken Charter",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }]
+  }
+]

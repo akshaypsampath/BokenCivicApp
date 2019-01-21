@@ -52,6 +52,7 @@ class HomeTempScreen extends React.Component {
 }
 
   render() {
+    let todayDate = new Date('Jan 3, 2019');
 
     if (!this.state.loading) {
       return (
@@ -86,6 +87,7 @@ class HomeTempScreen extends React.Component {
               onPress={() => this.props.navigation.navigate('TeamSelect')}>
               <Text>team schedule select</Text>
             </Button>
+            <Text>Today Date : {todayDate.getMonth()},{todayDate.getDate()}</Text>
           </Content>
         </Container>
         //</StyleProvider>
@@ -157,6 +159,8 @@ class TeamSelectionScreen extends React.Component { /*Select team to display sch
 
   render() {
     let temp = MiddleSchedule;
+
+
     return(
     <Container>
       <Content>

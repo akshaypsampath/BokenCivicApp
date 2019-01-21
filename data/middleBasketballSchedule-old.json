@@ -1,0 +1,1217 @@
+[
+  {
+    "team": "All Saints 5",
+    "games": [
+      {
+        "opponent": "Elysian Charter Green 5",
+        "date": "Thursday, Jan 3, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 5",
+        "date": "Friday, Jan 11, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter White 5",
+        "date": "Thursday, Jan 17, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Purple 5",
+        "date": "Monday, Jan 28, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Red 5",
+        "date": "Monday, Feb 4, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 5",
+        "date": "Tuesday, Feb 19, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Black 5",
+        "date": "Tuesday, Feb 26, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Grey 5",
+        "date": "Monday, Mar 4, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 5",
+        "date": "Friday, Mar 8, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      }
+    ]
+  },
+  {
+    "team": "Elysian Charter White 5",
+    "games": [
+      {
+        "opponent": "Hoboken Charter 5",
+        "date": "Thursday, Jan 3, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter Green 5",
+        "date": "Thursday, Jan 10, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 5",
+        "date": "Thursday, Jan 17, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 5",
+        "date": "Thursday, Jan 24, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Purple 5",
+        "date": "Monday, Feb 4, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Grey 5",
+        "date": "Monday, Feb 11, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Black 5",
+        "date": "Friday, Mar 1, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 5",
+        "date": "Monday, Mar 4, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Red 5",
+        "date": "Monday, Mar 11, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Elysian Charter Green 5",
+    "games": [
+      {
+        "opponent": "All Saints 5",
+        "date": "Thursday, Jan 3, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter White 5",
+        "date": "Thursday, Jan 10, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 5",
+        "date": "Thursday, Jan 17, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 5",
+        "date": "Thursday, Jan 24, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 5",
+        "date": "Thursday, Jan 31, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Black 5",
+        "date": "Monday, Feb 11, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Purple 5",
+        "date": "Thursday, Feb 21, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Red 5",
+        "date": "Friday, Mar 1, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Grey 5",
+        "date": "Monday, Mar 11, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Hoboken Charter 5",
+    "games":[
+      {
+        "opponent": "Elysian Charter White 5",
+        "date": "Thursday, Jan 3, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Grey 5",
+        "date": "Friday, Jan 11, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Black 5",
+        "date": "Thursday, Jan 17, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter Green 5",
+        "date": "Thursday, Jan 24, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 5",
+        "date": "Thursday, Jan 31, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Red 5",
+        "date": "Tuesday, Feb 12, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 5",
+        "date": "Tuesday, Feb 26, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Purple 5",
+        "date": "Friday, Mar 1, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 5",
+        "date": "Friday, Mar 8, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Connors/Calabro 5",
+    "games":[
+      {
+        "opponent": "HOLA 5",
+        "date": "Friday, Jan 4, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Black 5",
+        "date": "Friday, Jan 11, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Red 5",
+        "date": "Friday, Jan 18, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Grey 5",
+        "date": "Monday, Jan 28, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter Green 5",
+        "date": "Thursday, Jan 31, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 5",
+        "date": "Tuesday, Feb 19, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 5",
+        "date": "Tuesday, Feb 26, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter White 5",
+        "date": "Monday, Mar 4, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Purple 5",
+        "date": "Friday, Mar 8, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "HOLA 5",
+    "games":[
+      {
+        "opponent": "Connors/Calabro 5",
+        "date": "Friday, Jan 4, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 5",
+        "date": "Friday, Jan 11, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter Green 5",
+        "date": "Thursday, Jan 17, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter White 5",
+        "date": "Thursday, Jan 24, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 5",
+        "date": "Thursday, Jan 31, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Purple 5",
+        "date": "Tuesday, Feb 12, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Grey 5",
+        "date": "Friday, Feb 22, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Black 5",
+        "date": "Tuesday, Mar 5, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Red 5",
+        "date": "Friday, Mar 8, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Stevens Purple 5",
+    "games":[
+      {
+        "opponent": "Wallace Black 5",
+        "date": "Monday, Jan 7, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Red 5",
+        "date": "Monday, Jan 14, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Grey 5",
+        "date": "Friday, Jan 18, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 5",
+        "date": "Monday, Jan 28, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter White 5",
+        "date": "Monday, Feb 4, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 5",
+        "date": "Tuesday, Feb 4, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter Green 5",
+        "date": "Thursday, Feb 21, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 5",
+        "date": "Friday, Mar 1, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 5",
+        "date": "Friday, Mar 8, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Wallace Black 5",
+    "games":[
+      {
+        "opponent": "Stevens Purple 5",
+        "date": "Monday, Jan 7, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 5",
+        "date": "Friday, Jan 11, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 5",
+        "date": "Thursday, Jan 17, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Grey 5",
+        "date": "Thursday, Jan 31, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Red 5",
+        "date": "Friday, Feb 1, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter Green 5",
+        "date": "Monday, Feb 11, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 5",
+        "date": "Tuesday, Feb 26, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter White 5",
+        "date": "Friday, Mar 1, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 5",
+        "date": "Tuesday, Mar 5, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Stevens Red 5",
+    "games":[
+      {
+        "opponent": "Wallace Grey 5",
+        "date": "Monday, Jan 7, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Purple 5",
+        "date": "Monday, Jan 14, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 5",
+        "date": "Friday, Jan 18, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Black 5",
+        "date": "Friday, Feb 1, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 5",
+        "date": "Monday, Feb 4, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 5",
+        "date": "Tuesday, Feb 12, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter Green 5",
+        "date": "Friday, Mar 1, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 5",
+        "date": "Friday, Mar 8, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Wallace Grey 5",
+    "games":[
+      {
+        "opponent": "Stevens Red 5",
+        "date": "Monday, Jan 7, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 5",
+        "date": "Friday, Jan 11, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens Purple 5",
+        "date": "Friday, Jan 18, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 5",
+        "date": "Monday, Jan 28, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace Black 5",
+        "date": "Thursday, Jan 31, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter White 5",
+        "date": "Monday, Feb 11, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 5",
+        "date": "Friday, Feb 22, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 5",
+        "date": "Monday, Mar 4, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter Green 5",
+        "date": "Monday, Mar 11, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "All Saints 6",
+    "games":[
+      {
+        "opponent": "Mustard Seed 6",
+        "date": "Tuesday, Jan 8, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens 6",
+        "date": "Monday, Jan 14, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 6",
+        "date": "Thursday, Jan 24, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 6",
+        "date": "Tuesday, Jan 29, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter Green 6",
+        "date": "Tuesday, Feb 5, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace 6",
+        "date": "Thursday, Feb 7, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hudson 6",
+        "date": "Tuesday, Feb 26, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 6",
+        "date": "Thursday, Mar 7, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Elysian Charter Green 6",
+    "games":[
+      {
+        "opponent": "Hoboken Charter 6",
+        "date": "Thursday, Jan 3, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens 6",
+        "date": "Tuesday, Jan 8, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 6",
+        "date": "Thursday, Jan 10, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace 6",
+        "date": "Tuesday, Jan 22, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 6",
+        "date": "Tuesday, Feb 5, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hudson 6",
+        "date": "Monday, Feb 25, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 6",
+        "date": "Thursday, Mar 7, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Hoboken Charter 6",
+    "games":[
+      {
+        "opponent": "Elysian Charter Green 6",
+        "date": "Thursday, Jan 3, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hudson 6",
+        "date": "Tuesday, Jan 15, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens 6",
+        "date": "Friday, Jan 18, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Mustard Seed 6",
+        "date": "Friday, Feb 1, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 6",
+        "date": "Tuesday, Feb 5, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 6",
+        "date": "Monday, Feb 25, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace 6",
+        "date": "Thursday, Feb 28, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 6",
+        "date": "Thursday, Mar 7, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Connors/Calabro 6",
+    "games":[
+      {
+        "opponent": "HOLA 6",
+        "date": "Friday, Jan 4, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace 6",
+        "date": "Thursday, Jan 10, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Mustard Seed 6",
+        "date": "Tuesday, Jan 15, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 6",
+        "date": "Tuesday, Jan 29, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 6",
+        "date": "Tuesday, Feb 5, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens 6",
+        "date": "Tuesday, Feb 19, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hudson 6",
+        "date": "Thursday, Feb 28, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter Green 6",
+        "date": "Thursday, Mar 7, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "HOLA 6",
+    "games":[
+      {
+        "opponent": "Connors/Calabro 6",
+        "date": "Friday, Jan 4, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter Green 6",
+        "date": "Thursday, Jan 10, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 6",
+        "date": "Thursday, Jan 24, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace 6",
+        "date": "Friday, Feb 1, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hudson 6",
+        "date": "Thursday, Feb 7, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens 6",
+        "date": "Friday, Feb 22, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 6",
+        "date": "Monday, Feb 25, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Mustard Seed 6",
+        "date": "Thursday, Mar 7, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Hudson 6",
+    "games":[
+      {
+        "opponent": "Wallace 6",
+        "date": "Friday, Jan 4, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 6",
+        "date": "Tuesday, Jan 15, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Mustard Seed 6",
+        "date": "Tuesday, Jan 22, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens 6",
+        "date": "Tuesday, Jan 29, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 6",
+        "date": "Thursday, Feb 7, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter Green 6",
+        "date": "Monday, Feb 25, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 6",
+        "date": "Tuesday, Feb 26, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 6",
+        "date": "Thursday, Feb 28, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Wallace 6",
+    "games":[
+      {
+        "opponent": "Hudson 6",
+        "date": "Friday, Jan 4, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 6",
+        "date": "Thursday, Jan 10, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter Green 6",
+        "date": "Tuesday, Jan 22, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 6",
+        "date": "Friday, Feb 1, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 6",
+        "date": "Thursday, Feb 7, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Mustard Seed 6",
+        "date": "Thursday, Feb 21, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 6",
+        "date": "Thursday, Feb 28, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens 6",
+        "date": "Tuesday, Mar 5, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Mustard Seed 6",
+    "games":[
+      {
+        "opponent": "All Saints 6",
+        "date": "Tuesday, Jan 8, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 6",
+        "date": "Tuesday, Jan 15, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hudson 6",
+        "date": "Tuesday, Jan 22, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 6",
+        "date": "Friday, Feb 1, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Stevens 6",
+        "date": "Thursday, Feb 7, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace 6",
+        "date": "Thursday, Feb 21, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Elysian Charter Green 6",
+        "date": "Thursday, Feb 28, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 6",
+        "date": "Thursday, Mar 7, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+  {
+    "team": "Stevens 6",
+    "games":[
+      {
+        "opponent": "Elysian Charter Green 6",
+        "date": "Tuesday, Jan 8, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "All Saints 6",
+        "date": "Monday, Jan 14, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hoboken Charter 6",
+        "date": "Friday, Jan 18, 2019",
+        "time": "8:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Hudson 6",
+        "date": "Tuesday, Jan 29, 2019",
+        "time": "6:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Mustard Seed 6",
+        "date": "Thursday, Feb 7, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Connors/Calabro 6",
+        "date": "Tuesday, Feb 19, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "HOLA 6",
+        "date": "Friday, Feb 22, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+      {
+        "opponent": "Wallace 6",
+        "date": "Tuesday, Mar 5, 2019",
+        "time": "7:45 PM",
+        "location": "Wallace School Gymnasium",
+        "type": "Game"
+      },
+    ]
+  },
+]

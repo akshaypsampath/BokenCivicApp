@@ -1,0 +1,860 @@
+[
+  {
+    "date": "2019-01-02",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Elysian Charter White",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter Kelly Green",
+        "team2": "HOLA Black",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-01-03",
+    "events":
+    [
+      {
+        "team1": "All Saints",
+        "team2": "Hoboken Middle School Knicks",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Middle School Nets",
+        "team2": "Stevens Red",
+        "time": "19:15",
+        "location": "Multi Service Center Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-01-07",
+    "events":
+    [
+      {
+        "team1": "Hoboken Charter",
+        "team2": "HOLA Teal",
+        "time": "18:15",
+        "location": "Multi Service Center Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hudson",
+        "team2": "Mustard Seed",
+        "time": "19:15",
+        "location": "Multi Service Center Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-01-08",
+    "events":
+    [
+      {
+        "team1": "Hoboken Middle School Warriors",
+        "team2": "Stevens Red",
+        "time": "18:15",
+        "location": "Multi Service Center Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Middle School Knicks",
+        "team2": "Hoboken Middle School Nets",
+        "time": "19:15",
+        "location": "Multi Service Center Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-01-09",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter White",
+        "team2": "Hoboken Charter",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Stevens White",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-01-14",
+    "events":
+    [
+      {
+        "team1": "All Saints",
+        "team2": "Elysian Charter Kelly Green",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "HOLA Teal",
+        "team2": "Mustard Seed",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-01-15",
+    "events":
+    [
+      {
+        "team1": "Hoboken Middle School Knicks",
+        "team2": "Hoboken Middle School Warriors",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "HOLA Black",
+        "team2": "Stevens Red",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-01-16",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter White",
+        "team2": "Stevens White",
+        "time": "18:45",
+        "location": "Wallace School Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "HOLA Teal",
+        "team2": "Hudson",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-01-22",
+    "events":
+    [
+      {
+        "team1": "Hoboken Middle School Nets",
+        "team2": "Hoboken Middle School Warriors",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Charter",
+        "team2": "Hudson",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-01-23",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Mustard Seed",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "HOLA Teal",
+        "team2": "Stevens White",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-01-24",
+    "events":
+    [
+      {
+        "team1": "All Saints",
+        "team2": "HOLA Black",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter Kelly Green",
+        "team2": "Stevens Red",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-01-28",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Kelly Green",
+        "team2": "Hoboken Middle School Knicks",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Middle School Warriors",
+        "team2": "HOLA Black",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-01-29",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Hudson",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter White",
+        "team2": "Mustard Seed",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-01-30",
+    "events":
+    [
+      {
+        "team1": "Hoboken Charter",
+        "team2": "Stevens White",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "All Saints",
+        "team2": "Stevens Red",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-01-31",
+    "events":
+    [
+      {
+        "team1": "Hoboken Middle School Nets",
+        "team2": "HOLA Black",
+        "time": "18:15",
+      "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter Kelly Green",
+        "team2": "Hoboken Middle School Warriors",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-04",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "HOLA Teal",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter White",
+        "team2": "Hudson",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-05",
+    "events":
+    [
+      {
+        "team1": "Hoboken Middle School Knicks",
+        "team2": "Stevens Red",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "All Saints",
+        "team2": "Hoboken Middle School Nets",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-06",
+    "events":
+    [
+      {
+        "team1": "Hoboken Charter School",
+        "team2": "Mustard Seed",
+        "time": "18:45",
+        "location": "Wallace School Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hudson",
+        "team2": "Stevens White",
+        "time": "19:45",
+        "location": "Wallace School Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-07",
+    "events":
+    [
+      {
+        "team1": "Hoboken Middle School Knicks",
+        "team2": "HOLA Black",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "All Saints",
+        "team2": "Hoboken Middle School Warrior",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-11",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Kelly Green",
+        "team2": "Hoboken Middle School Nets",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter White",
+        "team2": "HOLA Teal",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-12",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Hoboken Charter",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Mustard Seed",
+        "team2": "Stevens White",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-13",
+    "events":
+    [
+      {
+        "team1": "Hoboken Charter",
+        "team2": "HOLA Teal",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hudson",
+        "team2": "Mustard Seed",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-19",
+    "events":
+    [
+      {
+        "team1": "Hoboken Middle School Warriors",
+        "team2": "Stevens Red",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Middle School Knicks",
+        "team2": "Hoboken Middle School Nets",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-20",
+    "events":
+    [
+      {
+        "team1": "HOLA Teal",
+        "team2": "Mustard Seed",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "HOLA Black",
+        "team2": "Stevens Red",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-21",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Stevens White",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Middle School Knicks",
+        "team2": "Hoboken Middle School Warriors",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-25",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Elysian Charter White",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter Kelly Green",
+        "team2": "HOLA Black",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-26",
+    "events":
+    [
+      {
+        "team1": "All Saints",
+        "team2": "Hoboken Middle School Knicks",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Middle School Nets",
+        "team2": "Stevens Red",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-27",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter White",
+        "team2": "Hoboken Charter",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "All Saints",
+        "team2": "Elysian Charter Kelly Green",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-02-28",
+    "events":
+    [
+      {
+        "team1": "HOLA Teal",
+        "team2": "Hudson",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Middle School Nets",
+        "team2": "Hoboken Middle School Warriors",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-03-04",
+    "events":
+    [
+      {
+        "team1": "All Saints",
+        "team2": "HOLA Black",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter Kelly Green",
+        "team2": "Stevens Red",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-03-05",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Mustard Seed",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "HOLA Teal",
+        "team2": "Stevens White",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-03-06",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter White",
+        "team2": "Stevens White",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Charter",
+        "team2": "Hudson",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-03-07",
+    "events":
+    [
+      {
+        "team1": "TBA",
+        "team2": "TBA",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "TBA",
+        "team2": "TBA",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  }
+]
