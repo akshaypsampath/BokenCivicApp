@@ -6,27 +6,26 @@ import { Row, Grid } from 'react-native-easy-grid';
 import { Font, AppLoading } from "expo";
 import styles from "./src/styles";
 
-import Icon from "react-native-vector-icons/FontAwesome"
+import Icon from "react-native-vector-icons/FontAwesome";
 
-import TeamHomeScreen from "./src/screens/TeamHome" //resolve routing later
-import DetailsScreen from "./src/screens/Details"
-import SettingsScreen from "./src/screens/Settings"
+import TeamHomeScreen from "./src/screens/TeamHome"; //resolve routing later
+import DetailsScreen from "./src/screens/Details";
+import SettingsScreen from "./src/screens/Settings";
 
-import LeaguesScreen from "./src/screens/Leagues"
-import StatsScreen from "./src/screens/Stats"
-import MenuScreen from "./src/screens/Menu"
-import ScheduleScreen from "./src/screens/Schedule"
-
-import HomeScreen from "./src/screens/Home"
-import _storeData from "./src/actions/actions"
-import _retrieveData from "./src/actions/actions"
+import LeaguesScreen from "./src/screens/Leagues";
+import StatsScreen from "./src/screens/Stats";
+import MenuScreen from "./src/screens/Menu";
+import ScheduleScreen from "./src/screens/Schedule";
+import TeamSelectionScreen from "./src/screens/TeamSelect"
+import HomeScreen from "./src/screens/Home";
+import _storeData from "./src/actions/actions";
+import _retrieveData from "./src/actions/actions";
 
 
 //import ScheduleCards from "./src/components/scheduleCards";
 
 //import getTheme from './native-base-theme/components';
 //import material from './native-base-theme/variables/material';
-
 var Data = require('./data/basketballData.json');
 //var MiddleSchedule = require('./data/middleBasketballSchedule.json');
 
@@ -100,41 +99,6 @@ class HomeTempScreen extends React.Component {
     }
   }
 }
-
-class TeamSelectionScreen extends React.Component { /*Select team to display schedule for*/
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
-  render() {
-    let temp = MiddleSchedule;
-
-
-    return(
-    <Container>
-      <Content>
-        {
-          temp.map((item, index)=>{
-            return(
-              <Card style={styles.container} key={index}>
-                <CardItem button
-                  onPress={() => this.props.navigation.navigate('Schedule', {teamName: item.team, object: item})}>
-                  <Text>{item.team}</Text>
-                </CardItem>
-              </Card>
-            );
-          })
-        }
-      </Content>
-    </Container>
-    );
-  }
-}
-
-
-
-
 
 const AppNavigator =  createStackNavigator(
   {

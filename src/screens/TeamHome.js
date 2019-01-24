@@ -1,7 +1,7 @@
 import React from 'react';
 import { Component, FlatList, ScrollView, AsyncStorage} from 'react-native';
 import { Container, Header, Content, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Root, Toast, Footer, FooterTab} from "native-base";
-import Icon from "react-native-vector-icons/FontAwesome"
+import Icon from "react-native-vector-icons/FontAwesome";
 import { Row, Grid } from 'react-native-easy-grid';
 import styles from "./../styles";
 

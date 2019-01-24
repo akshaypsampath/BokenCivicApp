@@ -26,81 +26,77 @@ export default class LeaguesScreen extends React.Component {
     },
     };
   };
-
   constructor(props) {
     super(props)
-    this.state ={}
-  }
-
-  _subscribeStatus = (item) => {
-    if (item.isSubscribed == "true"){
-      return{
-        flexGrow: 1,
-        backgroundColor: 'yellow',
-      };
-    }
-    else{
-      return{
-        flexGrow: 1,
-        backgroundColor: 'red',
-      };
-    }
-  }
-
-  returnName = (item) => {
-    Alert.alert(item.team)
+    this.state ={testNum: 0,
+                  SNCteams: false,
+                }
   }
 
   _onPress = (item) => {
-    x = item.isSubscribed
+    x = item.myTeam
     y = item.coach
-    if (x == "false"){
-      item.isSubscribed = "true"
+    if (x == false){
+      item.myTeam = true
     }
     else {
-      item.isSubscribed = "false"
+      item.myTeam = false
     }
-    this.forceUpdate()
-    Alert.alert('pressed ' + y + ' ' + item.isSubscribed)
+    //Alert.alert('pressed ' + y + ' ' + item.isSubscribed)
   }
 
 
+  _renderSubcard = (temp) => {
+    let subTemp = temp.teams;
+    this.setState({ testNum: 2})
+    return(subTemp);
+  }
+
+  _testInsideLoop = (temp) => {
+    this.setState({testNum: 2})
+    var a = this.state.testNum;
+    var b = temp[0].teams[0].wins;
+    console.log(a)
+    //\Alert.alert('is this number working ' +a+ ' ' + b)
+  }
+
   render() {
+    var temp = Data;
+    let teamTemp = temp.teams;
+
 
     return (
       <Container>
         <Header style={{justifyContent: 'center', alignItems: 'center'}}>
-          <Title>Select teams to subscribe to</Title>
+          <Title>Manage MyTeams</Title>
         </Header>
-        <Content>
+        <Content padder>
 
           {
-            Data.map((item,index)=>{
+            temp.map((item,index)=>{
               return(
                 <Card key={index}>
                   <CardItem bordered>
                     <Text>{item.league}</Text>
                   </CardItem>
+
                   {
                     item.teams.map((item2,index2)=>{
                       return(
-                        <CardItem style={{flex:1}}bordered key={index2}>
-                          <Button style={this._subscribeStatus(item2)} onPress={() => this._onPress(item2)}>
-                            <Text>{item2.team}</Text>
-                            <Text>{item2.isSubscribed}</Text>
+                        <CardItem style={{flexGrow: 1}} bordered key={index2}>
+                          <Button onPress={() => this._onPress(item2)}>
+                            <Text>{item2.name}</Text>
+                            <Text>{item2.myTeam}</Text>
                           </Button>
                         </CardItem>
                       )
                     })
                   }
+
                 </Card>
               )
             })
           }
-          <Button
-            onPress={() => this.props.navigation.navigate('Details', {newTitle: 'FLOB',})}>
-            <Text>Go to Details</Text>
-          </Button>
         </Content>
       </Container>
     );
