@@ -11,7 +11,7 @@ import ScheduleCards from "./../components/ScheduleCards";
 import Icon from "react-native-vector-icons/FontAwesome";
 
 
-var Data = require('./../../data/basketballData.json');
+//var Data = require('./../../data/basketballData.json');
 var BBGirlsSched = require('./../../data/basketballGirlsSchedule.json');
 
 
@@ -43,16 +43,14 @@ export default class ScheduleScreen extends React.Component { /* Display each of
 
 
     this.setState({
-      temp: Data[2].teams[0].schedule
+      temp: BBGirlsSched
     });
   }
 
   render() {
+    let todayDate = new Date();
     //let data = Data[2].teams[0].schedule;
 
-    // console.log(data);
-    // console.log("*****************************************************************")
-    // console.log(this.state.temp);
 
 
     return(
@@ -60,7 +58,7 @@ export default class ScheduleScreen extends React.Component { /* Display each of
          <Header>
             <Title >{this.state.teamName} Schedule</Title>
           </Header>
-        <Content padder style={{backgroundColor:"#f8f7f5"}}>
+        <Content padder style={{backgroundColor:'#f8f7f5'}}>
           <ScheduleCards data={this.state.temp}/>
 
         </Content>

@@ -6,20 +6,20 @@ import { Row, Grid } from 'react-native-easy-grid';
 import { Font, AppLoading } from "expo";
 
 import styles from "./../styles";
-import ScheduleCards from "./../components/ScheduleCards";
+//import ScheduleCards from "./../components/ScheduleCards";
 import MyTeamsList from "./../components/MyTeamsList";
 
 import Icon from "react-native-vector-icons/FontAwesome"
 
 var Data = require('../../data/basketballData.json');
-var teamListObj = require('../../data/teamList.json');
-var BBGirlsSched = require('../../data/basketballGirlsSchedule.json');
-var BBGrammarSched = require('../../data/basketballGrammarSchedule.json');
-var BBMiddleSched = require('../../data/basketballMiddleSchedule.json');
+var TeamListObj = require('../../data/teamList.json');
+//var BBGirlsSched = require('../../data/basketballGirlsSchedule.json');
+//var BBGrammarSched = require('../../data/basketballGrammarSchedule.json');
+//var BBMiddleSched = require('../../data/basketballMiddleSchedule.json');
 
-import _testPress from "./../actions/actions";
 
-export default class HomeScreen extends React.Component {
+
+export default class ViewMyTeamsScreen extends React.Component {
   static navigationOptions = {
    header: null
   };
@@ -28,7 +28,7 @@ export default class HomeScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = { loading: true,
-                    sched: []
+                    teamList: []
                   };
   }
 
@@ -39,7 +39,7 @@ export default class HomeScreen extends React.Component {
     }).done();
     this.setState({
       loading: false,
-      sched: BBGirlsSched
+      teamList: TeamListObj
     });
   }
   _getBadgeColor(typeStr) {
@@ -77,25 +77,20 @@ export default class HomeScreen extends React.Component {
       return (
         <Container>
           <Header style={styles.header}>
-            <Title style={styles.title}>Hoboken Basketball</Title>
+            <Title style={styles.title}>View My Teams</Title>
           </Header>
           <Grid style={styles.grid}>
-          <Card>
-            <CardItem header>
-              <Text>My Upcoming Games</Text>
-            </CardItem>
-          </Card>
             <ScrollView>
-            <ScheduleCards data={this.state.sched}/>
+              <MyTeamsList teamList={this.state.teamList}/>
             </ScrollView>
           </Grid>
             <Footer>
               <FooterTab>
-                <Button onPress={() => this.props.navigation.navigate('ViewMyTeams')}>
+                <Button active onPress={() => this.props.navigation.navigate('ViewMyTeams')}>
                   <Icon name="list-ul" size={20}/>
-                  <Text note>View My Teams</Text>
+
                 </Button>
-                <Button active>
+                <Button onPress={() => this.props.navigation.navigate('Home')}>
                   <Icon active name="home" size={20}/>
                 </Button>
                 <Button>

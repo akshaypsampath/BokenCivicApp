@@ -12,14 +12,16 @@ import TeamHomeScreen from "./src/screens/TeamHome"; //resolve routing later
 import DetailsScreen from "./src/screens/Details";
 import SettingsScreen from "./src/screens/Settings";
 
-import LeaguesScreen from "./src/screens/Leagues";
-import StatsScreen from "./src/screens/Stats";
-import MenuScreen from "./src/screens/Menu";
-import ScheduleScreen from "./src/screens/Schedule";
+import LeaguesScreen from "./src/screens/Leagues"
+import StatsScreen from "./src/screens/Stats"
+import MenuScreen from "./src/screens/Menu"
+import ScheduleScreen from "./src/screens/Schedule"
+import ViewMyTeamsScreen from "./src/screens/ViewMyTeams"
+import EventDetailsScreen from "./src/screens/EventDetails"
 import TeamSelectionScreen from "./src/screens/TeamSelect"
-import HomeScreen from "./src/screens/Home";
-import _storeData from "./src/actions/actions";
-import _retrieveData from "./src/actions/actions";
+import HomeScreen from "./src/screens/Home"
+import _storeData from "./src/actions/actions"
+import _retrieveData from "./src/actions/actions"
 
 
 //import ScheduleCards from "./src/components/scheduleCards";
@@ -79,7 +81,7 @@ class HomeTempScreen extends React.Component {
               <Text>Menu (Small Fry League)</Text>
             </Button>
             <Button dark large
-              onPress={() => this.props.navigation.navigate('newHome')}>
+              onPress={() => this.props.navigation.navigate('Home')}>
               <Text>newHome</Text>
             </Button>
             <Button
@@ -102,8 +104,8 @@ class HomeTempScreen extends React.Component {
 
 const AppNavigator =  createStackNavigator(
   {
-    Home: HomeTempScreen,
-    newHome: HomeScreen,
+    oldHome: HomeTempScreen,
+    Home: HomeScreen,
     Settings: SettingsScreen,
     Details: DetailsScreen,
     Schedule: ScheduleScreen,
@@ -112,11 +114,13 @@ const AppNavigator =  createStackNavigator(
     Menu: MenuScreen,
     Stats: StatsScreen,
     TeamSelect: TeamSelectionScreen,
+    ViewMyTeams: ViewMyTeamsScreen,
+    EventDetails: EventDetailsScreen,
     /*Calendar: CalendarScreen,
     Roster: RosterScreen,*/
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'oldHome',
   }
 );
 //export default createAppContainer(AppNavigator);
