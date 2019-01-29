@@ -11,11 +11,12 @@ import MyTeamsList from "./../components/MyTeamsList";
 
 import Icon from "react-native-vector-icons/FontAwesome"
 
-var Data = require('../../data/basketballData.json');
+//var Data = require('../../data/basketballData.json');
 var teamListObj = require('../../data/teamList.json');
-var BBGirlsSched = require('../../data/basketballGirlsSchedule.json');
-var BBGrammarSched = require('../../data/basketballGrammarSchedule.json');
-var BBMiddleSched = require('../../data/basketballMiddleSchedule.json');
+var BBMasterSched = require('../../data/basketballMasterSchedule.json');
+//var BBGirlsSched = require('../../data/basketballGirlsSchedule.json');
+//var BBGrammarSched = require('../../data/basketballGrammarSchedule.json');
+//var BBMiddleSched = require('../../data/basketballMiddleSchedule.json');
 
 import _testPress from "./../actions/actions";
 
@@ -39,7 +40,7 @@ export default class HomeScreen extends React.Component {
     }).done();
     this.setState({
       loading: false,
-      sched: BBGirlsSched
+      sched: BBMasterSched
     });
   }
   _getBadgeColor(typeStr) {
@@ -93,13 +94,15 @@ export default class HomeScreen extends React.Component {
               <FooterTab>
                 <Button onPress={() => this.props.navigation.navigate('ViewMyTeams')}>
                   <Icon name="list-ul" size={20}/>
-                  <Text note>View My Teams</Text>
+                  <Text note style={{fontSize:10}}>View My Teams</Text>
                 </Button>
-                <Button active>
+                <Button active onPress={() => this.props.navigation.navigate('Home')}>
                   <Icon active name="home" size={20}/>
+                  <Text note style={{fontSize:10}}>Home</Text>
                 </Button>
-                <Button>
+                <Button onPress={() => this.props.navigation.navigate('TeamSelect')}>
                   <Icon name="wrench" size={20}/>
+                  <Text note style={{fontSize:10}}>Browse All Teams</Text>
                 </Button>
               </FooterTab>
             </Footer>

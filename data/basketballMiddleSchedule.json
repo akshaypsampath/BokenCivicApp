@@ -1,8 +1,9 @@
 [
   {
   "date": "2019-01-03",
-  "events": [{
-      "TEAM": "All Saints 5 vs. Elysian Charter Green 5",
+  "events":
+  [
+    {
       "time": "18:45",
       "location": "Wallace School Gymnasium",
       "team1": "All Saints 5",
@@ -12,7 +13,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Elysian Charter White 5 vs. Hoboken Charter 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium",
       "team1": "Elysian Charter White 5",
@@ -22,7 +22,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Elysian Charter Green 6 vs. Hoboken Charter 6",
       "time": "20:45",
       "location": "Wallace School Gymnasium",
       "team1": "Elysian Charter Green 6",
@@ -36,7 +35,6 @@
   {
     "date": "2019-01-04",
     "events": [{
-      "TEAM": "Connors/Calabro 5 vs. HOLA 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium",
       "team1": "Connors/Calabro 5",
@@ -46,7 +44,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Connors/Calabro 6 vs. HOLA 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium",
       "team1": "Connors/Calabro 6",
@@ -56,7 +53,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Hudson 6 vs. Wallace 6",
       "time": "20:45",
       "location": "Wallace School Gymnasium",
       "team1": "Hudson 6",
@@ -70,7 +66,6 @@
   {
     "date": "2019-01-07",
     "events": [{
-      "TEAM": "Stevens Purple 5 vs. Wallace Black 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium",
       "team1": "Stevens Purple 5",
@@ -80,7 +75,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Stevens Red 5 vs. Wallace Grey 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium",
       "team1": "Stevens Red 5",
@@ -94,7 +88,6 @@
   {
     "date": "2019-01-08",
     "events": [{
-      "TEAM": "All Saints 6 vs. Mustard Seed 6",
       "time": "18:45",
       "location": "Wallace School Gymnasium",
       "team1": "All Saints 6",
@@ -104,7 +97,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Elysian Charter Green 6 vs. Stevens 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium",
       "team1": "Elysian Charter Green 6",
@@ -118,7 +110,6 @@
   {
     "date": "2019-01-10",
     "events": [{
-      "TEAM": "Elysian Charter Green 5 vs. Elysian Charter White 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium",
       "team1": "Elysian Charter Green 5",
@@ -128,7 +119,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Elysian Charter Green 6 vs. HOLA 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium",
       "team1": "Elysian Charter Green 6",
@@ -138,7 +128,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Connors/Calabro 6 vs. Wallace 6",
       "time": "20:45",
       "location": "Wallace School Gymnasium",
       "team1": "Connors/Calabro 6",
@@ -152,7 +141,6 @@
   {
     "date": "2019-01-11",
     "events": [{
-      "TEAM": "Connors/Calabro 5 vs. Wallace Black 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium",
       "team1": "Connors/Calabro 5",
@@ -162,7 +150,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Hoboken Charter 5 vs. Wallace Grey 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium",
       "team1": "Hoboken Charter 5",
@@ -172,7 +159,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "All Saints 5 vs. HOLA 5",
       "time": "20:45",
       "location": "Wallace School Gymnasium",
       "team1": "All Saints 5",
@@ -186,7 +172,6 @@
   {
     "date": "2019-01-14",
     "events": [{
-      "TEAM": "Stevens Purple 5 vs. Stevens Red 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium",
       "team1": "Stevens Purple 5",
@@ -196,7 +181,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "All Saints 6 vs. Stevens 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium",
       "team1": "All Saints 6",
@@ -210,7 +194,6 @@
   {
     "date": "2019-01-15",
     "events": [{
-      "TEAM": "Hoboken Charter 6 vs. Hudson 6",
       "time": "18:45",
       "location": "Wallace School Gymnasium",
       "team1": "Hoboken Charter 6",
@@ -220,7 +203,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Connors/Calabro 6 vs. Mustard Seed 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium",
       "team1": "Connors/Calabro 6",
@@ -234,7 +216,6 @@
   {
     "date": "2019-01-17",
     "events": [{
-      "TEAM": "All Saints 5 vs. Elysian Charter White 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium",
       "team1": "All Saints 5",
@@ -244,7 +225,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Elysian Charter Green 5 vs. HOLA 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium",
       "team1": "Elysian Charter Green 5",
@@ -254,7 +234,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Hoboken Charter 5 vs. Wallace Black 5",
       "time": "20:45",
       "location": "Wallace School Gymnasium",
       "team1": "Hoboken Charter 5",
@@ -268,7 +247,6 @@
   {
     "date": "2019-01-18",
     "events": [{
-      "TEAM": "Connors/Calabro 5 vs. Stevens Red 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium",
       "team1": "Connors/Calabro 5",
@@ -278,7 +256,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Stevens Purple 5 vs. Wallace Grey 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium",
       "team1": "Stevens Purple 5",
@@ -288,7 +265,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Hoboken Charter 6 vs. Stevens 6",
       "time": "20:45",
       "location": "Wallace School Gymnasium",
       "team1": "Hoboken Charter 6",
@@ -302,7 +278,6 @@
   {
     "date": "2019-01-22",
     "events": [{
-      "TEAM": "Hudson 6 vs. Mustard Seed 6",
       "time": "18:45",
       "location": "Wallace School Gymnasium",
       "team1": "Hudson 6",
@@ -312,7 +287,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Elysian Charter Green 6 vs. Wallace 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium",
       "team1": "Elysian Charter Green 6",
@@ -326,7 +300,6 @@
   {
     "date": "2019-01-24",
     "events": [{
-      "TEAM": "All Saints 6 vs HOLA 6 ",
       "time": "18:45",
       "location": "Wallace School Gymnasium",
       "team1": "All Saints 6",
@@ -336,7 +309,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Elysian Charter Green 5  vs Hoboken Charter 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium",
       "team1": "Elysian Charter Green 5",
@@ -346,7 +318,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Elysian Charter White 5 vs. HOLA 5",
       "time": "20:45",
       "location": "Wallace School Gymnasium",
       "team1": "Elysian Charter White 5",
@@ -360,7 +331,6 @@
   {
     "date": "2019-01-28",
     "events": [{
-      "TEAM": "All Saints 5 vs. Stevens Purple 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium",
       "team1": "All Saints 5",
@@ -370,7 +340,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Connors/Calabro 5 vs. Wallace Grey 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium",
       "team1": "Connors/Calabro 5",
@@ -384,7 +353,6 @@
   {
     "date": "2019-01-29",
     "events": [{
-      "TEAM": "Hudson 6 vs. Stevens 6",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Hudson 6",
@@ -394,7 +362,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "All Saints 6 vs. Connors/Calabro 6 ",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "All Saints 6",
@@ -408,7 +375,6 @@
   {
     "date": "2019-01-31",
     "events": [{
-      "TEAM": "Connors/Calabro 5 vs. Elysian Charter Green 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Connors/Calabro 5",
@@ -418,7 +384,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Wallace Black 5 vs. Wallace Grey 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Wallace Black 5",
@@ -428,7 +393,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Hoboken Charter 5 vs. HOLA 5",
       "time": "20:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Hoboken Charter 5",
@@ -442,7 +406,6 @@
   {
     "date": "2019-02-01",
     "events": [{
-      "TEAM": "HOLA 6 vs. Wallace 6",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "HOLA 6",
@@ -452,7 +415,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Hoboken Charter 6 vs. Mustard Seed 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Hoboken Charter 6",
@@ -462,7 +424,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Stevens Red 5 vs. Wallace Black 5",
       "time": "20:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Stevens Red 5",
@@ -476,7 +437,6 @@
   {
     "date": "2019-02-04",
     "events": [{
-      "TEAM": "Elysian Charter White 5 vs. Stevens Purple 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Elysian Charter White 5",
@@ -486,7 +446,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "All Saints 5 vs. Stevens Red 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "All Saints 5",
@@ -500,7 +459,6 @@
   {
     "date": "2019-02-05",
     "events": [{
-      "TEAM": "All Saints 6 vs. Elysian Charter Green 6",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "All Saints 6",
@@ -510,7 +468,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Connors/Calabro 6 vs. Hoboken Charter 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium",
       "team1": "Connors/Calabro 6",
@@ -524,7 +481,6 @@
   {
     "date": "2019-02-07",
     "events": [{
-      "TEAM": "HOLA 6 vs. Hudson 6",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "HOLA 6",
@@ -534,7 +490,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Mustard Seed 6 vs. Stevens 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Mustard Seed 6",
@@ -544,7 +499,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "All Saints 6 vs. Wallace 6",
       "time": "20:45",
       "location": "Wallace School Gymnasium ",
       "team1": "All Saints 6",
@@ -558,7 +512,6 @@
   {
     "date": "2019-02-11",
     "events": [{
-      "TEAM": "Elysian Charter Green 5 vs. Wallace Black 5 ",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Elysian Charter Green 5",
@@ -568,7 +521,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Elysian Charter White 5 vs. Wallace Grey 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Elysian Charter White 5",
@@ -582,7 +534,6 @@
   {
     "date": "2019-02-12",
     "events": [{
-      "TEAM": "Hoboken Charter 5 vs. Stevens Red 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Hoboken Charter 5",
@@ -592,7 +543,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "HOLA 5 vs. Stevens Purple 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "HOLA 5",
@@ -606,7 +556,6 @@
   {
     "date": "2019-02-19",
     "events": [{
-      "TEAM": "All Saints 5 vs. Connors/Calabro 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "All Saints 5",
@@ -616,7 +565,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Connors/Calabro 6 vs. Stevens 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Connors/Calabro 6",
@@ -630,7 +578,6 @@
   {
     "date": "2019-02-21",
     "events": [{
-      "TEAM": "Elysian Charter Green 5 vs. Stevens Purple 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Elysian Charter Green 5",
@@ -640,7 +587,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Mustard Seed 6 vs. Wallace 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Mustard Seed 6",
@@ -654,7 +600,6 @@
   {
     "date": "2019-02-22",
     "events": [{
-      "TEAM": "HOLA 5 vs Wallace Grey 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "HOLA 5",
@@ -664,7 +609,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "HOLA 6 vs. Stevens 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "HOLA 6",
@@ -678,7 +622,6 @@
   {
     "date": "2019-02-25",
     "events": [{
-      "TEAM": "Elysian Charter Green 6 vs. Hudson 6",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Elysian Charter Green 6",
@@ -688,7 +631,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Hoboken Charter 6 vs. HOLA 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Hoboken Charter 6",
@@ -702,7 +644,6 @@
   {
     "date": "2019-02-26",
     "events": [{
-      "TEAM": "All Saints 6 vs. Hudson 6",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "All Saints 6",
@@ -712,7 +653,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Connors/Calabro 5 vs. Hoboken Charter 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Connors/Calabro 5",
@@ -722,7 +662,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "All Saints 5 vs. Wallace Black 5",
       "time": "20:45",
       "location": "Wallace School Gymnasium ",
       "team1": "All Saints 5",
@@ -736,7 +675,6 @@
   {
     "date": "2019-02-28",
     "events": [{
-      "TEAM": "Hoboken Charter 6 vs. Wallace 6",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Hoboken Charter 6",
@@ -746,7 +684,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Connors/Calabro 6 vs. Hudson 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Connors/Calabro 6",
@@ -756,7 +693,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Elysian Charter Green vs. Mustard Seed 6",
       "time": "20:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Elysian Charter Green",
@@ -770,7 +706,6 @@
   {
     "date": "2019-03-01",
     "events": [{
-      "TEAM": "Elysian Charter White 5 vs. Wallace Black 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Elysian Charter White 5",
@@ -780,7 +715,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Elysian Charter Green 5 vs. Stevens Red 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Elysian Charter Green 5",
@@ -790,7 +724,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Hoboken Charter 5 vs. Stevens Purple 5 ",
       "time": "20:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Hoboken Charter 5",
@@ -804,7 +737,6 @@
   {
     "date": "2019-03-04",
     "events": [{
-      "TEAM": "All Saints 5 vs. Wallace Grey 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "All Saints 5",
@@ -814,7 +746,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Connors/Calabro 5 vs. Elysian Charter White 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Connors/Calabro 5",
@@ -828,7 +759,6 @@
   {
     "date": "2019-03-05",
     "events": [{
-      "TEAM": "HOLA 5 vs. Wallace Black 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "HOLA 5",
@@ -838,7 +768,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Stevens 6 vs. Wallace 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Stevens 6",
@@ -852,7 +781,6 @@
   {
     "date": "2019-03-07",
     "events": [{
-      "TEAM": "All Saints 6 vs. Hoboken Charter 6 ",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "All Saints 6",
@@ -862,7 +790,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Connors/Calabro 6 vs. Elysian Charter Green 6",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Connors/Calabro 6",
@@ -872,7 +799,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "HOLA 6 vs. Mustard Seed 6",
       "time": "20:45",
       "location": "Wallace School Gymnasium ",
       "team1": "HOLA 6",
@@ -886,7 +812,6 @@
   {
     "date": "2019-03-08",
     "events": [{
-      "TEAM": "Connors/Calabro 5 vs. Stevens Purple 5",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Connors/Calabro 5",
@@ -896,7 +821,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "HOLA 5 vs. Stevens Red 5",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "HOLA 5",
@@ -906,7 +830,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "All Saints 5 vs. Hoboken Charter 5 ",
       "time": "20:45",
       "location": "Wallace School Gymnasium ",
       "team1": "All Saints 5",
@@ -920,7 +843,6 @@
   {
     "date": "2019-03-11",
     "events": [{
-      "TEAM": "Elysian Charter Green 5 vs. Wallace Grey 5 ",
       "time": "18:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Elysian Charter Green 5",
@@ -930,7 +852,6 @@
       "team2score": "na",
       "league": "middle"
     }, {
-      "TEAM": "Elysian Charter White 5 vs. Stevens Red 5 ",
       "time": "19:45",
       "location": "Wallace School Gymnasium ",
       "team1": "Elysian Charter White 5",

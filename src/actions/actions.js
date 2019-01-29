@@ -51,16 +51,19 @@ _getBadgeColor = (typeStr)=> {
   }
 }
 
-_getDate = (dateStr) => {
-  let tempDate = new Date(dateStr);
-  let monthNum = tempDate.getDate();
-
-  return monthNum+1;
-}
+// _getDate = (dateStr) => {
+//   let tempDate = new Date(dateStr+"T12:00:00.0");
+//   let monthNum = tempDate.getDate();
+//
+//   return monthNum+1;
+// }
 
 _isFutureEvent = (dateStr) => {
   let tempDate = new Date(dateStr);
+  //tempDate.setDate(tempDate.getDate()-1);
   let todayDate = new Date();
+  todayDate.setDate(todayDate.getDate()-1);
+  console.log(todayDate +" _-_ "+tempDate);
 
   return tempDate>=todayDate;
 }
@@ -82,60 +85,26 @@ _getTimeAmPm = (timeStr) => {
   return result;
 }
 
-_getMonthAbr = (dateStr) => {
+// _getMonthAbr = (dateStr) => {
+//   let tempDate = new Date(dateStr+"T12:00:00.0");
+//   console.log(dateStr +" _-_ "+tempDate);
+//   let monthNum = tempDate.getMonth();
+//   //console.log("tempDate: "+tempDate);
+//   let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "June",
+//   "July", "Aug", "Sept", "October", "Nov", "Dec"];
+//
+//   return monthNames[monthNum];
+//
+// }
+_getMonthDate = (dateStr) => {
   let tempDate = new Date(dateStr);
+  //console.log(dateStr +" _-_ "+tempDate);
   let monthNum = tempDate.getMonth();
   //console.log("tempDate: "+tempDate);
+  let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "June",
+  "July", "Aug", "Sept", "October", "Nov", "Dec"];
 
-  if(monthNum==0)
-  {
-    return "Jan";
-  }
-  else if(monthNum==1)
-  {
-    return "Feb";
-  }
-  else if(monthNum==2)
-  {
-    return "Mar";
-  }
-  else if(monthNum==3)
-  {
-    return "Apr";
-  }
-  else if(monthNum==4)
-  {
-    return "May";
-  }
-  else if(monthNum==5)
-  {
-    return "June";
-  }
-  else if(monthNum==6)
-  {
-    return "July";
-  }
-  else if(monthNum==7)
-  {
-    return "Aug";
-  }
-  else if(monthNum==8)
-  {
-    return "Sept";
-  }
-  else if(monthNum==9)
-  {
-    return "Oct";
-  }
-  else if(monthNum==10)
-  {
-    return "Nov";
-  }
-  else if(monthNum==11)
-  {
-    return "Dec";
-  }
-
+  return monthNames[monthNum]+" "+tempDate.getDate();
 }
 
 _copyAdr2Clip = (adrStr) => {
@@ -144,6 +113,34 @@ _copyAdr2Clip = (adrStr) => {
   //   text: 'Address Copied to Clipboard!',
   //   buttonText: 'Okay',
   // });
+}
+
+_compareEventsbyTime = (event1, event2) => {
+  let result = 0;
+
+  let time1 = event1.time.split(":")
+  let time2 = event2.time.split(":")
+
+  if(Number(time1[0])>Number(time2[0]))
+  {
+    result = 1;
+  }
+  else if(Number(time1[0])<Number(time2[0]))
+  {
+    result = -1;
+  }
+  else
+  {
+    if(Number(time1[1]) > Number(time2[1]))
+    {
+      result = 1;
+    }
+    else if(Number(time1[1]) < Number(time2[1]))
+    {
+      result = -1;
+    }
+  }
+  return result;
 }
 
 _testPress = (teamNameStr)=> {

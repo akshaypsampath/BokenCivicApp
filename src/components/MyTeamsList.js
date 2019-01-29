@@ -9,23 +9,32 @@ import styles from "./../styles";
 import _testPress from "./../actions/actions";
 
 function MyTeamsList(teamList) {
-  console.log(teamList);
+  console.log("teamList");
+  //teamItem.myTeam
 
   return(
-    teamList.teamList.map((teamItem, index)=>{
+    teamList.teamList.map((leagueItem, index)=>{
+      //console.log(leagueItem.leagueName);
       return (
-        <View>
-           {teamItem.myTeam == false &&
-             <Card key={index}>
-                <CardItem onPress={this._testPress(teamItem.name)}>
-                  <Body>
-                    <Text bold>{teamItem.name} </Text>
-                    <Text note>{teamItem.league}</Text>
-                  </Body>
+        <View key={index}>
+          {leagueItem.teams.map((teamItem, index2)=>{
+            return(
+              <View key={index2}>
+                 {teamItem.myTeam === false &&
+                   <Card key={index2}>
+                      <CardItem key={index2} onPress={this._testPress(teamItem.name)}>
+                        <Body key={index2}>
+                          <Text bold>{teamItem.name} </Text>
+                          <Text note>{teamItem.league}</Text>
+                        </Body>
 
-               </CardItem>
-              </Card>
-          }
+                     </CardItem>
+                  </Card>
+                }
+            </View>
+          )
+          })
+        }
           </View>
           )
     })

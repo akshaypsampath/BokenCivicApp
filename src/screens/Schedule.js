@@ -12,8 +12,9 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 
 //var Data = require('./../../data/basketballData.json');
-var BBGirlsSched = require('./../../data/basketballGirlsSchedule.json');
-
+var BBMasterSched = require('./../../data/basketballMasterSchedule.json'); 
+//var BBGrammarSched = require('./../../data/basketballGrammarSchedule.json');
+//var BBMiddleSched = require('./../../data/basketballMiddleSchedule.json');
 
 
 export default class ScheduleScreen extends React.Component { /* Display each of the games for a team, when and where*/
@@ -43,7 +44,7 @@ export default class ScheduleScreen extends React.Component { /* Display each of
 
 
     this.setState({
-      temp: BBGirlsSched
+      temp: BBMasterSched
     });
   }
 

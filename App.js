@@ -23,7 +23,7 @@ import HomeScreen from "./src/screens/Home"
 import _storeData from "./src/actions/actions"
 import _retrieveData from "./src/actions/actions"
 
-
+ 
 //import ScheduleCards from "./src/components/scheduleCards";
 
 //import getTheme from './native-base-theme/components';
