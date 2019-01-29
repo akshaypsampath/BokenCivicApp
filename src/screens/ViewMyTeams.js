@@ -42,25 +42,6 @@ export default class ViewMyTeamsScreen extends React.Component {
       teamList: TeamListObj
     });
   }
-  _getBadgeColor(typeStr) {
-    if(typeStr=="Game")
-    {
-      return {
-        backgroundColor: '#4bbb87',
-      };
-    }
-    else if(typeStr=="Practice")
-    {
-      return {
-        backgroundColor: '#fdac4f',
-      };
-    }
-    else {
-      return {
-        backgroundColor: '#62B1F6',
-      }
-    }
-  }
 
   _copyAdr2Clip(adrStr) {
     Clipboard.setString(adrStr);
@@ -82,22 +63,25 @@ export default class ViewMyTeamsScreen extends React.Component {
           <Grid style={styles.grid}>
             <ScrollView>
               <MyTeamsList teamList={this.state.teamList}/>
+              
             </ScrollView>
           </Grid>
-            <Footer>
-              <FooterTab>
-                <Button active onPress={() => this.props.navigation.navigate('ViewMyTeams')}>
-                  <Icon name="list-ul" size={20}/>
-
-                </Button>
-                <Button onPress={() => this.props.navigation.navigate('Home')}>
-                  <Icon active name="home" size={20}/>
-                </Button>
-                <Button>
-                  <Icon name="wrench" size={20}/>
-                </Button>
-              </FooterTab>
-            </Footer>
+          <Footer>
+            <FooterTab>
+              <Button active onPress={() => this.props.navigation.navigate('ViewMyTeams')}>
+                <Icon name="list-ul" size={20}/>
+                <Text note style={{fontSize:10}}>View My Teams</Text>
+              </Button>
+              <Button onPress={() => this.props.navigation.navigate('Home')}>
+                <Icon name="home" size={20}/>
+                <Text note style={{fontSize:10}}>Home</Text>
+              </Button>
+              <Button onPress={() => this.props.navigation.navigate('TeamSelect')}>
+                <Icon name="wrench" size={20}/>
+                <Text note style={{fontSize:10}}>Browse All Teams</Text>
+              </Button>
+            </FooterTab>
+          </Footer>
           </Container>
         );
       }

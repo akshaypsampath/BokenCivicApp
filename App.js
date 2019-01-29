@@ -34,7 +34,7 @@ import _storeData from "./src/actions/actions"
 import _retrieveData from "./src/actions/actions"
 >>>>>>> bbd84f4ed86678b5ed36d2764ee4ff183ae865eb
 
-
+ 
 //import ScheduleCards from "./src/components/scheduleCards";
 
 //import getTheme from './native-base-theme/components';

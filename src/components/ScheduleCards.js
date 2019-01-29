@@ -6,35 +6,40 @@ import styles from "./../styles";
 
 import _copyAdr2Clip from "./../actions/actions";
 import _getBadgeColor from "./../actions/actions";
-import _getMonthAbr from "./../actions/actions";
-import _getDate from "./../actions/actions";
+//import _getMonthAbr from "./../actions/actions";
+//import _getDate from "./../actions/actions";
+import _getMonthDate from "./../actions/actions";
 import _getTimeAmPm from "./../actions/actions";
 import _isFutureEvent from "./../actions/actions";
 
 //var Data = require('./../../data/basketballData.json');
+import _compareEventsbyTime from "./../actions/actions";
 
 function ScheduleCards(data) {
-  
+
 
 
 
   return(
   data.data.map((dateItem, index)=>{
+    //console.log(dateItem);
+    dateItem.events.sort(this._compareEventsbyTime);
+
      return (
-       <View>
+       <View key={index}>
        {this._isFutureEvent(dateItem.date) &&
-       <View>
+       <View key={index}>
        {
          dateItem.events.map((eventItem, index1)=>{
            return(
 
            <Card key={index*30+index1}>
-             <CardItem onPress={this._copyAdr2Clip("address")}>
+             <CardItem key={index*30+index1} onPress={this._copyAdr2Clip("address")}>
 
-               <Left style={styles.scheduleLeft}>
-                 <Grid>
-                  <Row style={{justifyContent:'center'}}>
-                    <Text bold style={{fontWeight:'bold'}}>{this._getMonthAbr(dateItem.date)} {this._getDate(dateItem.date)}</Text>
+               <Left key={index*30+index1} style={styles.scheduleLeft}>
+                 <Grid key={index*30+index1}>
+                  <Row key={index*30+index1} style={{justifyContent:'center'}}>
+                    <Text bold style={{fontWeight:'bold'}}>{this._getMonthDate(dateItem.date+"T"+eventItem.time)}</Text>
                   </Row>
                   <Row style={{justifyContent:'center'}}>
                     <Text style={{fontWeight:'bold'}}>{this._getTimeAmPm(eventItem.time)}</Text>
@@ -49,7 +54,7 @@ function ScheduleCards(data) {
                <Body>
                  <Text>{eventItem.team1} vs. {eventItem.team2}</Text>
                  <Text note>{eventItem.location} </Text>
-
+                 <Text>{eventItem.league}</Text>
                </Body>
 
               </CardItem>
