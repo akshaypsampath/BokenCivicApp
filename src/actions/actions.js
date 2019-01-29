@@ -10,6 +10,7 @@ _storeData = async (key, value) => {
     // Error saving data
   }
 }
+
 _retrieveData = async (key) => {
 try {
   const value = await AsyncStorage.getItem(key);

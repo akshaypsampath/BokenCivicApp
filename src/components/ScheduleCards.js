@@ -23,7 +23,7 @@ function ScheduleCards(data) {
   return(
   data.data.map((dateItem, index)=>{
     //console.log(dateItem);
-    dateItem.events.sort(this._compareEventsbyTime);
+    dateItem.events.sort(this._compareEventsbyTime);//move this sort somewhere else (once u can rewrite json)
 
      return (
        <View key={index}>
