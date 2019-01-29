@@ -16,7 +16,7 @@ import LeaguesScreen from "./src/screens/Leagues";
 import StatsScreen from "./src/screens/Stats";
 import MenuScreen from "./src/screens/Menu";
 import ScheduleScreen from "./src/screens/Schedule";
-import TeamSelectionScreen from "./src/screens/TeamSelect"
+import TeamSelectScreen from "./src/screens/TeamSelect"
 import HomeScreen from "./src/screens/Home";
 import _storeData from "./src/actions/actions";
 import _retrieveData from "./src/actions/actions";
@@ -111,7 +111,7 @@ const AppNavigator =  createStackNavigator(
     TeamHome: TeamHomeScreen,
     Menu: MenuScreen,
     Stats: StatsScreen,
-    TeamSelect: TeamSelectionScreen,
+    TeamSelect: TeamSelectScreen,
     /*Calendar: CalendarScreen,
     Roster: RosterScreen,*/
   },
