@@ -12,16 +12,6 @@ import TeamHomeScreen from "./src/screens/TeamHome"; //resolve routing later
 import DetailsScreen from "./src/screens/Details";
 import SettingsScreen from "./src/screens/Settings";
 
-<<<<<<< HEAD
-import LeaguesScreen from "./src/screens/Leagues";
-import StatsScreen from "./src/screens/Stats";
-import MenuScreen from "./src/screens/Menu";
-import ScheduleScreen from "./src/screens/Schedule";
-import TeamSelectScreen from "./src/screens/TeamSelect"
-import HomeScreen from "./src/screens/Home";
-import _storeData from "./src/actions/actions";
-import _retrieveData from "./src/actions/actions";
-=======
 import LeaguesScreen from "./src/screens/Leagues"
 import StatsScreen from "./src/screens/Stats"
 import MenuScreen from "./src/screens/Menu"
@@ -32,7 +22,6 @@ import TeamSelectionScreen from "./src/screens/TeamSelect"
 import HomeScreen from "./src/screens/Home"
 import _storeData from "./src/actions/actions"
 import _retrieveData from "./src/actions/actions"
->>>>>>> bbd84f4ed86678b5ed36d2764ee4ff183ae865eb
 
 
 //import ScheduleCards from "./src/components/scheduleCards";
@@ -124,13 +113,9 @@ const AppNavigator =  createStackNavigator(
     TeamHome: TeamHomeScreen,
     Menu: MenuScreen,
     Stats: StatsScreen,
-<<<<<<< HEAD
-    TeamSelect: TeamSelectScreen,
-=======
     TeamSelect: TeamSelectionScreen,
     ViewMyTeams: ViewMyTeamsScreen,
     EventDetails: EventDetailsScreen,
->>>>>>> bbd84f4ed86678b5ed36d2764ee4ff183ae865eb
     /*Calendar: CalendarScreen,
     Roster: RosterScreen,*/
   },
