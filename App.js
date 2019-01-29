@@ -11,7 +11,6 @@ import Icon from "react-native-vector-icons/FontAwesome";
 import TeamHomeScreen from "./src/screens/TeamHome"; //resolve routing later
 import DetailsScreen from "./src/screens/Details";
 import SettingsScreen from "./src/screens/Settings";
-
 import LeaguesScreen from "./src/screens/Leagues"
 import StatsScreen from "./src/screens/Stats"
 import MenuScreen from "./src/screens/Menu"
@@ -23,7 +22,8 @@ import HomeScreen from "./src/screens/Home"
 import _storeData from "./src/actions/actions"
 import _retrieveData from "./src/actions/actions"
 
- 
+
+
 //import ScheduleCards from "./src/components/scheduleCards";
 
 //import getTheme from './native-base-theme/components';
