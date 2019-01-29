@@ -24,10 +24,15 @@ export default styles = StyleSheet.create({
   },
   grid: {
     flexDirection: 'column',
+    overflow: 'scroll',
   },
   row: {
     backgroundColor: '#635DB7',
     flex: 3,
     flexDirection: 'column',
+  },
+  scheduleLeft: {
+    maxWidth:'30%',
+    paddingRight: 13,
   }
 });
