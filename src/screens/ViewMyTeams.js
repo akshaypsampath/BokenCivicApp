@@ -21,7 +21,7 @@ var TeamListObj = require('../../data/teamList.json');
 
 export default class ViewMyTeamsScreen extends React.Component {
   static navigationOptions = {
-   header: null
+   header: null,
   };
 
 
@@ -57,13 +57,13 @@ export default class ViewMyTeamsScreen extends React.Component {
     if (!this.state.loading) {
       return (
         <Container>
-          <Header style={styles.header}>
+          <Header style={styles.header}> 
             <Title style={styles.title}>View My Teams</Title>
           </Header>
           <Grid style={styles.grid}>
             <ScrollView>
-              <MyTeamsList teamList={this.state.teamList}/>
-              
+              <MyTeamsList navigation={this.props.navigation} teamList={this.state.teamList}/>
+
             </ScrollView>
           </Grid>
           <Footer>

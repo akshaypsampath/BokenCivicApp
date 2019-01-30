@@ -19,8 +19,10 @@ import ViewMyTeamsScreen from "./src/screens/ViewMyTeams"
 import EventDetailsScreen from "./src/screens/EventDetails"
 import TeamSelectionScreen from "./src/screens/TeamSelect"
 import HomeScreen from "./src/screens/Home"
+
 import _storeData from "./src/actions/actions"
 import _retrieveData from "./src/actions/actions"
+import NavigationService from "./src/actions/NavigationService"
 
 
 
@@ -127,7 +129,9 @@ const AppNavigator =  createStackNavigator(
 const App = createAppContainer(AppNavigator);
 export default () =>
   <Root>
-    <App />
+    <App
+      ref={navigatorRef => {NavigationService.setTopLevelNavigator(navigatorRef);}}
+    />
   </Root>;
 
 

@@ -11,6 +11,7 @@ import _getBadgeColor from "./../actions/actions";
 import _getMonthDate from "./../actions/actions";
 import _getTimeAmPm from "./../actions/actions";
 import _isFutureEvent from "./../actions/actions";
+import _checkEvent from "./../actions/actions";
 
 //var Data = require('./../../data/basketballData.json');
 import _compareEventsbyTime from "./../actions/actions";
