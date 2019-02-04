@@ -12,7 +12,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 
 //var Data = require('./../../data/basketballData.json');
-var BBMasterSched = require('./../../data/basketballMasterSchedule.json'); 
+var BBMasterSched = require('./../../data/basketballMasterSchedule.json');
 //var BBGrammarSched = require('./../../data/basketballGrammarSchedule.json');
 //var BBMiddleSched = require('./../../data/basketballMiddleSchedule.json');
 
@@ -61,7 +61,6 @@ export default class ScheduleScreen extends React.Component { /* Display each of
           </Header>
         <Content padder style={{backgroundColor:'#f8f7f5'}}>
           <ScheduleCards data={this.state.temp}/>
-
         </Content>
       </Container>
     );

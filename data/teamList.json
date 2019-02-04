@@ -1,120 +1,121 @@
 [
   {
-    "leagueName": "Middle",
+    "leagueName": "middle",
     "teams": [
       {
         "key": "AS5MI",
         "name": "All Saints 5",
-        "myTeam": false,
-        "league": "middle",
+        "myTeam": true,
+        "league": "middle"
       },
       {
         "key": "EG5MI",
         "name": "Elysian Charter Green 5",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "EW5MI",
         "name": "Elysian Charter White 5",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "EG6MI",
         "name": "Elysian Charter Green 6",
-        "myTeam": false,
-        "league": "middle",
+        "myTeam": true,
+        "league": "middle"
       },
       {
         "key": "HC5MI",
         "name": "Hoboken Charter 5",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "HC6MI",
         "name": "Hoboken Charter 6",
         "myTeam": false,
+        "league": "middle"
       },
       {
         "key": "CC5MI",
         "name": "Connors/Calabro 5",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "CC6MI",
         "name": "Connors/Calabro 6",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "HO5MI",
         "name": "HOLA 5",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "HO6MI",
         "name": "HOLA 6",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "HU6MI",
         "name": "Hudson 6",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "WA6MI",
         "name": "Wallace 6",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "SP5MI",
         "name": "Stevens Purple 5",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "WB5MI",
         "name": "Wallace Black 5",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "SR5MI",
         "name": "Stevens Red 5",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "WG5MI",
         "name": "Wallace Grey 5",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "AS6MI",
         "name": "All Saints 6",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "MS6MI",
         "name": "Mustard Seed 6",
         "myTeam": false,
-        "league": "middle",
+        "league": "middle"
       },
       {
         "key": "ST6MI",
         "name": "Stevens 6",
         "myTeam": false,
-        "league": "middle",
-      },
+        "league": "middle"
+      }
     ]
   },
   {
@@ -124,86 +125,86 @@
         "key": "ECGGR",
         "name": "Elysian Charter Green",
         "myTeam": false,
-        "league": "grammar",
+        "league": "grammar"
       },
       {
         "key": "ECWGR",
         "name": "Elysian Charter White",
         "myTeam": false,
-        "league": "grammar",
+        "league": "grammar"
       },
       {
         "key": "ECKGR",
         "name": "Elysian Charter Kelly Green",
         "myTeam": false,
-        "league": "grammar",
+        "league": "grammar"
       },
       {
         "key": "ASGR",
         "name": "All Saints",
         "myTeam": false,
-        "league": "grammar",
+        "league": "grammar"
       },
       {
         "key": "HSWGR",
         "name": "Hoboken Middle School Warriors",
-        "myTeam": false,
-        "league": "grammar",
+        "myTeam": true,
+        "league": "grammar"
       },
       {
         "key": "HSKGR",
         "name": "Hoboken Middle School Knicks",
         "myTeam": false,
-        "league": "grammar",
+        "league": "grammar"
       },
       {
         "key": "HSNGR",
         "name": "Hoboken Middle School Nets",
         "myTeam": false,
-        "league": "grammar",
+        "league": "grammar"
       },
       {
         "key": "SRGR",
         "name": "Stevens Red",
         "myTeam": false,
-        "league": "grammar",
+        "league": "grammar"
       },
       {
         "key": "SWGR",
         "name": "Stevens White",
         "myTeam": false,
-        "league": "grammar",
+        "league": "grammar"
       },
       {
         "key": "HCGR",
         "name": "Hoboken Charter",
         "myTeam": false,
-        "league": "grammar",
+        "league": "grammar"
       },
       {
         "key": "HTGR",
         "name": "HOLA Teal",
         "myTeam": false,
-        "league": "grammar",
+        "league": "grammar"
       },
       {
         "key": "HBGR",
         "name": "HOLA Black",
         "myTeam": false,
-        "league": "grammar",
+        "league": "grammar"
       },
       {
         "key": "HUDGR",
         "name": "Hudson",
         "myTeam": false,
-        "league": "grammar",
+        "league": "grammar"
       },
       {
         "key": "MSGR",
         "name": "Mustard Seed",
-        "myTeam": false,
-        "league": "grammar",
-      },
+        "myTeam": true,
+        "league": "grammar"
+      }
     ]
   },
   {
@@ -213,14 +214,14 @@
         "key": "",
         "name": "",
         "myTeam": false,
-        "league": "smallFry",
+        "league": "smallFry"
       },
       {
         "key": "",
         "name": "",
         "myTeam": false,
-        "league": "smallFry",
-      },
+        "league": "smallFry"
+      }
     ]
   },
   {
@@ -230,38 +231,38 @@
         "key": "ECGI",
         "name": "Elysian Charter",
         "myTeam": false,
-        "league": "girls",
+        "league": "girls"
       },
       {
         "key": "HCGI",
         "name": "Hoboken Charter",
         "myTeam": false,
-        "league": "girls",
+        "league": "girls"
       },
       {
         "key": "HMSGI",
         "name": "Hoboken Middle School",
         "myTeam": false,
-        "league": "girls",
+        "league": "girls"
       },
       {
         "key": "HOLAGI",
         "name": "HOLA",
-        "myTeam": false,
-        "league": "girls",
+        "myTeam": true,
+        "league": "girls"
       },
       {
         "key": "SRGI",
         "name": "Stevens Red",
         "myTeam": false,
-        "league": "girls",
+        "league": "girls"
       },
       {
         "key": "SWGI",
         "name": "Stevens White",
         "myTeam": false,
-        "league": "girls",
-      },
+        "league": "girls"
+      }
     ]
-  },
+  }
 ]

@@ -24,6 +24,10 @@ try {
  }
 }
 
+_checkEvent = (dateStr, eventObj) => {
+  return _isFutureEvent(dateStr);
+}
+
 _getTeamObj = (leagueObj, teamName) => {
   //return sub-Ojbect of given Team from given League //its broken idk why
 
@@ -64,7 +68,7 @@ _isFutureEvent = (dateStr) => {
   //tempDate.setDate(tempDate.getDate()-1);
   let todayDate = new Date();
   todayDate.setDate(todayDate.getDate()-1);
-  console.log(todayDate +" _-_ "+tempDate);
+  //console.log(todayDate +" _-_ "+tempDate);
 
   return tempDate>=todayDate;
 }
