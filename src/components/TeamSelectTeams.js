@@ -12,11 +12,13 @@ import NavigateButton from "./NavigateButton";
   return(
       data.data.teams.map((item2, index2)=>{
       return(
-          <CardItem key={index2} bordered button
-            onPress={() => this.props.navigation.navigate('Schedule', {team: 'Team A',})}>
-            <NavigateButton style={{flex:1}}/>
-            <Text>{item2.name}</Text>
-          </CardItem>
+          <Card key={index2}>
+            <CardItem button
+              onPress={() => this.props.navigation.navigate('Schedule', {team: 'Team A',})}>
+              <NavigateButton style={{flex:1}}/>
+              <Text>{item2.name}</Text>
+            </CardItem>
+          </Card>
         );
       })
   );

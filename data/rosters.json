@@ -247,6 +247,7 @@
   },
   {
     "team": "Hoboken Middle School Knicks",
+    "key": "HSKGR",
     "league": "grammar",
     "roster": [
       {
@@ -1423,6 +1424,7 @@
   },
   {
     "team": "Elysian Charter Green 6",
+    "key": "EG6MI",
     "league": "middle",
     "roster": [
       {

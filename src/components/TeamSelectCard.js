@@ -12,20 +12,22 @@ function TeamSelectCard(data) {
   temp = data.data;
   return(
     <Container>
-    <Content style={{flexGrow:1}}>
-    {
-      temp.map((item,index)=>{
-      return(
-        <Card key={index}>
-          <CardItem header bordered>
-            <Text>{item.leagueName}</Text>
-          </CardItem>
-          <TeamSelectTeams key={index} data={item}/>
-        </Card>
-      );
-      })
-    }
-    </Content>
+      <Content>
+      {
+        temp.map((item,index)=>{
+        return(
+          <View>
+          <Card key={index}>
+            <CardItem header>
+              <Text>{item.leagueName} League</Text>
+            </CardItem>
+          </Card>
+          <TeamSelectTeams data={item}/>
+          </View>
+        );
+        })
+      }
+      </Content>
     </Container>
   );
 }

@@ -6,62 +6,55 @@ import { Row, Grid } from 'react-native-easy-grid';
 import { Font, AppLoading } from "expo";
 
 import styles from "./../styles";
-
+import {_subToTeam, _isSubscribed} from "./../actions/actions";
 import Icon from "react-native-vector-icons/FontAwesome"
 
 var Data = require('../../data/basketballData.json');//hoist state so this isn't necessary
-var teamList = require('../../data/teamList.json');
+var TeamList = require('../../data/teamList.json');
 
-
+// Screen for subscribing to teams used in the rest of the app
 export default class LeaguesScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return{
       title: 'Leagues',
       headerStyle: {
-      backgroundColor: '#1b97b2',
-    },
-    headerTintColor: '#fff',
-    headerTitleStyle: {
-      fontWeight: 'bold',
-    },
+        backgroundColor: '#1b97b2',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
     };
   };
   constructor(props) {
     super(props)
-    this.state ={testNum: 0,
-                  SNCteams: false,
-                }
+    this.state ={
+      subTeams:[],
+    }
   }
 
   _onPress = (item) => {
-    x = item.myTeam
-    y = item.coach
-    if (x == false){
-      item.myTeam = true
-    }
-    else {
-      item.myTeam = false
-    }
+    var x = this.state.subTeams;
+    var y = item.key;
+    x = _subToTeam(x, y);
+    console.log(x);
+    this.setState({subTeams: x})
     //Alert.alert('pressed ' + y + ' ' + item.isSubscribed)
   }
 
-
-  _renderSubcard = (temp) => {
-    let subTemp = temp.teams;
-    this.setState({ testNum: 2})
-    return(subTemp);
+  _subRender = (key) => {
+    var x = this.state.subTeams;
+    if(_isSubscribed(x,key)){
+      return styles.subscribedTeam;
+    }
+    else{
+      return styles.unsubscribedTeam;
+    }
   }
 
-  _testInsideLoop = (temp) => {
-    this.setState({testNum: 2})
-    var a = this.state.testNum;
-    var b = temp[0].teams[0].wins;
-    console.log(a)
-    //\Alert.alert('is this number working ' +a+ ' ' + b)
-  }
 
   render() {
-    var temp = Data;
+    var temp = TeamList;
     let teamTemp = temp.teams;
 
 
@@ -76,18 +69,17 @@ export default class LeaguesScreen extends React.Component {
             temp.map((item,index)=>{
               return(
                 <Card key={index}>
-                  <CardItem bordered>
-                    <Text>{item.league}</Text>
+                  <CardItem header bordered>
+                    <Text style={{color:'black'}}>{item.leagueName}</Text>
                   </CardItem>
 
                   {
                     item.teams.map((item2,index2)=>{
                       return(
-                        <CardItem style={{flexGrow: 1}} bordered key={index2}>
-                          <Button onPress={() => this._onPress(item2)}>
-                            <Text>{item2.name}</Text>
-                            <Text>{item2.myTeam}</Text>
-                          </Button>
+                        <CardItem style={this._subRender(item2.key)} bordered key={index2} button
+                           onPress={() => this._onPress(item2)}>
+                           <Text>{item2.name} </Text>
+                           <Text>{item2.key}</Text>
                         </CardItem>
                       )
                     })

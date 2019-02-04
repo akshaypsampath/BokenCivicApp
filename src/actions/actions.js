@@ -147,3 +147,26 @@ _compareEventsbyTime = (event1, event2) => {
 _testPress = (teamNameStr)=> {
   console.log(teamNameStr);
 }
+
+export function _subToTeam(subList, pressedTeam) {
+  console.log("pressed");
+  if(!subList.includes(pressedTeam)) {
+    subList = subList.concat(pressedTeam);
+  }
+  else {
+    var i = subList.indexOf(pressedTeam);
+    if(i != -1) {
+      subList.splice(i,1);
+    }
+  }
+  return subList;
+}
+
+export function _isSubscribed(subList,teamKey){
+  if(subList.includes(teamKey)) {
+    return true;
+  }
+  else{
+    return false;
+  }
+}

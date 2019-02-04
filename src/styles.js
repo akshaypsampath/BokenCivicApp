@@ -34,5 +34,11 @@ export default styles = StyleSheet.create({
   scheduleLeft: {
     maxWidth:'30%',
     paddingRight: 13,
-  }
+  },
+  subscribedTeam: {
+    backgroundColor: '#51d68d',
+  },
+  unsubscribedTeam: {
+    
+  },
 });
