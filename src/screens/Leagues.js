@@ -33,13 +33,27 @@ export default class LeaguesScreen extends React.Component {
     }
   }
 
+  async componentWillMount(){
+    AsyncStorage.getItem('subbedTeams').then((value) => {
+      this.setState({subTeams: JSON.parse(value)});
+    }).done();
+  }
+
+  _subEdit = async (x) =>{
+    await this.setState({subTeams: x})
+    AsyncStorage.setItem('subbedTeams', JSON.stringify(this.state.subTeams));
+    var list = await AsyncStorage.getItem('subbedTeams');
+    list = JSON.parse(list);
+    console.log(list);
+  }
+
   _onPress = (item) => {
     var x = this.state.subTeams;
     var y = item.key;
     x = _subToTeam(x, y);
     console.log(x);
-    this.setState({subTeams: x})
-    //Alert.alert('pressed ' + y + ' ' + item.isSubscribed)
+
+    this._subEdit(x);
   }
 
   _subRender = (key) => {

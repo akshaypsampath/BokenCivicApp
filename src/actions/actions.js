@@ -153,7 +153,6 @@ _testPress = (teamNameStr)=> {
 }
 
 export function _subToTeam(subList, pressedTeam) {
-  console.log("pressed");
   if(!subList.includes(pressedTeam)) {
     subList = subList.concat(pressedTeam);
   }

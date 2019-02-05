@@ -8,12 +8,14 @@ import { withNavigation } from "react-navigation";
 
 //var teamList = require('./../../data/teamList.json'); //pass teamList obj in from Home
 import _testPress from "./../actions/actions";
+import {_isSubscribed} from "./../actions/actions";
 import NavigationService from "./../actions/NavigationService";
 
-function MyTeamsList(teamList) {
-  //console.log("teamList");
+function MyTeamsList(teamList, subTeams) {
+  //console.log(teamList);
   //teamItem.myTeam
-
+  console.log("subteams in component");
+  console.log(teamList.subTeams);
   return(
     teamList.teamList.map((leagueItem, index)=>{
       //console.log(this.props.navigation);
@@ -22,7 +24,7 @@ function MyTeamsList(teamList) {
           {leagueItem.teams.map((teamItem, index2)=>{
             return(
               <View key={index2}>
-                 {teamItem.myTeam === true &&
+                 {_isSubscribed(teamList.subTeams, teamItem.key) === true &&
                    <Card key={index2}>
                       <CardItem button key={index2} onPress={()=>NavigationService.navigate('TeamHome', {teamName: 'Team A',})}>
                         <Body key={index2}>

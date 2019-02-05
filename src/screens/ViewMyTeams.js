@@ -28,7 +28,8 @@ export default class ViewMyTeamsScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = { loading: true,
-                    teamList: []
+                    teamList:[],
+                    subTeams:[1,2,3],
                   };
   }
 
@@ -37,10 +38,24 @@ export default class ViewMyTeamsScreen extends React.Component {
       Roboto: require("native-base/Fonts/Roboto.ttf"),
       Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
     }).done();
-    this.setState({
-      loading: false,
-      teamList: TeamListObj
-    });
+    await AsyncStorage.getItem('subbedTeams').then((value) => {
+      var subs = value
+      subs = JSON.parse(subs)
+      console.log("subs array");
+      console.log(subs);
+      this.setState({
+        subTeams: subs,
+        teamList: TeamListObj,
+        loading: false,
+      });
+    }).done();
+    /*this.setState({
+
+    });*/
+  }
+
+  async componentDidMount(){
+
   }
 
   _copyAdr2Clip(adrStr) {
@@ -53,16 +68,17 @@ export default class ViewMyTeamsScreen extends React.Component {
     //let temp = Data[2].teams[0].schedule;
     //console.log(this.state.teamList);
     //console.log(teamListObj);
-
+    console.log("subTeams state");
+    console.log(this.state.subTeams);
     if (!this.state.loading) {
       return (
         <Container>
-          <Header style={styles.header}> 
+          <Header style={styles.header}>
             <Title style={styles.title}>View My Teams</Title>
           </Header>
           <Grid style={styles.grid}>
             <ScrollView>
-              <MyTeamsList navigation={this.props.navigation} teamList={this.state.teamList}/>
+              <MyTeamsList navigation={this.props.navigation} teamList={this.state.teamList} subTeams={this.state.subTeams}/>
 
             </ScrollView>
           </Grid>
