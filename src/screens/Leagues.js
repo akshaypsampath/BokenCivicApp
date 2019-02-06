@@ -6,7 +6,7 @@ import { Row, Grid } from 'react-native-easy-grid';
 import { Font, AppLoading } from "expo";
 
 import styles from "./../styles";
-import {_subToTeam, _isSubscribed} from "./../actions/actions";
+import {_subToTeam, _isMyTeam} from "./../actions/actions";
 import Icon from "react-native-vector-icons/FontAwesome"
 
 var Data = require('../../data/basketballData.json');//hoist state so this isn't necessary
@@ -61,7 +61,7 @@ export default class LeaguesScreen extends React.Component {
   }
   _subRender = (key) => {
     var x = this.state.subTeams;
-    if(_isSubscribed(x,key)){
+    if(_isMyTeam(x,key)){
       return styles.subscribedTeam;
     }
     else{
@@ -84,22 +84,22 @@ export default class LeaguesScreen extends React.Component {
               return(
               <View key={index}>
                 <Card key={index}>
-                  <CardItem header bordered>
-                    <Text style={{color:'black', fontWeight:'bold'}}>{item.leagueName}</Text>
+                  <CardItem header bordered key={index}>
+                    <Text key={index} style={{color:'black', fontWeight:'bold'}}>{item.leagueName}</Text>
                   </CardItem>
                 </Card>
                   {
                     item.teams.map((item2,index2)=>{
                       return(
-                      <Card key={index2}>
-                        <CardItem style={this._subRender(item2.key)} bordered key={index2} button
+                      <Card key={index*30+index2}>
+                        <CardItem style={this._subRender(item2.key)} bordered key={index*30+index2} button
                            onPress={() => this._onPress(item2)}>
                            <Body key={index2}>
-                            <Text>{item2.name} </Text>
+                            <Text key={index2}>{item2.name} </Text>
                           </Body>
-                          <Right>
-                            <Icon button name="chevron-right" color="#0000EE" size={40}
-                              onPress={() => this.props.navigation.navigate('Schedule', {team: item2.name, key: item2.key})}>
+                          <Right key={index2}>
+                            <Icon button key={index*30+index2} name="chevron-right" color="#0000EE" size={30}
+                              onPress={() => this.props.navigation.navigate('TeamHome', {teamKey: item2.key})}>
                             </Icon>
                           </Right>
                         </CardItem>

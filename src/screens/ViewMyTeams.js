@@ -90,7 +90,7 @@ export default class ViewMyTeamsScreen extends React.Component {
                 <Icon name="home" size={20}/>
                 <Text note style={{fontSize:10}}>Home</Text>
               </Button>
-              <Button onPress={() => this.props.navigation.navigate('TeamSelect')}>
+              <Button onPress={() => this.props.navigation.navigate('Leagues')}>
                 <Icon name="wrench" size={20}/>
                 <Text note style={{fontSize:10}}>Browse All Teams</Text>
               </Button>

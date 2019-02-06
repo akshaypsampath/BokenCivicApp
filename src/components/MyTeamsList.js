@@ -1,3 +1,4 @@
+//Joe's fuck shit
 import React from 'react';
 import { Component, ScrollView, View} from 'react-native';
 import { Container, Header, Content, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Root, Toast, Footer, FooterTab} from "native-base";
@@ -8,7 +9,7 @@ import { withNavigation } from "react-navigation";
 
 //var teamList = require('./../../data/teamList.json'); //pass teamList obj in from Home
 import _testPress from "./../actions/actions";
-import {_isSubscribed} from "./../actions/actions";
+import {_isMyTeam} from "./../actions/actions";
 import NavigationService from "./../actions/NavigationService";
 
 function MyTeamsList(teamList, subTeams) {
@@ -24,7 +25,7 @@ function MyTeamsList(teamList, subTeams) {
           {leagueItem.teams.map((teamItem, index2)=>{
             return(
               <View key={index2}>
-                 {_isSubscribed(teamList.subTeams, teamItem.key) === true &&
+                 {_isMyTeam(teamList.subTeams, teamItem.key) === true &&
                    <Card key={index2}>
                       <CardItem button key={index2} onPress={()=>NavigationService.navigate('TeamHome', {teamKey: teamItem.key})}>
                         <Body key={index2}>

@@ -6,7 +6,7 @@ import { Row, Grid } from 'react-native-easy-grid';
 import { Font, AppLoading } from "expo";
 
 import styles from "./../styles";
-import ScheduleMyCards from "./../components/ScheduleMyCards";
+import ScheduleCards from "./../components/ScheduleCards";
 import MyTeamsList from "./../components/MyTeamsList";
 import {_isSubscribed} from "./../actions/actions";
 import Icon from "react-native-vector-icons/FontAwesome"
@@ -18,7 +18,7 @@ var BBMasterSched = require('../../data/basketballMasterSchedule.json');
 //var BBGrammarSched = require('../../data/basketballGrammarSchedule.json');
 //var BBMiddleSched = require('../../data/basketballMiddleSchedule.json');
 
-import _testPress from "./../actions/actions";
+//import _printMyTeamsList from "./../actions/actions";
 
 
 export default class HomeScreen extends React.Component {
@@ -31,7 +31,7 @@ export default class HomeScreen extends React.Component {
     super(props);
     this.state = { loading: true,
                     sched: [],
-                    subTeams: [],
+                    myTeams: [],
                   };
   }
 
@@ -41,10 +41,10 @@ export default class HomeScreen extends React.Component {
       Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
     }).done();
     await AsyncStorage.getItem('subbedTeams').then((value) => {
-      var subs = value
-      subs = JSON.parse(subs)
+      var myT = value
+      myT = JSON.parse(myT)
       this.setState({
-        subTeams: subs,
+        myTeams: myT,
         loading: false,
         sched: BBMasterSched
       });
@@ -57,6 +57,7 @@ export default class HomeScreen extends React.Component {
     //let temp = Data[2].teams[0].schedule;
     //console.log(this.state.teamList);
     //console.log(teamListObj);
+    //this._printMyTeamsList("hi");
 
     if (!this.state.loading) {
       return (
@@ -71,7 +72,7 @@ export default class HomeScreen extends React.Component {
             </CardItem>
           </Card>
             <ScrollView>
-            <ScheduleCards data={this.state.sched} guideKey="myteams"/>
+            <ScheduleCards data={this.state.sched} guideKey="myteams" myTeams={this.state.myTeams}/>
             </ScrollView>
           </Grid>
             <Footer>
@@ -84,7 +85,7 @@ export default class HomeScreen extends React.Component {
                   <Icon active name="home" size={20}/>
                   <Text note style={{fontSize:10}}>Home</Text>
                 </Button>
-                <Button onPress={() => this.props.navigation.navigate('TeamSelect')}>
+                <Button onPress={() => this.props.navigation.navigate('Leagues')}>
                   <Icon name="wrench" size={20}/>
                   <Text note style={{fontSize:10}}>Browse All Teams</Text>
                 </Button>

@@ -18,7 +18,7 @@ import _checkEvent from "./../actions/actions";
 import _compareEventsbyTime from "./../actions/actions";
 import NavigationService from "./../actions/NavigationService";
 
-function ScheduleCards({data, guideKey}) {
+function ScheduleCards({data, guideKey, myTeams}) {
 
 //console.log("scheduleCards");
 //console.log(data);
@@ -37,7 +37,7 @@ function ScheduleCards({data, guideKey}) {
            dateItem.events.map((eventItem, index1)=>{
              return(
                <View key={index*30+index1}>
-               {this._isDisplayEvent(dateItem.date, guideKey, eventItem.team1key, eventItem.team2key) &&
+               {this._isDisplayEvent(dateItem.date, guideKey, eventItem.team1key, eventItem.team2key, myTeams) &&
 
              <Card key={index*30+index1}>
                <CardItem button key={index*30+index1} onPress={()=>NavigationService.navigate('EventDetails', {team1key: eventItem.team1key,

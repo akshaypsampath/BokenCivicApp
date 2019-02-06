@@ -32,7 +32,8 @@ export default class ScheduleScreen extends React.Component { /* Display each of
     super(props)
     this.state = {teamKey: " ",
                   loading: true,
-                  temp: []}
+                  temp: [],
+                  myTeams: []}
   }
 
   async componentWillMount() {
@@ -40,12 +41,18 @@ export default class ScheduleScreen extends React.Component { /* Display each of
         //console.log("value: "+value);
         this.setState({
           teamKey: value,
-          temp: BBMasterSched,
-          loading: false
         });
         //console.log("teamKey: "+ this.state.teamKey)
     }).done();
-
+    await AsyncStorage.getItem('subbedTeams').then((value) => {
+      var myT = value
+      myT = JSON.parse(myT)
+      this.setState({
+        myTeams: myT,
+        loading: false,
+        temp: BBMasterSched
+      });
+    }).done();
     //var teamObj = _getTeamObj(this.state.teamKey);
 
   }
@@ -65,7 +72,7 @@ export default class ScheduleScreen extends React.Component { /* Display each of
               <Title >{teamObj.name} Schedule</Title>
             </Header>
           <Content padder style={{backgroundColor:'#f8f7f5'}}>
-            <ScheduleCards data={this.state.temp} guideKey={this.state.teamKey}/>
+            <ScheduleCards data={this.state.temp} guideKey={this.state.teamKey} myTeams={this.state.myTeams}/>
           </Content>
           <Footer>
             <FooterTab>

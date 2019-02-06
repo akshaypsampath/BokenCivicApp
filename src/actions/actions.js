@@ -81,11 +81,11 @@ _getTeamObj = (teamKey) => {
 
 _getTeamName = (teamKey) => {
   let thisTeamObj = _getTeamObj(teamKey);
-  console.log(teamKey, thisTeamObj.name)
+  //console.log(teamKey, thisTeamObj.name)
   return thisTeamObj.name;
 }
 
-_isMyTeam = (teamKey) => {
+_isMyTeamOld = (teamKey) => {
   let thisTeamObj = _getTeamObj(teamKey);
   //console.log(teamKey, thisTeamObj.myTeam)
   return thisTeamObj.myTeam;
@@ -99,13 +99,12 @@ _isMyTeam = (teamKey) => {
 //
 //   return monthNum+1;
 // }
-_isDisplayEvent = (dateStr, guideKey, team1key, team2key) => {
-  //console.log("dateStr, guideKey, team1key, team2key");
-  //console.log(dateStr, guideKey, team1key, team2key);
+_isDisplayEvent = (dateStr, guideKey, team1key, team2key, myTeams) => {
+
   //for HomeScreen schedule
   if(guideKey === "myteams")
   {
-    let isMyTeam = _isMyTeam(team1key) || _isMyTeam(team2key);
+    let isMyTeam = _isMyTeam(myTeams, team1key) || _isMyTeam(myTeams, team2key);
     //console.log("look");
     return _isFutureEvent(dateStr) && isMyTeam;
   }
@@ -209,29 +208,60 @@ _testPress = (teamNameStr)=> {
   console.log(teamNameStr);
 }
 
-<<<<<<< Updated upstream
 export function _subToTeam(subList, pressedTeam) {
-  if(!subList.includes(pressedTeam)) {
-    subList = subList.concat(pressedTeam);
+  if(subList !== null) {
+    if(!subList.includes(pressedTeam)) {
+      subList = subList.concat(pressedTeam);
+    }
+    else {
+      var i = subList.indexOf(pressedTeam);
+      if(i != -1) {
+        subList.splice(i,1);
+      }
+    }
+
   }
   else {
-    var i = subList.indexOf(pressedTeam);
-    if(i != -1) {
-      subList.splice(i,1);
-    }
+    var subList = [pressedTeam];
+    //subList.concat(pressedTeam);
   }
   return subList;
 }
+// export function async _getSubList(){//doesn't work bc async delay, not used atm
+//   var temp = [];
+//   try{}
+//   AsyncStorage.getItem('subbedTeams').then((value) => {
+//     var subs = value;
+//     subs = JSON.parse(subs);
+//     //console.log(subs);
+//     return subs;
+//   }).done((subList) => {
+//     console.log("subList "+subList)
+//     temp = subList;
+//   });
+//     console.log("out of loop "+temp)
+//   return temp;
+// }
 
-export function _isSubscribed(subList,teamKey){
-  if(subList.includes(teamKey)) {
+export function _isMyTeam(myTeams,teamKey){
+
+  if(myTeams !== null && myTeams!== undefined && myTeams.includes(teamKey)) {
     return true;
   }
   else{
     return false;
   }
-=======
+}
+
 _str2upper = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
->>>>>>> Stashed changes
+
 }
+
+// _printMyTeamsList = (str) => {
+//    AsyncStorage.getItem('subbedTeams').then((value) => {
+//     var subs = value
+//     subs = JSON.parse(subs)
+//   }).done();
+//   console.log(subs);
+// }
