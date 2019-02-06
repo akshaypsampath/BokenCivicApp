@@ -1,15 +1,17 @@
 import React from 'react';
-import { Component, FlatList, ScrollView, AsyncStorage} from 'react-native';
+import { View, AsyncStorage} from 'react-native';
 import { Container, Header, Content, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Root, Toast, Footer, FooterTab} from "native-base";
 import Icon from "react-native-vector-icons/FontAwesome";
 import { Row, Grid } from 'react-native-easy-grid';
 import styles from "./../styles";
+import { Font } from "expo";
 
-var Data = require('./../../data/basketballData.json');
+//var Data = require('./../../data/basketballData.json');
+var teamObj=null;
 
 export default class TeamHomeScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
-    _storeData('teamNameTitle', navigation.getParam('teamName'));
+    _storeData('teamKeyVal', navigation.getParam('teamKey'));
     return{
       header: null,
     };
@@ -17,12 +19,18 @@ export default class TeamHomeScreen extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {
+      teamKey: null
+      }
   }
 
   async componentWillMount() {
-    AsyncStorage.getItem("teamNameTitle").then((value) => {
-        this.setState({"teamName": value});
+    await Font.loadAsync({
+      Roboto: require("native-base/Fonts/Roboto.ttf"),
+      Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
+    }).done();
+    AsyncStorage.getItem("teamKeyVal").then((value) => {
+        this.setState({"teamKey": value});
     }).done();
   }
 
@@ -30,69 +38,94 @@ export default class TeamHomeScreen extends React.Component {
 
 
   render() {
-    let temp = Data[2];
-    //let teamObj = temp["teams"].Where(d => d["team"] == "Team A").First();
-    //let teamObj = temp["teams"].filter(d => d.team == "Team A");
-    var teamObj = _getTeamObj(temp, this.state.teamName);
+
+    teamObj = _getTeamObj(this.state.teamKey); //FIX
+    //teamObj = {"key": "HOLAGI", "league": "girls", "myTeam": true, "name": "HOLA",}
+    //console.log("TeamHome:");
+    //console.log(teamObj);
 
 
+    if(teamObj!==null){
     return (
+
+
       <Container>
          <Header style={styles.header}>
-            <Title style={styles.title}>{teamObj.team} Home</Title>
+            <Title style={styles.title}>{teamObj.name}</Title>
           </Header>
-        <Content padder style={{backgroundColor:"##f8f7f5"}}>
-          <Card>
-            <CardItem>
-              <Body>
-                <Text style={{fontSize:20, fontWeight:'bold'}}>Coach: {teamObj.coach}</Text>
-                <Text note>Phone: {teamObj.phone}</Text>
-                <Text note>Email: {teamObj.email}</Text>
-              </Body>
-            </CardItem>
-            <CardItem>
-              <Body>
-                <Text bold>Record: {teamObj.wins}W-{teamObj.losses}L-{teamObj.ties}T</Text>
-              </Body>
-            </CardItem>
-          </Card>
-          <Card>
-            <CardItem button
-                onPress={() => this.props.navigation.navigate('Schedule', {team: 'Team A',})}>
-              <Body style={{justifyContent:'center'}}>
-                <Text style={{fontSize:22, fontWeight:'bold', color:"#0000EE"}}>Team A Schedule</Text>
-              </Body>
-              <Right>
-                <Icon name="chevron-right" size={40} color="#0000EE" />
-              </Right>
-            </CardItem>
-          </Card>
-          <Card style={{paddingLeft:5,}}>
+          <Content padder>
+            <Card>
+              <CardItem>
+                <Body>
+                  <Text style={{fontSize:20, fontWeight:'bold'}}>{_str2upper(teamObj.league)} League</Text>
+                </Body>
+              </CardItem>
+              <CardItem>
+                <Body>
+                  <Text style={{fontSize:16, fontWeight:'bold'}}>Coach: </Text>
+                  <Text note>Phone: </Text>
+                  <Text note>Email: </Text>
+                </Body>
+              </CardItem>
 
-            <CardItem>
-              <Body>
-                <Text style={{fontSize:20, fontWeight:'bold'}}>Roster</Text>
-                {
-                  teamObj.roster.map((item, index)=> {
-                    return (
-                      <Text>{item}</Text>
-                    )
-                  })
-                }
-              </Body>
-            </CardItem>
-            <CardItem footer button onPress={() => this.props.navigation.navigate('Stats', {teamName: "{teamObj.team}",})}>
+            </Card>
+            <Card>
+              <CardItem button
+                  onPress={() => this.props.navigation.navigate('Schedule', {teamKey: teamObj.key})}>
+                <Body style={{justifyContent:'center'}}>
+                  <Text style={{fontSize:18, fontWeight:'bold', color:"#0000EE"}}>{teamObj.name} Schedule</Text>
+                </Body>
+                <Right>
+                  <Icon name="chevron-right" size={40} color="#0000EE" />
+                </Right>
+              </CardItem>
+            </Card>
+            <Card style={{paddingLeft:5,}}>
 
-                <Text bold>Click to view detailed stats</Text>
 
-              <Right>
-                <Icon name="chevron-right" size={30} color="#0000EE" />
-              </Right>
-            </CardItem>
-          </Card>
-        </Content>
+              <CardItem footer button onPress={() => this.props.navigation.navigate('Stats', {teamName: teamObj.name})}>
+
+                  <Text bold>Click to view detailed stats</Text>
+
+                <Right>
+                  <Icon name="chevron-right" size={30} color="#0000EE" />
+                </Right>
+              </CardItem>
+            </Card>
+          </Content>
+          <Footer>
+            <FooterTab>
+              <Button onPress={() => this.props.navigation.navigate('ViewMyTeams')}>
+                <Icon name="list-ul" size={20}/>
+                <Text note style={{fontSize:10}}>View My Teams</Text>
+              </Button>
+              <Button onPress={() => this.props.navigation.navigate('Home')}>
+                <Icon active name="home" size={20}/>
+                <Text note style={{fontSize:10}}>Home</Text>
+              </Button>
+              <Button onPress={() => this.props.navigation.navigate('TeamSelect')}>
+                <Icon name="wrench" size={20}/>
+                <Text note style={{fontSize:10}}>Browse All Teams</Text>
+              </Button>
+            </FooterTab>
+          </Footer>
       </Container>
+
 
     );
   }
+  else {
+    return(
+      <Container>
+        <Content padding>
+          <Title>Loading...</Title>
+        </Content>
+      </Container>
+    );
+  }
+  }
 }
+
+/*
+
+*/

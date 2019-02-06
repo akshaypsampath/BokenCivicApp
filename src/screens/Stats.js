@@ -20,7 +20,7 @@ export default class StatsScreen extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {teamName: " "}
   }
 
   async componentWillMount() {
@@ -42,11 +42,11 @@ export default class StatsScreen extends React.Component {
     return (
       <Container>
          <Header>
-            <Title>{this.state.titleText}</Title>
+            <Title>{this.state.teamName} Statistics</Title>
           </Header>
         <Content >
           <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Text>Stats Screen</Text>
+            <Text>Detailed Statistics coming soon!</Text>
           </View>
         </Content>
       </Container>

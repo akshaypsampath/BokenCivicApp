@@ -1,10 +1,11 @@
 //import React from 'react';
-import { AsyncStorage, Clipboard} from 'react-native';
+import { AsyncStorage, Clipboard} from "react-native";
 
-
+//var BBMasterSched = require('./../../data/basketballMasterSchedule.json');
 
 _storeData = async (key, value) => {
   try {
+    //console.log(key+", "+value)
     await AsyncStorage.setItem(key, value);
   } catch (error) {
     // Error saving data
@@ -28,18 +29,6 @@ _checkEvent = (dateStr, eventObj) => {
   return _isFutureEvent(dateStr);
 }
 
-_getTeamObj = (leagueObj, teamName) => {
-  //return sub-Ojbect of given Team from given League //its broken idk why
-
-  for (let i=0; i<leagueObj.teams.length; i++) {
-
-    if(leagueObj.teams[i].team == teamName)
-      return leagueObj.teams[i];
-  }
-  return leagueObj.teams[0];
-  // return leagueObj.teams[0].team;
-};
-
 _getBadgeColor = (typeStr)=> {
   if(typeStr=="Game")
   {
@@ -56,12 +45,80 @@ _getBadgeColor = (typeStr)=> {
   }
 }
 
+_getTeamObj = (teamKey) => {
+  var BBMasterSched = require('./../../data/teamList.json');
+  let correctTeam = null;
+  //return sub-Ojbect of given Team from given League //its broken idk why
+
+  BBMasterSched.forEach(function(leagueItem){
+    let thisTeam = leagueItem.teams.filter(function(teamItem){
+      return teamItem.key === teamKey;
+    })
+
+    if(thisTeam === undefined || thisTeam.length == 0){
+      ;
+    }
+    else {
+      correctTeam = thisTeam;
+    }
+  });
+
+    // return new Promise((resolve, reject) => {
+    // /*stuff using username, password*/
+    // if ( ) {
+    //   resolve(correctTeam[0]);
+    // }
+    // else {
+    //   reject(null);
+    // }
+    // });
+  if(correctTeam != null)
+  {
+    return correctTeam[0];
+  }
+  return null;
+};
+
+_getTeamName = (teamKey) => {
+  let thisTeamObj = _getTeamObj(teamKey);
+  console.log(teamKey, thisTeamObj.name)
+  return thisTeamObj.name;
+}
+
+_isMyTeam = (teamKey) => {
+  let thisTeamObj = _getTeamObj(teamKey);
+  //console.log(teamKey, thisTeamObj.myTeam)
+  return thisTeamObj.myTeam;
+}
+
+
+
 // _getDate = (dateStr) => {
 //   let tempDate = new Date(dateStr+"T12:00:00.0");
 //   let monthNum = tempDate.getDate();
 //
 //   return monthNum+1;
 // }
+_isDisplayEvent = (dateStr, guideKey, team1key, team2key) => {
+  //console.log("dateStr, guideKey, team1key, team2key");
+  //console.log(dateStr, guideKey, team1key, team2key);
+  //for HomeScreen schedule
+  if(guideKey === "myteams")
+  {
+    let isMyTeam = _isMyTeam(team1key) || _isMyTeam(team2key);
+    //console.log("look");
+    return _isFutureEvent(dateStr) && isMyTeam;
+  }
+  //for Schedule.js
+  else
+  {
+    let isCorrectTeam = guideKey === team1key || guideKey === team2key;
+    //console.log(teamKey);
+    return _isFutureEvent(dateStr) && isCorrectTeam;
+  }
+
+}
+
 
 _isFutureEvent = (dateStr) => {
   let tempDate = new Date(dateStr);
@@ -152,6 +209,7 @@ _testPress = (teamNameStr)=> {
   console.log(teamNameStr);
 }
 
+<<<<<<< Updated upstream
 export function _subToTeam(subList, pressedTeam) {
   if(!subList.includes(pressedTeam)) {
     subList = subList.concat(pressedTeam);
@@ -172,4 +230,8 @@ export function _isSubscribed(subList,teamKey){
   else{
     return false;
   }
+=======
+_str2upper = (str) => {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+>>>>>>> Stashed changes
 }

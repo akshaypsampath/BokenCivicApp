@@ -26,7 +26,7 @@ function MyTeamsList(teamList, subTeams) {
               <View key={index2}>
                  {_isSubscribed(teamList.subTeams, teamItem.key) === true &&
                    <Card key={index2}>
-                      <CardItem button key={index2} onPress={()=>NavigationService.navigate('TeamHome', {teamName: 'Team A',})}>
+                      <CardItem button key={index2} onPress={()=>NavigationService.navigate('TeamHome', {teamKey: teamItem.key})}>
                         <Body key={index2}>
                           <Text bold>{teamItem.name} </Text>
                           <Text note>{teamItem.league}</Text>

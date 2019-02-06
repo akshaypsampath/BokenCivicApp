@@ -10,6 +10,8 @@ import ScheduleCards from "./../components/ScheduleCards";
 
 import Icon from "react-native-vector-icons/FontAwesome";
 
+//import _getTeamObj from "./../actions/actions";
+//import _storeData from "./../actions/actions";
 
 //var Data = require('./../../data/basketballData.json');
 var BBMasterSched = require('./../../data/basketballMasterSchedule.json');
@@ -19,10 +21,8 @@ var BBMasterSched = require('./../../data/basketballMasterSchedule.json');
 
 export default class ScheduleScreen extends React.Component { /* Display each of the games for a team, when and where*/
   static navigationOptions = ({ navigation }) => {
-    let teamName = navigation.getParam('team');
-    let teamKey = navigation.getParam('key');
-    _storeData('team', teamName);
-    _storeData('key', teamKey);
+    _storeData('teamKeyVal', navigation.getParam('teamKey'));
+
     return{
       header: null,
     };
@@ -30,45 +30,70 @@ export default class ScheduleScreen extends React.Component { /* Display each of
 
   constructor(props) {
     super(props)
-    this.state = {
-      showToast: false,
-      key: "",
-      temp: []
-    }
+    this.state = {teamKey: " ",
+                  loading: true,
+                  temp: []}
   }
 
   async componentWillMount() {
-    AsyncStorage.getItem("team").then((value) => {
+    AsyncStorage.getItem("teamKeyVal").then((value) => {
+        //console.log("value: "+value);
         this.setState({
-          "teamName": value
+          teamKey: value,
+          temp: BBMasterSched,
+          loading: false
         });
-    }).done();
-    AsyncStorage.getItem("key").then((value) => {
-        this.setState({
-          "key": value
-        });
+        //console.log("teamKey: "+ this.state.teamKey)
     }).done();
 
-    this.setState({
-      temp: BBMasterSched
-    });
+    //var teamObj = _getTeamObj(this.state.teamKey);
+
   }
 
   render() {
-    let todayDate = new Date();
+    if (!this.state.loading) {
+      //console.log("schedule.js this.state"+this.state.teamKey+".");
+      let teamObj = _getTeamObj(this.state.teamKey);
+
     //let data = Data[2].teams[0].schedule;
 
 
 
-    return(
-      <Container>
-         <Header>
-            <Title >{this.state.teamName} Schedule</Title>
-          </Header>
-        <Content padder style={{backgroundColor:'#f8f7f5'}}>
-          <ScheduleCards data={this.state.temp}/>
-        </Content>
-      </Container>
-    );
+      return(
+        <Container>
+           <Header>
+              <Title >{teamObj.name} Schedule</Title>
+            </Header>
+          <Content padder style={{backgroundColor:'#f8f7f5'}}>
+            <ScheduleCards data={this.state.temp} guideKey={this.state.teamKey}/>
+          </Content>
+          <Footer>
+            <FooterTab>
+              <Button onPress={() => this.props.navigation.navigate('ViewMyTeams')}>
+                <Icon name="list-ul" size={20}/>
+                <Text note style={{fontSize:10}}>View My Teams</Text>
+              </Button>
+              <Button onPress={() => this.props.navigation.navigate('Home')}>
+                <Icon active name="home" size={20}/>
+                <Text note style={{fontSize:10}}>Home</Text>
+              </Button>
+              <Button onPress={() => this.props.navigation.navigate('TeamSelect')}>
+                <Icon name="wrench" size={20}/>
+                <Text note style={{fontSize:10}}>Browse All Teams</Text>
+              </Button>
+            </FooterTab>
+          </Footer>
+        </Container>
+      );
+    }
+    else {
+      return(
+        <Container>
+          <Content padding>
+            <Title>Loading...</Title>
+          </Content>
+        </Container>
+      );
+    }
   }
 }

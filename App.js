@@ -90,7 +90,6 @@ class HomeTempScreen extends React.Component {
               onPress={() => this.props.navigation.navigate('TeamSelect')}>
               <Text>team schedule select</Text>
             </Button>
-            <Text>Today Date : {todayDate.getMonth()},{todayDate.getDate()}</Text>
           </Content>
         </Container>
         //</StyleProvider>
@@ -106,15 +105,15 @@ class HomeTempScreen extends React.Component {
 
 const AppNavigator =  createStackNavigator(
   {
-    oldHome: HomeTempScreen,
+    oldHome: HomeTempScreen, //cut
     Home: HomeScreen,
-    Settings: SettingsScreen,
-    Details: DetailsScreen,
+    Settings: SettingsScreen, //cut
+    Details: DetailsScreen, //cut
     Schedule: ScheduleScreen,
     Leagues: LeaguesScreen,
     TeamHome: TeamHomeScreen,
-    Menu: MenuScreen,
-    Stats: StatsScreen,
+    Menu: MenuScreen, //cut
+    Stats: StatsScreen, //cut
     TeamSelect: TeamSelectionScreen,
     ViewMyTeams: ViewMyTeamsScreen,
     EventDetails: EventDetailsScreen,
@@ -122,7 +121,7 @@ const AppNavigator =  createStackNavigator(
     Roster: RosterScreen,*/
   },
   {
-    initialRouteName: 'oldHome',
+    initialRouteName: 'Home',
   }
 );
 //export default createAppContainer(AppNavigator);

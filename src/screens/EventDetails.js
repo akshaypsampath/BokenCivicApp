@@ -1,4 +1,4 @@
-//Page opened from schedule. Not completed, just TeamHome framework
+//Page opened from scheduleCards. Not completed, just TeamHome framework
 
 
 import React from 'react';
@@ -14,7 +14,12 @@ import styles from "./../styles";
 
 export default class EventDetailsScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
-    _storeData('teamNameTitle', navigation.getParam('teamName'));
+    //_storeData('teamNameTitle', navigation.getParam('teamName'));
+    const team1key = navigation.getParam('team1key', 'Team 1');
+    const team2key = navigation.getParam('team2key', 'Team 2');
+    const date = navigation.getParam('date', null);
+    const time = navigation.getParam('time', null);
+    const location = navigation.getParam('location', 'Hoboken');
     return{
       header: null,
     };
@@ -35,29 +40,26 @@ export default class EventDetailsScreen extends React.Component {
 
 
   render() {
-    let temp = Data[2];
+    //let temp = Data[2];
     //let teamObj = temp["teams"].Where(d => d["team"] == "Team A").First();
     //let teamObj = temp["teams"].filter(d => d.team == "Team A");
-    var teamObj = _getTeamObj(temp, this.state.teamName);
+    //var teamObj = _getTeamObj(temp, 'team A');
+    console.log("team1key");
+    console.log(team1key);
 
 
     return (
       <Container>
          <Header style={styles.header}>
-            <Title style={styles.title}>{teamObj.team} Home</Title>
+            <Title style={styles.title}>{team1key} Home</Title>
           </Header>
         <Content padder style={{backgroundColor:"##f8f7f5"}}>
           <Card>
             <CardItem>
               <Body>
-                <Text style={{fontSize:20, fontWeight:'bold'}}>Coach: {teamObj.coach}</Text>
-                <Text note>Phone: {teamObj.phone}</Text>
-                <Text note>Email: {teamObj.email}</Text>
-              </Body>
-            </CardItem>
-            <CardItem>
-              <Body>
-                <Text bold>Record: {teamObj.wins}W-{teamObj.losses}L-{teamObj.ties}T</Text>
+                <Text style={{fontSize:20, fontWeight:'bold'}}>{date}</Text>
+                <Text note>Time: {time}</Text>
+                <Text note>Location: {location}</Text>
               </Body>
             </CardItem>
           </Card>
@@ -74,18 +76,7 @@ export default class EventDetailsScreen extends React.Component {
           </Card>
           <Card style={{paddingLeft:5,}}>
 
-            <CardItem>
-              <Body>
-                <Text style={{fontSize:20, fontWeight:'bold'}}>Roster</Text>
-                {
-                  teamObj.roster.map((item, index)=> {
-                    return (
-                      <Text>{item}</Text>
-                    )
-                  })
-                }
-              </Body>
-            </CardItem>
+
             <CardItem footer button onPress={() => this.props.navigation.navigate('Stats', {teamName: "{teamObj.team}",})}>
 
                 <Text bold>Click to view detailed stats</Text>

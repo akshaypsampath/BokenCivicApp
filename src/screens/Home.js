@@ -20,6 +20,7 @@ var BBMasterSched = require('../../data/basketballMasterSchedule.json');
 
 import _testPress from "./../actions/actions";
 
+
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
    header: null
@@ -49,29 +50,6 @@ export default class HomeScreen extends React.Component {
       });
     }).done();
   }
-  _getBadgeColor(typeStr) {
-    if(typeStr=="Game")
-    {
-      return {
-        backgroundColor: '#4bbb87',
-      };
-    }
-    else if(typeStr=="Practice")
-    {
-      return {
-        backgroundColor: '#fdac4f',
-      };
-    }
-    else {
-      return {
-        backgroundColor: '#62B1F6',
-      }
-    }
-  }
-
-  _copyAdr2Clip(adrStr) {
-    Clipboard.setString(adrStr);
-  }
 
 
 
@@ -93,7 +71,7 @@ export default class HomeScreen extends React.Component {
             </CardItem>
           </Card>
             <ScrollView>
-              <ScheduleMyCards data={this.state.sched} subTeams={this.state.subTeams}/>
+            <ScheduleCards data={this.state.sched} guideKey="myteams"/>
             </ScrollView>
           </Grid>
             <Footer>
