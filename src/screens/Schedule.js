@@ -20,8 +20,9 @@ var BBMasterSched = require('./../../data/basketballMasterSchedule.json');
 export default class ScheduleScreen extends React.Component { /* Display each of the games for a team, when and where*/
   static navigationOptions = ({ navigation }) => {
     let teamName = navigation.getParam('team');
+    let teamKey = navigation.getParam('key');
     _storeData('team', teamName);
-
+    _storeData('key', teamKey);
     return{
       header: null,
     };
@@ -31,6 +32,7 @@ export default class ScheduleScreen extends React.Component { /* Display each of
     super(props)
     this.state = {
       showToast: false,
+      key: "",
       temp: []
     }
   }
@@ -41,7 +43,11 @@ export default class ScheduleScreen extends React.Component { /* Display each of
           "teamName": value
         });
     }).done();
-
+    AsyncStorage.getItem("key").then((value) => {
+        this.setState({
+          "key": value
+        });
+    }).done();
 
     this.setState({
       temp: BBMasterSched

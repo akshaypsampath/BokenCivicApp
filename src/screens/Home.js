@@ -6,9 +6,9 @@ import { Row, Grid } from 'react-native-easy-grid';
 import { Font, AppLoading } from "expo";
 
 import styles from "./../styles";
-import ScheduleCards from "./../components/ScheduleCards";
+import ScheduleMyCards from "./../components/ScheduleMyCards";
 import MyTeamsList from "./../components/MyTeamsList";
-
+import {_isSubscribed} from "./../actions/actions";
 import Icon from "react-native-vector-icons/FontAwesome"
 
 //var Data = require('../../data/basketballData.json');
@@ -29,7 +29,8 @@ export default class HomeScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = { loading: true,
-                    sched: []
+                    sched: [],
+                    subTeams: [],
                   };
   }
 
@@ -38,10 +39,15 @@ export default class HomeScreen extends React.Component {
       Roboto: require("native-base/Fonts/Roboto.ttf"),
       Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
     }).done();
-    this.setState({
-      loading: false,
-      sched: BBMasterSched
-    });
+    await AsyncStorage.getItem('subbedTeams').then((value) => {
+      var subs = value
+      subs = JSON.parse(subs)
+      this.setState({
+        subTeams: subs,
+        loading: false,
+        sched: BBMasterSched
+      });
+    }).done();
   }
   _getBadgeColor(typeStr) {
     if(typeStr=="Game")
@@ -87,7 +93,7 @@ export default class HomeScreen extends React.Component {
             </CardItem>
           </Card>
             <ScrollView>
-            <ScheduleCards data={this.state.sched}/>
+              <ScheduleMyCards data={this.state.sched} subTeams={this.state.subTeams}/>
             </ScrollView>
           </Grid>
             <Footer>

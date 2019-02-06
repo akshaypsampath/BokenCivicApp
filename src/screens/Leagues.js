@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, AsyncStorage, Clipboard, Alert} from 'react-native';
 import { createStackNavigator, createAppContainer} from "react-navigation";
-import { Container, Header, Content, Title, Text, Card, CardItem, Button } from "native-base";
+import { Container, Header, Content, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Root, Toast, Footer, FooterTab} from "native-base";
 import { Row, Grid } from 'react-native-easy-grid';
 import { Font, AppLoading } from "expo";
 
@@ -16,7 +16,7 @@ var TeamList = require('../../data/teamList.json');
 export default class LeaguesScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return{
-      title: 'Leagues',
+      title: 'Subscribe and Look at Schedules',
       headerStyle: {
         backgroundColor: '#1b97b2',
       },
@@ -56,6 +56,9 @@ export default class LeaguesScreen extends React.Component {
     this._subEdit(x);
   }
 
+  _onPressIcon = (item) => {
+    console.log("You pressed the icon");
+  }
   _subRender = (key) => {
     var x = this.state.subTeams;
     if(_isSubscribed(x,key)){
@@ -74,32 +77,37 @@ export default class LeaguesScreen extends React.Component {
 
     return (
       <Container>
-        <Header style={{justifyContent: 'center', alignItems: 'center'}}>
-          <Title>Manage MyTeams</Title>
-        </Header>
         <Content padder>
 
           {
             temp.map((item,index)=>{
               return(
+              <View key={index}>
                 <Card key={index}>
                   <CardItem header bordered>
-                    <Text style={{color:'black'}}>{item.leagueName}</Text>
+                    <Text style={{color:'black', fontWeight:'bold'}}>{item.leagueName}</Text>
                   </CardItem>
-
+                </Card>
                   {
                     item.teams.map((item2,index2)=>{
                       return(
+                      <Card key={index2}>
                         <CardItem style={this._subRender(item2.key)} bordered key={index2} button
                            onPress={() => this._onPress(item2)}>
-                           <Text>{item2.name} </Text>
-                           <Text>{item2.key}</Text>
+                           <Body key={index2}>
+                            <Text>{item2.name} </Text>
+                          </Body>
+                          <Right>
+                            <Icon button name="chevron-right" color="#0000EE" size={40}
+                              onPress={() => this.props.navigation.navigate('Schedule', {team: item2.name, key: item2.key})}>
+                            </Icon>
+                          </Right>
                         </CardItem>
+                      </Card>
                       )
                     })
                   }
-
-                </Card>
+              </View>
               )
             })
           }

@@ -41,8 +41,6 @@ export default class ViewMyTeamsScreen extends React.Component {
     await AsyncStorage.getItem('subbedTeams').then((value) => {
       var subs = value
       subs = JSON.parse(subs)
-      console.log("subs array");
-      console.log(subs);
       this.setState({
         subTeams: subs,
         teamList: TeamListObj,
