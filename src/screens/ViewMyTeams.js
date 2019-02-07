@@ -20,8 +20,17 @@ var TeamListObj = require('../../data/teamList.json');
 
 
 export default class ViewMyTeamsScreen extends React.Component {
-  static navigationOptions = {
-   header: null,
+  static navigationOptions = ({navigationOptions}) => {
+    return{
+      title: "View My Teams",
+      headerStyle: {
+        backgroundColor: '#1b97b2',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    };
   };
 
 
@@ -64,16 +73,13 @@ export default class ViewMyTeamsScreen extends React.Component {
 
   render() {
     //let temp = Data[2].teams[0].schedule;
-    //console.log(this.state.teamList);
-    //console.log(teamListObj);
-    console.log("subTeams state");
-    console.log(this.state.subTeams);
+
+    //console.log("subTeams state");
+    //console.log(this.state.subTeams);
     if (!this.state.loading) {
       return (
         <Container>
-          <Header style={styles.header}>
-            <Title style={styles.title}>View My Teams</Title>
-          </Header>
+
           <Grid style={styles.grid}>
             <ScrollView>
               <MyTeamsList navigation={this.props.navigation} teamList={this.state.teamList} subTeams={this.state.subTeams}/>

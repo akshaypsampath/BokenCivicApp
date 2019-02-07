@@ -13,7 +13,14 @@ export default class TeamHomeScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     _storeData('teamKeyVal', navigation.getParam('teamKey'));
     return{
-      header: null,
+      title: _getTeamName(navigation.getParam('teamKey')),
+      headerStyle: {
+        backgroundColor: '#1b97b2',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
     };
   };
 
@@ -50,9 +57,6 @@ export default class TeamHomeScreen extends React.Component {
 
 
       <Container>
-         <Header style={styles.header}>
-            <Title style={styles.title}>{teamObj.name}</Title>
-          </Header>
           <Content padder>
             <Card>
               <CardItem>

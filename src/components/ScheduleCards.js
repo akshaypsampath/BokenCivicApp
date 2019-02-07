@@ -39,36 +39,36 @@ function ScheduleCards({data, guideKey, myTeams}) {
                <View key={index*30+index1}>
                {this._isDisplayEvent(dateItem.date, guideKey, eventItem.team1key, eventItem.team2key, myTeams) &&
 
-             <Card key={index*30+index1}>
-               <CardItem button key={index*30+index1} onPress={()=>NavigationService.navigate('EventDetails', {team1key: eventItem.team1key,
+                 <Card key={index*30+index1}>
+                   <CardItem button key={index*30+index1} onPress={()=>NavigationService.navigate('EventDetails', {team1key: eventItem.team1key,
                                                                                                                team2key: eventItem.team2key,
                                                                                                                date: dateItem.date,
                                                                                                                time: eventItem.time,
                                                                                                                location: eventItem.location,
                                                                                                              })}>
 
-                 <Left key={index*30+index1} style={styles.scheduleLeft}>
-                   <Grid key={index*30+index1}>
-                    <Row key={index*30+index1} style={{justifyContent:'center'}}>
-                      <Text bold style={{fontWeight:'bold'}}>{this._getMonthDate(dateItem.date+"T"+eventItem.time)}</Text>
-                    </Row>
-                    <Row style={{justifyContent:'center'}}>
-                      <Text style={{fontWeight:'bold'}}>{this._getTimeAmPm(eventItem.time)}</Text>
-                    </Row>
-                    <Row style={{justifyContent:'center'}}>
-                   <Badge style={this._getBadgeColor(eventItem.type)}>
-                     <Text>{eventItem.type} </Text>
-                   </Badge>
-                    </Row>
-                  </Grid>
-                  </Left>
-                 <Body>
-                   <Text>{eventItem.team1} vs. {eventItem.team2}</Text>
-                   <Text note>{eventItem.location} </Text>
-                   <Text>{eventItem.league}</Text>
-                 </Body>
+                     <Left key={index*30+index1} style={styles.scheduleLeft}>
+                       <Grid key={index*30+index1}>
+                        <Row key={index*30+index1} style={{justifyContent:'center'}}>
+                          <Text bold style={{fontWeight:'bold'}}>{this._getMonthDate(dateItem.date+"T"+eventItem.time)}</Text>
+                        </Row>
+                        <Row style={{justifyContent:'center'}}>
+                          <Text style={{fontWeight:'bold'}}>{this._getTimeAmPm(eventItem.time)}</Text>
+                        </Row>
+                        <Row style={{justifyContent:'center'}}>
+                       <Badge style={this._getBadgeColor(eventItem.type)}>
+                         <Text>{eventItem.type} </Text>
+                       </Badge>
+                        </Row>
+                      </Grid>
+                      </Left>
+                     <Body>
+                       <Text>{eventItem.team1} vs. {eventItem.team2}</Text>
+                       <Text note>{eventItem.location} </Text>
+                       <Text>{eventItem.league}</Text>
+                     </Body>
 
-                </CardItem>
+                    </CardItem>
 
               </Card>
             }

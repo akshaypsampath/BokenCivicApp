@@ -17,7 +17,14 @@ export default class EventDetailsScreen extends React.Component {
     //_storeData('teamNameTitle', navigation.getParam('teamName'));
 
     return{
-      header: null,
+      title: "Game Details",
+      headerStyle: {
+        backgroundColor: '#1b97b2',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
     };
   };
 
@@ -53,9 +60,6 @@ export default class EventDetailsScreen extends React.Component {
 
     return (
       <Container>
-         <Header style={styles.header}>
-            <Title style={styles.title}>Game Details</Title>
-          </Header>
         <Content padder>
           <Card>
             <CardItem>
@@ -70,7 +74,7 @@ export default class EventDetailsScreen extends React.Component {
           </Card>
           <Card>
             <CardItem button
-                onPress={() => this.props.navigation.navigate('TeamHome', {teamKey: team1key,})}>
+                onPress={() => this.props.navigation.navigate('TeamHome', {teamKey: team1key})}>
               <Body style={{justifyContent:'center'}}>
                 <Text style={{fontSize:16, fontWeight:'bold', color:"#0000EE"}}>{_getTeamName(team1key)} Home</Text>
               </Body>

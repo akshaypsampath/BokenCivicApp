@@ -14,7 +14,14 @@ export default class StatsScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     _storeData('teamNameTitle', navigation.getParam('teamName'));
     return{
-      header: null,
+      title: navigation.getParam('teamName')+" Statistics",
+      headerStyle: {
+        backgroundColor: '#1b97b2',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
     };
   };
 
@@ -41,9 +48,6 @@ export default class StatsScreen extends React.Component {
   render() {
     return (
       <Container>
-         <Header>
-            <Title>{this.state.teamName} Statistics</Title>
-          </Header>
         <Content >
           <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text>Detailed Statistics coming soon!</Text>

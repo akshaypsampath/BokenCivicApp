@@ -24,7 +24,14 @@ export default class ScheduleScreen extends React.Component { /* Display each of
     _storeData('teamKeyVal', navigation.getParam('teamKey'));
 
     return{
-      header: null,
+      title: _getTeamName(navigation.getParam('teamKey'))+" Schedule",
+      headerStyle: {
+        backgroundColor: '#1b97b2',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
     };
   };
 
@@ -68,9 +75,6 @@ export default class ScheduleScreen extends React.Component { /* Display each of
 
       return(
         <Container>
-           <Header>
-              <Title >{teamObj.name} Schedule</Title>
-            </Header>
           <Content padder style={{backgroundColor:'#f8f7f5'}}>
             <ScheduleCards data={this.state.temp} guideKey={this.state.teamKey} myTeams={this.state.myTeams}/>
           </Content>

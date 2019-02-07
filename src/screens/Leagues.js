@@ -16,7 +16,7 @@ var TeamList = require('../../data/teamList.json');
 export default class LeaguesScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return{
-      title: 'Subscribe and Look at Schedules',
+      title: 'Browse All Teams',
       headerStyle: {
         backgroundColor: '#1b97b2',
       },
@@ -51,7 +51,7 @@ export default class LeaguesScreen extends React.Component {
     var x = this.state.subTeams;
     var y = item.key;
     x = _subToTeam(x, y);
-    console.log(x);
+    //console.log(x);
 
     this._subEdit(x);
   }
@@ -94,11 +94,11 @@ export default class LeaguesScreen extends React.Component {
                       <Card key={index*30+index2}>
                         <CardItem style={this._subRender(item2.key)} bordered key={index*30+index2} button
                            onPress={() => this._onPress(item2)}>
-                           <Body key={index2}>
-                            <Text key={index2}>{item2.name} </Text>
+                           <Body key={index*30+index2}>
+                            <Text key={index*30+index2}>{item2.name} </Text>
                           </Body>
-                          <Right key={index2}>
-                            <Icon button key={index*30+index2} name="chevron-right" color="#0000EE" size={30}
+                          <Right key={index*30+index2}>
+                            <Icon button key={100+index*30+index2} name="chevron-right" color="#0000EE" size={30}
                               onPress={() => this.props.navigation.navigate('TeamHome', {teamKey: item2.key})}>
                             </Icon>
                           </Right>
@@ -112,6 +112,22 @@ export default class LeaguesScreen extends React.Component {
             })
           }
         </Content>
+        <Footer>
+          <FooterTab>
+            <Button onPress={() => this.props.navigation.navigate('ViewMyTeams')}>
+              <Icon name="list-ul" size={20}/>
+              <Text note style={{fontSize:10}}>View My Teams</Text>
+            </Button>
+            <Button onPress={() => this.props.navigation.navigate('Home')}>
+              <Icon active name="home" size={20}/>
+              <Text note style={{fontSize:10}}>Home</Text>
+            </Button>
+            <Button active onPress={() => this.props.navigation.navigate('Leagues')}>
+              <Icon name="wrench" size={20}/>
+              <Text note style={{fontSize:10}}>Browse All Teams</Text>
+            </Button>
+          </FooterTab>
+        </Footer>
       </Container>
     );
   }

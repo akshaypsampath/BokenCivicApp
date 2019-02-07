@@ -22,8 +22,17 @@ var BBMasterSched = require('../../data/basketballMasterSchedule.json');
 
 
 export default class HomeScreen extends React.Component {
-  static navigationOptions = {
-   header: null
+  static navigationOptions = ({ navigation }) =>  {
+    return{
+      title: 'Hoboken Basketball',
+      headerStyle: {
+        backgroundColor: '#1b97b2',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    };
   };
 
 
@@ -54,17 +63,22 @@ export default class HomeScreen extends React.Component {
 
 
   render() {
+    AsyncStorage.getItem('subbedTeams').then((value) => {
+      var myT = value
+      myT = JSON.parse(myT)
+      this.setState({
+        myTeams: myT,
+      });
+    }).done();
     //let temp = Data[2].teams[0].schedule;
     //console.log(this.state.teamList);
     //console.log(teamListObj);
     //this._printMyTeamsList("hi");
+    //console.log(this.state.myTeams)
 
     if (!this.state.loading) {
       return (
         <Container>
-          <Header style={styles.header}>
-            <Title style={styles.title}>Hoboken Basketball</Title>
-          </Header>
           <Grid style={styles.grid}>
           <Card>
             <CardItem header>
