@@ -121,7 +121,7 @@ export default class TeamHomeScreen extends React.Component {
   else {
     return(
       <Container>
-        <Content padding>
+        <Content>
           <Title>Loading...</Title>
         </Content>
       </Container>
