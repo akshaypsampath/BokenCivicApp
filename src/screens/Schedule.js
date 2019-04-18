@@ -100,7 +100,7 @@ export default class ScheduleScreen extends React.Component { /* Display each of
     else {
       return(
         <Container>
-          <Content padding>
+          <Content>
             <Title>Loading...</Title>
           </Content>
         </Container>

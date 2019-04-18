@@ -115,15 +115,3 @@ export default class HomeScreen extends React.Component {
       }
   }
 }
-/** Old MyTeams view
-<Row style={styles.row}>
-  <MyTeamsList teamList={this.state.teamList}/>
-  <Card>
-    <CardItem header>
-      <Text>My Teams </Text>
-    </CardItem>
-    <CardItem>
-    </CardItem>
-  </Card>
-</Row>
-*/
