@@ -48,16 +48,18 @@ export default class HomeScreen extends React.Component {
     await Font.loadAsync({
       Roboto: require("native-base/Fonts/Roboto.ttf"),
       Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
-    }).done();
+    });
     await AsyncStorage.getItem('subbedTeams').then((value) => {
       var myT = value
       myT = JSON.parse(myT)
       this.setState({
         myTeams: myT,
-        loading: false,
         sched: BBMasterSched
       });
-    }).done();
+    });
+    this.setState({
+      loading: false,
+    });
   }
 
 
