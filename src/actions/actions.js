@@ -45,6 +45,28 @@ _getBadgeColor = (typeStr)=> {
   }
 }
 
+_getTeamObjRoster = (teamKey) => {
+  var Rosters = require('./../../data/rosters.json');
+  let correctTeam = null;
+  //return sub-Ojbect of given Team from given League //its broken idk why
+
+  let thisTeam = Rosters.key.filter(function(teamItem){
+      return teamItem.key === teamKey;
+
+    if(thisTeam === undefined || thisTeam.length == 0){
+      ;
+    }
+    else {
+      correctTeam = thisTeam;
+    }
+  });
+  if(correctTeam != null)
+  {
+    return correctTeam[0];
+  }
+  return null;
+};
+
 _getTeamObj = (teamKey) => {
   var BBMasterSched = require('./../../data/teamList.json');
   let correctTeam = null;
@@ -62,6 +84,7 @@ _getTeamObj = (teamKey) => {
       correctTeam = thisTeam;
     }
   });
+
 
     // return new Promise((resolve, reject) => {
     // /*stuff using username, password*/
@@ -117,6 +140,14 @@ _isDisplayEvent = (dateStr, guideKey, team1key, team2key, myTeams) => {
   }
 
 }
+
+_isRoster = (teamKey, key) => {
+
+    let isCorrectTeam = key === teamKey;
+    //console.log(teamKey);
+    return isCorrectTeam;
+}
+
 
 
 _isFutureEvent = (dateStr) => {

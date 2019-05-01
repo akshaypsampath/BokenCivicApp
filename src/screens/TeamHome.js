@@ -6,6 +6,7 @@ import { Row, Grid } from 'react-native-easy-grid';
 import styles from "./../styles";
 import { Font } from "expo";
 
+
 //var Data = require('./../../data/basketballData.json');
 var teamObj=null;
 
@@ -78,6 +79,17 @@ export default class TeamHomeScreen extends React.Component {
                   onPress={() => this.props.navigation.navigate('Schedule', {teamKey: teamObj.key})}>
                 <Body style={{justifyContent:'center'}}>
                   <Text style={{fontSize:18, fontWeight:'bold', color:"#0000EE"}}>{teamObj.name} Schedule</Text>
+                </Body>
+                <Right>
+                  <Icon name="chevron-right" size={40} color="#0000EE" />
+                </Right>
+              </CardItem>
+            </Card>
+            <Card>
+              <CardItem button
+                onPress={() => this.props.navigation.navigate('Roster', {teamKey: teamObj.key})}>
+                <Body style={{justifyContent: 'center'}}>
+                  <Text bold>Roster</Text>
                 </Body>
                 <Right>
                   <Icon name="chevron-right" size={40} color="#0000EE" />

@@ -13,7 +13,10 @@ import Icon from "react-native-vector-icons/FontAwesome"
 
 //var Data = require('../../data/basketballData.json');
 var teamListObj = require('../../data/teamList.json');
-var BBMasterSched = require('../../data/basketballMasterSchedule.json');
+
+//Has ben changed to test schedule as well
+
+var BBMasterSched = require('../../data/basketballMasterScheduleTest.json');
 //var BBGirlsSched = require('../../data/basketballGirlsSchedule.json');
 //var BBGrammarSched = require('../../data/basketballGrammarSchedule.json');
 //var BBMiddleSched = require('../../data/basketballMiddleSchedule.json');

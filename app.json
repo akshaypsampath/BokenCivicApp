@@ -25,7 +25,9 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.SampathNichols.HobokenRecreation"
+      "package": "com.SampathNichols.HobokenRecreation",
+      "permissions": [],
+      "versionCode": 2,
     }
   }
 }

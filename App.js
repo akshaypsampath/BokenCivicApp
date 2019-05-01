@@ -19,7 +19,7 @@ import ViewMyTeamsScreen from "./src/screens/ViewMyTeams"
 import EventDetailsScreen from "./src/screens/EventDetails"
 import TeamSelectionScreen from "./src/screens/TeamSelect"
 import HomeScreen from "./src/screens/Home"
-
+import RosterScreen from "./src/screens/Roster"
 import _storeData from "./src/actions/actions"
 import _retrieveData from "./src/actions/actions"
 import NavigationService from "./src/actions/NavigationService"
@@ -117,8 +117,8 @@ const AppNavigator =  createStackNavigator(
     TeamSelect: TeamSelectionScreen,
     ViewMyTeams: ViewMyTeamsScreen,
     EventDetails: EventDetailsScreen,
-    /*Calendar: CalendarScreen,
-    Roster: RosterScreen,*/
+    Roster: RosterScreen,
+    /*Calendar: CalendarScreen,*/
   },
   {
     initialRouteName: 'Home',

@@ -1,33 +1,24 @@
 import React from 'react';
-import { StyleSheet, View, AsyncStorage, Clipboard} from 'react-native';
+import { StyleSheet, View, ScrollView, AsyncStorage, Clipboard} from 'react-native';
 import { createStackNavigator, createAppContainer} from "react-navigation";
 import { Container, Header, Content, List, ListItem, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Root, Toast, Accordion, Footer, FooterTab} from "native-base";
 import { Row, Grid } from 'react-native-easy-grid';
 import { Font, AppLoading } from "expo";
 
 import styles from "./../styles";
-import ScheduleCards from "./../components/ScheduleCards";
-
+import RosterCards from "./../components/RosterCards";
+import MyTeamsList from "./../components/MyTeamsList";
+import {_isSubscribed} from "./../actions/actions";
+import {_isRoster} from "./../actions/actions";
 import Icon from "react-native-vector-icons/FontAwesome";
 
-//import _getTeamObj from "./../actions/actions";
-//import _storeData from "./../actions/actions";
+var Rosters = require("./../../data/rosters.json");
 
-//var Data = require('./../../data/basketballData.json');
-
-//This has been changed to a schedule for the future called basketballMasterScheduleTest
-
-var BBMasterSched = require('./../../data/basketballMasterScheduleTest.json');
-//var BBGrammarSched = require('./../../data/basketballGrammarSchedule.json');
-//var BBMiddleSched = require('./../../data/basketballMiddleSchedule.json');
-
-
-export default class ScheduleScreen extends React.Component { /* Display each of the games for a team, when and where*/
+export default class RosterScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     _storeData('teamKeyVal', navigation.getParam('teamKey'));
-
     return{
-      title: _getTeamName(navigation.getParam('teamKey'))+" Schedule",
+      title: _getTeamName(navigation.getParam('teamKey'))+" Roster",
       headerStyle: {
         backgroundColor: '#1b97b2',
       },
@@ -39,11 +30,10 @@ export default class ScheduleScreen extends React.Component { /* Display each of
   };
 
   constructor(props) {
-    super(props) 
+    super(props)
     this.state = {teamKey: " ",
-                  loading: true,
-                  temp: [],
-                  myTeams: []}
+                  data: [],
+                  loading: true}
   }
 
   async componentWillMount() {
@@ -54,32 +44,20 @@ export default class ScheduleScreen extends React.Component { /* Display each of
         });
         //console.log("teamKey: "+ this.state.teamKey)
     }).done();
-    await AsyncStorage.getItem('subbedTeams').then((value) => {
-      var myT = value
-      myT = JSON.parse(myT)
-      this.setState({
-        myTeams: myT,
-        loading: false,
-        temp: BBMasterSched
-      });
-    }).done();
-    //var teamObj = _getTeamObj(this.state.teamKey);
-
+    this.setState({
+      loading: false,
+      data: Rosters,
+    })
   }
 
-  render() {
+  render(){
     if (!this.state.loading) {
-      //console.log("schedule.js this.state"+this.state.teamKey+".");
-      let teamObj = _getTeamObj(this.state.teamKey);
-
-    //let data = Data[2].teams[0].schedule;
-
-
-
+      console.log(this.state.teamKey);
       return(
-        <Container>
+        <Container style={{}}>
+          <Text>Hello, I am a roster screen</Text>
           <Content padder style={{backgroundColor:'#f8f7f5'}}>
-            <ScheduleCards data={this.state.temp} guideKey={this.state.teamKey} myTeams={this.state.myTeams}/>
+            <RosterCards data={this.state.data} teamKey={this.state.teamKey}/>
           </Content>
           <Footer>
             <FooterTab>
@@ -100,7 +78,8 @@ export default class ScheduleScreen extends React.Component { /* Display each of
         </Container>
       );
     }
-    else {
+
+    else{
       return(
         <Container>
           <Content>

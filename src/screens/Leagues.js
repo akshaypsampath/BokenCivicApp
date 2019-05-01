@@ -82,23 +82,24 @@ export default class LeaguesScreen extends React.Component {
           {
             temp.map((item,index)=>{
               return(
-              <View key={index}>
-                <Card key={index}>
-                  <CardItem header bordered key={index}>
-                    <Text key={index} style={{color:'black', fontWeight:'bold'}}>{item.leagueName}</Text>
+              <View key={index + index + 1}>
+                <Card key={index + 30* index + 1}>
+                  <CardItem header bordered key={index + 75*index +1}>
+                    <Text key={index + 500*index + 1} style={{color:'black', fontWeight:'bold'}}>{item.leagueName}</Text>
                   </CardItem>
                 </Card>
                   {
                     item.teams.map((item2,index2)=>{
+                      console.log(index2)
                       return(
-                      <Card key={index*30+index2}>
-                        <CardItem style={this._subRender(item2.key)} bordered key={index*30+index2} button
+                      <Card key={index*30+index2 + 1}>
+                        <CardItem style={this._subRender(item2.key)} bordered key={index2} button
                            onPress={() => this._onPress(item2)}>
-                           <Body key={index*30+index2}>
-                            <Text key={index*30+index2}>{item2.name} </Text>
+                           <Body key={index2 + index*10 + 1}>
+                            <Text key={index2 + index *100 + 1}>{item2.name} </Text>
                           </Body>
-                          <Right key={index*30+index2}>
-                            <Icon button key={100+index*30+index2} name="chevron-right" color="#0000EE" size={30}
+                          <Right key={index2 + index *1000 + 1}>
+                            <Icon button key={index2 + index *10000 + 1} name="chevron-right" color="#0000EE" size={30}
                               onPress={() => this.props.navigation.navigate('TeamHome', {teamKey: item2.key})}>
                             </Icon>
                           </Right>
