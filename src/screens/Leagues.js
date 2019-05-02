@@ -44,7 +44,6 @@ export default class LeaguesScreen extends React.Component {
     AsyncStorage.setItem('subbedTeams', JSON.stringify(this.state.subTeams));
     var list = await AsyncStorage.getItem('subbedTeams');
     list = JSON.parse(list);
-    console.log(list);
   }
 
   _onPress = (item) => {
@@ -62,13 +61,22 @@ export default class LeaguesScreen extends React.Component {
   _subRender = (key) => {
     var x = this.state.subTeams;
     if(_isMyTeam(x,key)){
-      return styles.subscribedTeam;
+      return "circle";
     }
     else{
-      return styles.unsubscribedTeam;
+      return "circle-o";
     }
   }
 
+  _subColor = (key) => {
+    var x = this.state.subTeams;
+    if(_isMyTeam(x,key)){
+      return '#e6b800';
+    }
+    else{
+      return '#000000';
+    }
+  }
 
   render() {
     var temp = TeamList;
@@ -90,19 +98,18 @@ export default class LeaguesScreen extends React.Component {
                 </Card>
                   {
                     item.teams.map((item2,index2)=>{
-                      console.log(index2)
                       return(
                       <Card key={index*30+index2 + 1}>
-                        <CardItem style={this._subRender(item2.key)} bordered key={index2} button
-                           onPress={() => this._onPress(item2)}>
-                           <Body key={index2 + index*10 + 1}>
+                        <CardItem bordered key={index2} button
+                          onPress={() => this.props.navigation.navigate('TeamHome', {teamKey: item2.key})}>
+                          <Left key={index2}>
+                            <Icon button key={index2} name={this._subRender(item2.key)} color={this._subColor(item2.key)} size={30}
+                              onPress={() => this._onPress(item2)}>
+                            </Icon>
+                          </Left>
+                          <Body key={index2 + index*10 + 1}>
                             <Text key={index2 + index *100 + 1}>{item2.name} </Text>
                           </Body>
-                          <Right key={index2 + index *1000 + 1}>
-                            <Icon button key={index2 + index *10000 + 1} name="chevron-right" color="#0000EE" size={30}
-                              onPress={() => this.props.navigation.navigate('TeamHome', {teamKey: item2.key})}>
-                            </Icon>
-                          </Right>
                         </CardItem>
                       </Card>
                       )
