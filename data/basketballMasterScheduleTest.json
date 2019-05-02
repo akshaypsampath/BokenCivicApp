@@ -1,0 +1,2222 @@
+[
+  {
+    "date": "2019-05-02",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Elysian Charter White",
+        "team1key": "ECGGR",
+        "team2key": "ECWGR",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter Kelly Green",
+        "team2": "HOLA Black",
+        "team1key": "ECKGR",
+        "team2key": "HBGR",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-03",
+    "events":
+    [
+      {
+        "team1": "All Saints",
+        "team2": "Hoboken Middle School Knicks",
+        "team1key": "ASGR",
+        "team2key": "HSKGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Middle School Nets",
+        "team2": "Stevens Red",
+        "team1key": "HSNGR",
+        "team2key": "SRGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "All Saints 5",
+        "team2": "Elysian Charter Green 5",
+        "team1key": "AS5MI",
+        "team2key": "EG5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "Elysian Charter White 5",
+        "team2": "Hoboken Charter 5",
+        "team1key": "EW5MI",
+        "team2key": "HC5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "20:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "Elysian Charter Green 6",
+        "team2": "Hoboken Charter 6",
+        "team1key": "EG6MI",
+        "team2key": "HC6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-04",
+    "events": [{
+      "time": "18:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "Connors/Calabro 5",
+      "team2": "HOLA 5",
+      "team1key": "CC5MI",
+      "team2key": "HO5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }, {
+      "time": "19:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "Connors/Calabro 6",
+      "team2": "HOLA 6",
+      "team1key": "CC6MI",
+      "team2key": "HO6MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }, {
+      "time": "20:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "Hudson 6",
+      "team2": "Wallace 6",
+      "team1key": "HU6MI",
+      "team2key": "WA6MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }]
+  },
+  {
+    "date": "2019-05-05",
+    "events": [{
+      "time": "13:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Elysian Charter",
+      "team2": "Hoboken Charter",
+      "team1key": "ECGI",
+      "team2key": "HCGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "time": "14:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Hoboken Middle School",
+      "team2": "HOLA",
+      "team1key": "HMSGI",
+      "team2key": "HOLAGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "time": "15:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Stevens Red",
+      "team2": "Stevens White",
+      "team1key": "SRGI",
+      "team2key": "SWGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }]
+  },
+  {
+    "date": "2019-05-07",
+    "events":
+    [
+      {
+        "team1": "Hoboken Charter",
+        "team2": "HOLA Teal",
+        "team1key": "HCGR",
+        "team2key": "HTGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hudson",
+        "team2": "Mustard Seed",
+        "team1key": "HUDGR",
+        "team2key": "MSGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },{
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "Stevens Purple 5",
+        "team2": "Wallace Black 5",
+        "team1key": "SP5MI",
+        "team2key": "WB5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "Stevens Red 5",
+        "team2": "Wallace Grey 5",
+        "team1key": "SR5MI",
+        "team2key": "WG5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-08",
+    "events":
+    [
+      {
+        "team1": "Hoboken Middle School Warriors",
+        "team2": "Stevens Red",
+        "team1key": "HSWGR",
+        "team2key": "SRGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Middle School Knicks",
+        "team2": "Hoboken Middle School Nets",
+        "team1key": "HSKGR",
+        "team2key": "HSNGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "All Saints 6",
+        "team2": "Mustard Seed 6",
+        "team1key": "AS6MI",
+        "team2key": "MS6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      },
+      {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "Elysian Charter Green 6",
+        "team2": "Stevens 6",
+        "team1key": "EG6MI",
+        "team2key": "ST6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-09",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter White",
+        "team2": "Hoboken Charter",
+        "team1key": "ECWGR",
+        "team2key": "HCGR",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Stevens White",
+        "team1key": "ECGGR",
+        "team2key": "SWGR",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-10",
+    "events": [{
+      "time": "18:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "Elysian Charter Green 5",
+      "team2": "Elysian Charter White 5",
+      "team1key": "EG5MI",
+      "team2key": "EW5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    },
+    {
+      "time": "19:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "Elysian Charter Green 6",
+      "team2": "HOLA 6",
+      "team1key": "EG6MI",
+      "team2key": "HO6MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    },
+    {
+      "time": "20:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "Connors/Calabro 6",
+      "team2": "Wallace 6",
+      "team1key": "CC6MI",
+      "team2key": "WA6MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }]
+  },
+  {
+    "date": "2019-05-11",
+    "events": [{
+      "time": "18:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "Connors/Calabro 5",
+      "team2": "Wallace Black 5",
+      "team1key": "CC5MI",
+      "team2key": "WB5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    },
+    {
+      "time": "19:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "Hoboken Charter 5",
+      "team2": "Wallace Grey 5",
+      "team1key": "HC5MI",
+      "team2key": "WG5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    },
+    {
+      "time": "20:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "All Saints 5",
+      "team2": "HOLA 5",
+      "team1key": "AS5MI",
+      "team2key": "HO5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }]
+  },
+  {
+    "date": "2019-05-12",
+    "events": [{
+      "time": "13:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Hoboken Charter",
+      "team2": "HOLA",
+      "team1key": "HCGI",
+      "team2key": "HOLAGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "time": "14:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Elysian Charter",
+      "team2": "Stevens White",
+      "team1key": "ECGI",
+      "team2key": "SWGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "time": "15:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Hoboken Middle School",
+      "team2": "Stevens Red",
+      "team1key": "HMSGI",
+      "team2key": "SRGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }]
+  },
+  {
+    "date": "2019-05-14",
+    "events":
+    [
+      {
+        "team1": "All Saints",
+        "team2": "Elysian Charter Kelly Green",
+        "team1key": "ASGR",
+        "team2key": "ECKGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "HOLA Teal",
+        "team2": "Mustard Seed",
+        "team1key": "HTGR",
+        "team2key": "MSGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "Stevens Purple 5",
+        "team2": "Stevens Red 5",
+        "team1key": "SP5MI",
+        "team2key": "SR5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "All Saints 6",
+        "team2": "Stevens 6",
+        "team1key": "AS6MI",
+        "team2key": "ST6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-15",
+    "events":
+    [
+      {
+        "team1": "Hoboken Middle School Knicks",
+        "team2": "Hoboken Middle School Warriors",
+        "team1key": "HSKGR",
+        "team2key": "HSWGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "HOLA Black",
+        "team2": "Stevens Red",
+        "team1key": "HBGR",
+        "team2key": "SRGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "Hoboken Charter 6",
+        "team2": "Hudson 6",
+        "team1key": "HC6MI",
+        "team2key": "HU6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      },
+      {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "Connors/Calabro 6",
+        "team2": "Mustard Seed 6",
+        "team1key": "CC6MI",
+        "team2key": "MS6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-16",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter White",
+        "team2": "Stevens White",
+        "team1key": "ECWGR",
+        "team2key": "SWGR",
+        "time": "18:45",
+        "location": "Wallace School Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "HOLA Teal",
+        "team2": "Hudson",
+        "team1key": "HTGR",
+        "team2key": "HUDGR",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-17",
+    "events": [{
+      "time": "18:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "All Saints 5",
+      "team2": "Elysian Charter White 5",
+      "team1key": "AS5MI",
+      "team2key": "EW5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }, {
+      "time": "19:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "Elysian Charter Green 5",
+      "team2": "HOLA 5",
+      "team1key": "EG5MI",
+      "team2key": "HO5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }, {
+      "time": "20:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "Hoboken Charter 5",
+      "team2": "Wallace Black 5",
+      "team1key": "HC5MI",
+      "team2key": "WB5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }]
+  },
+  {
+    "date": "2019-05-18",
+    "events": [{
+      "time": "18:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "Connors/Calabro 5",
+      "team2": "Stevens Red 5",
+      "team1key": "CC5MI",
+      "team2key": "SR5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }, {
+      "time": "19:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "Stevens Purple 5",
+      "team2": "Wallace Grey 5",
+      "team1key": "SP5MI",
+      "team2key": "WG5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }, {
+      "time": "20:45",
+      "location": "Wallace School Gymnasium",
+      "team1": "Hoboken Charter 6",
+      "team2": "Stevens 6",
+      "team1key": "HC6MI",
+      "team2key": "ST6MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }]
+  },
+  {
+    "date": "2019-05-22",
+    "events":
+    [
+      {
+        "team1": "Hoboken Middle School Nets",
+        "team2": "Hoboken Middle School Warriors",
+        "team1key": "HSNGR",
+        "team2key": "HSWGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Charter",
+        "team2": "Hudson",
+        "team1key": "HCGR",
+        "team2key": "HUDGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "Hudson 6",
+        "team2": "Mustard Seed 6",
+        "team1key": "HU6MI",
+        "team2key": "MS6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "Elysian Charter Green 6",
+        "team2": "Wallace 6",
+        "team1key": "EG6MI",
+        "team2key": "WA6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-23",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Mustard Seed",
+        "team1key": "ECGGR",
+        "team2key": "MSGR",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "HOLA Teal",
+        "team2": "Stevens White",
+        "team1key": "HTGR",
+        "team2key": "SWGR",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-24",
+    "events":
+    [
+      {
+        "team1": "All Saints",
+        "team2": "HOLA Black",
+        "team1key": "ASGR",
+        "team2key": "HBGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter Kelly Green",
+        "team2": "Stevens Red",
+        "team1key": "ECKGR",
+        "team2key": "SRGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "All Saints 6",
+        "team2": "HOLA 6",
+        "team1key": "AS6MI",
+        "team2key": "HO6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "Elysian Charter Green 5",
+        "team2": "Hoboken Charter 5",
+        "team1key": "EG5MI",
+        "team2key": "HC5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "20:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "Elysian Charter White 5",
+        "team2": "HOLA 5",
+        "team1key": "EW5MI",
+        "team2key": "HO5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-26",
+    "events": [{
+      "time": "13:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Hoboken Charter",
+      "team2": "Hoboken Middle School",
+      "team1key": "HCGI",
+      "team2key": "HMSGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "time": "14:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "HOLA",
+      "team2": "Stevens White",
+      "team1key": "HOLAGI",
+      "team2key": "SWGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "time": "15:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Elysian Charter",
+      "team2": "Stevens Red",
+      "team1key": "ECGI",
+      "team2key": "SRGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }]
+  },
+  {
+    "date": "2019-05-28",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Kelly Green",
+        "team2": "Hoboken Middle School Knicks",
+        "team1key": "ECKGR",
+        "team2key": "HSKGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Middle School Warriors",
+        "team2": "HOLA Black",
+        "team1key": "HSWGR",
+        "team2key": "HBGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "All Saints 5",
+        "team2": "Stevens Purple 5",
+        "team1key": "AS5MI",
+        "team2key": "SP5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "Connors/Calabro 5",
+        "team2": "Wallace Grey 5",
+        "team1key": "CC5MI",
+        "team2key": "WG5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-29",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Hudson",
+        "team1key": "ECGGR",
+        "team2key": "HUDGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter White",
+        "team2": "Mustard Seed",
+        "team1key": "ECWGR",
+        "team2key": "MSGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Hudson 6",
+        "team2": "Stevens 6",
+        "team1key": "HU6MI",
+        "team2key": "ST6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "All Saints 6",
+        "team2": "Connors/Calabro 6",
+        "team1key": "AS6MI",
+        "team2key": "CC6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-30",
+    "events":
+    [
+      {
+        "team1": "Hoboken Charter",
+        "team2": "Stevens White",
+        "team1key": "HCGR",
+        "team2key": "SWGR",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "All Saints",
+        "team2": "Stevens Red",
+        "team1key": "ASGR",
+        "team2key": "SRGR",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-05-31",
+    "events":
+    [
+      {
+        "team1": "Hoboken Middle School Nets",
+        "team2": "HOLA Black",
+        "team1key": "HSNGR",
+        "team2key": "HBGR",
+        "time": "18:15",
+      "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter Kelly Green",
+        "team2": "Hoboken Middle School Warriors",
+        "team1key": "ECKGR",
+        "team2key": "HSWGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Connors/Calabro 5",
+        "team2": "Elysian Charter Green 5",
+        "team1key": "CC5MI",
+        "team2key": "EG5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Wallace Black 5",
+        "team2": "Wallace Grey 5",
+        "team1key": "WB5MI",
+        "team2key": "WG5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "20:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Hoboken Charter 5",
+        "team2": "HOLA 5",
+        "team1key": "HC5MI",
+        "team2key": "HO5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-01",
+    "events": [{
+      "time": "18:45",
+      "location": "Wallace School Gymnasium ",
+      "team1": "HOLA 6",
+      "team2": "Wallace 6",
+      "team1key": "HO6MI",
+      "team2key": "WA6MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }, {
+      "time": "19:45",
+      "location": "Wallace School Gymnasium ",
+      "team1": "Hoboken Charter 6",
+      "team2": "Mustard Seed 6",
+      "team1key": "HU6MI",
+      "team2key": "MS6MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }, {
+      "time": "20:45",
+      "location": "Wallace School Gymnasium ",
+      "team1": "Stevens Red 5",
+      "team2": "Wallace Black 5",
+      "team1key": "SR5MI",
+      "team2key": "WB5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }]
+  },
+  {
+    "date": "2019-06-02",
+    "events": [{
+      "time": "13:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Elysian Charter",
+      "team2": "HOLA",
+      "team1key": "ECGI",
+      "team2key": "HOLAGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "time": "14:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Hoboken Charter",
+      "team2": "Stevens White",
+      "team1key": "HCGI",
+      "team2key": "SWGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "time": "15:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Elysian Charter",
+      "team2": "Hoboken Middle School",
+      "team1key": "ECGI",
+      "team2key": "HMSGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }]
+  },
+  {
+    "date": "2019-06-04",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "HOLA Teal",
+        "team1key": "ECGGR",
+        "team2key": "HTGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter White",
+        "team2": "Hudson",
+        "team1key": "ECWGR",
+        "team2key": "HUDGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Elysian Charter White 5",
+        "team2": "Stevens Purple 5",
+        "team1key": "EW5MI",
+        "team2key": "SP5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "All Saints 5",
+        "team2": "Stevens Red 5",
+        "team1key": "AS5MI",
+        "team2key": "SR5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-05",
+    "events":
+    [
+      {
+        "team1": "Hoboken Middle School Knicks",
+        "team2": "Stevens Red",
+        "team1key": "HSKGR",
+        "team2key": "SRGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "All Saints",
+        "team2": "Hoboken Middle School Nets",
+        "team1key": "ASGR",
+        "team2key": "HSNGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "All Saints 6",
+        "team2": "Elysian Charter Green 6",
+        "team1key": "AS6MI",
+        "team2key": "EG6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      },
+      {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "team1": "Connors/Calabro 6",
+        "team2": "Hoboken Charter 6",
+        "team1key": "CC6MI",
+        "team2key": "HC6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-06",
+    "events":
+    [
+      {
+        "team1": "Hoboken Charter",
+        "team2": "Mustard Seed",
+        "team1key": "HCGR",
+        "team2key": "MSGR",
+        "time": "18:45",
+        "location": "Wallace School Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hudson",
+        "team2": "Stevens White",
+        "team1key": "HUDGR",
+        "team2key": "SWGR",
+        "time": "19:45",
+        "location": "Wallace School Gym",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-07",
+    "events":
+    [
+      {
+        "team1": "Hoboken Middle School Knicks",
+        "team2": "HOLA Black",
+        "team1key": "HSKGR",
+        "team2key": "HBGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "All Saints",
+        "team2": "Hoboken Middle School Warriors",
+        "team1key": "ASGR",
+        "team2key": "HSWGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "HOLA 6",
+        "team2": "Hudson 6",
+        "team1key": "HO6MI",
+        "team2key": "HU6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Mustard Seed 6",
+        "team2": "Stevens 6",
+        "team1key": "MS6MI",
+        "team2key": "ST6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "20:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "All Saints 6",
+        "team2": "Wallace 6",
+        "team1key": "AS6MI",
+        "team2key": "WA6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-09",
+    "events": [{
+      "time": "13:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "HOLA",
+      "team2": "Stevens Red",
+      "team1key": "HOLAGI",
+      "team2key": "SRGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "time": "14:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Hoboken Charter",
+      "team2": "Stevens White",
+      "team1key": "HCGI",
+      "team2key": "SWGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "time": "15:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Elysian Charter",
+      "team2": "Hoboken Middle School",
+      "team1key": "ECGI",
+      "team2key": "HMSGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }]
+  },
+  {
+    "date": "2019-06-11",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Kelly Green",
+        "team2": "Hoboken Middle School Nets",
+        "team1key": "ECKGR",
+        "team2key": "HSNGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter White",
+        "team2": "HOLA Teal",
+        "team1key": "ECWGR",
+        "team2key": "HTGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Elysian Charter Green 5",
+        "team2": "Wallace Black 5",
+        "team1key": "EG5MI",
+        "team2key": "WB5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Elysian Charter White 5",
+        "team2": "Wallace Grey 5",
+        "team1key": "EW5MI",
+        "team2key": "WG5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-12",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Hoboken Charter",
+        "team1key": "ECGGR",
+        "team2key": "HCGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Mustard Seed",
+        "team2": "Stevens White",
+        "team1key": "MSGR",
+        "team2key": "SWGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Hoboken Charter 5",
+        "team2": "Stevens Red 5",
+        "team1key": "HC5MI",
+        "team2key": "SR5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "HOLA 5",
+        "team2": "Stevens Purple 5",
+        "team1key": "HO5MI",
+        "team2key": "SP5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-13",
+    "events":
+    [
+      {
+        "team1": "Hoboken Charter",
+        "team2": "HOLA Teal",
+        "team1key": "HCGR",
+        "team2key": "HTGR",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hudson",
+        "team2": "Mustard Seed",
+        "team1key": "HUDGR",
+        "team2key": "MSGR",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-19",
+    "events":
+    [
+      {
+        "team1": "Hoboken Middle School Warriors",
+        "team2": "Stevens Red",
+        "team1key": "HSWGR",
+        "team2key": "SRGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Middle School Knicks",
+        "team2": "Hoboken Middle School Nets",
+        "team1key": "HSKGR",
+        "team2key": "HSNGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "All Saints 5",
+        "team2": "Connors/Calabro 5",
+        "team1key": "AS5MI",
+        "team2key": "CC5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      },
+      {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Connors/Calabro 6",
+        "team2": "Stevens 6",
+        "team1key": "CC6MI",
+        "team2key": "ST6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-20",
+    "events":
+    [
+      {
+        "team1": "HOLA Teal",
+        "team2": "Mustard Seed",
+        "team1key": "HTGR",
+        "team2key": "MSGR",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "HOLA Black",
+        "team2": "Stevens Red",
+        "team1key": "HBGR",
+        "team2key": "SRGR",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-21",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Stevens White",
+        "team1key": "ECGGR",
+        "team2key": "SWGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Middle School Knicks",
+        "team2": "Hoboken Middle School Warriors",
+        "team2key": "HSKGR",
+        "team1key": "HSWGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Elysian Charter Green 5",
+        "team2": "Stevens Purple 5",
+        "team1key": "EG5MI",
+        "team2key": "SP5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Mustard Seed 6",
+        "team2": "Wallace 6",
+        "team1key": "MS6MI",
+        "team2key": "WA6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-22",
+    "events": [{
+      "time": "18:45",
+      "location": "Wallace School Gymnasium ",
+      "team1": "HOLA 5",
+      "team2": "Wallace Grey 5",
+      "team2key": "HO5MI",
+      "team1key": "WG5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    },
+    {
+      "time": "19:45",
+      "location": "Wallace School Gymnasium ",
+      "team1": "HOLA 6",
+      "team2": "Stevens 6",
+      "team1key": "HO6MI",
+      "team2key": "ST6MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }]
+  },
+  {
+    "date": "2019-06-23",
+    "events": [{
+      "time": "13:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Stevens Red",
+      "team2": "Stevens White",
+      "team1key": "SRGI",
+      "team2key": "SWGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "time": "14:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Hoboken Middle School",
+      "team2": "HOLA",
+      "team1key": "HMSGI",
+      "team2key": "HOLAGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }, {
+      "time": "15:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Elysian Charter",
+      "team2": "Hoboken Charter",
+      "team1key": "ECGI",
+      "team2key": "HCGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }]
+  },
+  {
+    "date": "2019-06-25",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Elysian Charter White",
+        "team1key": "ECGGR",
+        "team2key": "ECWGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter Kelly Green",
+        "team2": "HOLA Black",
+        "team1key": "ECKGR",
+        "team2key": "HBGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Elysian Charter Green 6",
+        "team2": "Hudson 6",
+        "team1key": "EG6MI",
+        "team2key": "HU6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Hoboken Charter 6",
+        "team2": "HOLA 6",
+        "team1key": "HC6MI",
+        "team2key": "HO6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-26",
+    "events":
+    [
+      {
+        "team1": "All Saints",
+        "team2": "Hoboken Middle School Knicks",
+        "team1key": "ASGR",
+        "team2key": "HSKGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Middle School Nets",
+        "team2": "Stevens Red",
+        "team1key": "HSNGR",
+        "team2key": "SRGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "All Saints 6",
+        "team2": "Hudson 6",
+        "team1key": "AS6MI",
+        "team2key": "HU6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      },
+      {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Connors/Calabro 5",
+        "team2": "Hoboken Charter 5",
+        "team1key": "CC5MI",
+        "team2key": "HC5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "20:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "All Saints 5",
+        "team2": "Wallace Black 5",
+        "team1key": "AS5MI",
+        "team2key": "WB5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-27",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter White",
+        "team2": "Hoboken Charter",
+        "team1key": "ECWGR",
+        "team2key": "HCGR",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "All Saints",
+        "team2": "Elysian Charter Kelly Green",
+        "team1key": "ASGR",
+        "team2key": "ECKGR",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-28",
+    "events":
+    [
+      {
+        "team1": "HOLA Teal",
+        "team2": "Hudson",
+        "team1key": "HTGR",
+        "team2key": "HUDGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Middle School Nets",
+        "team2": "Hoboken Middle School Warriors",
+        "team1key": "HSNGR",
+        "team2key": "HSWGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Hoboken Charter 6",
+        "team2": "Wallace 6",
+        "team1key": "HC6MI",
+        "team2key": "WA6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Connors/Calabro 6",
+        "team2": "Hudson 6",
+        "team1key": "CC6MI",
+        "team2key": "HU6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }, {
+        "time": "20:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Elysian Charter Green 6",
+        "team2": "Mustard Seed 6",
+        "team1key": "EG6MI",
+        "team2key": "MS6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-07-01",
+    "events": [{
+      "time": "18:45",
+      "location": "Wallace School Gymnasium ",
+      "team1": "Elysian Charter White 5",
+      "team2": "Wallace Black 5",
+      "team1key": "EW5MI",
+      "team2key": "WB5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }, {
+      "time": "19:45",
+      "location": "Wallace School Gymnasium ",
+      "team1": "Elysian Charter Green 5",
+      "team2": "Stevens Red 5",
+      "team1key": "EG5MI",
+      "team2key": "SR5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }, {
+      "time": "20:45",
+      "location": "Wallace School Gymnasium ",
+      "team1": "Hoboken Charter 5",
+      "team2": "Stevens Purple 5",
+      "team1key": "HC5MI",
+      "team2key": "SP5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }]
+  },
+  {
+    "date": "2019-07-02",
+    "events": [{
+      "time": "13:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Stevens Red",
+      "team2": "Hoboken Middle School",
+      "team1key": "SRGI",
+      "team2key": "HMSGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    },
+    {
+      "time": "14:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "Stevens White",
+      "team2": "Elysian Charter",
+      "team1key": "SWGI",
+      "team2key": "ECGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    },
+    {
+      "time": "15:00",
+      "location": "Multi Service Center Gymnasium ",
+      "team1": "HOLA",
+      "team2": "Hoboken Charter",
+      "team2key": "HOLAGI",
+      "team1key": "HCGI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "girls"
+    }]
+  },
+  {
+    "date": "2019-07-04",
+    "events":
+    [
+      {
+        "team1": "All Saints",
+        "team2": "HOLA Black",
+        "team1key": "ASGR",
+        "team2key": "HBGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Elysian Charter Kelly Green",
+        "team2": "Stevens Red",
+        "team1key": "ECKGR",
+        "team2key": "SRGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "All Saints 5",
+        "team2": "Wallace Grey 5",
+        "team1key": "AS5MI",
+        "team2key": "WG5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      },
+      {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Connors/Calabro 5",
+        "team2": "Elysian Charter White 5",
+        "team1key": "CC5MI",
+        "team2key": "EW5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-07-05",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter Green",
+        "team2": "Mustard Seed",
+        "team1key": "ECGGR",
+        "team2key": "MSGR",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "HOLA Teal",
+        "team2": "Stevens White",
+        "team1key": "HTGR",
+        "team2key": "SWGR",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "HOLA 5",
+        "team2": "Wallace Black 5",
+        "team1key": "HO5MI",
+        "team2key": "WB5MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      },
+      {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Stevens 6",
+        "team2": "Wallace 6",
+        "team1key": "ST6MI",
+        "team2key": "WA6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-07-06",
+    "events":
+    [
+      {
+        "team1": "Elysian Charter White",
+        "team2": "Stevens White",
+        "team1key": "ECWGR",
+        "team2key": "SWGR",
+        "time": "18:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "Hoboken Charter",
+        "team2": "Hudson",
+        "team2key": "HCGR",
+        "team1key": "HUDGR",
+        "time": "19:45",
+        "location": "Wallace School Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      }
+    ]
+  },
+  {
+    "date": "2019-07-07",
+    "events":
+    [
+      {
+        "team1": "TBA",
+        "team2": "TBA",
+        "team1key": "",
+        "team2key": "",
+        "time": "18:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "team1": "TBA",
+        "team2": "TBA",
+        "team1key": "",
+        "team2key": "",
+        "time": "19:15",
+        "location": "Multi Service Center Gymnasium",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "grammar"
+      },
+      {
+        "time": "18:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "All Saints 6",
+        "team2": "Hoboken Charter 6",
+        "team1key": "AS6MI",
+        "team2key": "HC6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      },
+      {
+        "time": "19:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "Connors/Calabro 6",
+        "team2": "Elysian Charter Green 6",
+        "team1key": "CC6MI",
+        "team2key": "EG6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      },
+      {
+        "time": "20:45",
+        "location": "Wallace School Gymnasium ",
+        "team1": "HOLA 6",
+        "team2": "Mustard Seed 6",
+        "team1key": "HO6MI",
+        "team2key": "MS6MI",
+        "type": "Game",
+        "team1score": "na",
+        "team2score": "na",
+        "league": "middle"
+      }
+    ]
+  },
+  {
+    "date": "2019-07-08",
+    "events": [{
+      "time": "18:45",
+      "location": "Wallace School Gymnasium ",
+      "team1": "Connors/Calabro 5",
+      "team2": "Stevens Purple 5",
+      "team1key": "CC5MI",
+      "team2key": "SP5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    },
+    {
+      "time": "19:45",
+      "location": "Wallace School Gymnasium ",
+      "team1": "HOLA 5",
+      "team2": "Stevens Red 5",
+      "team1key": "HO5MI",
+      "team2key": "SR5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    },
+    {
+      "time": "20:45",
+      "location": "Wallace School Gymnasium ",
+      "team1": "All Saints 5",
+      "team2": "Hoboken Charter 5",
+      "team2key": "AS5MI",
+      "team1key": "HC5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }]
+  },
+  {
+    "date": "2019-07-11",
+    "events": [{
+      "time": "18:45",
+      "location": "Wallace School Gymnasium ",
+      "team1": "Elysian Charter Green 5",
+      "team2": "Wallace Grey 5",
+      "team1key": "EG5MI",
+      "team2key": "WG5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }, {
+      "time": "19:45",
+      "location": "Wallace School Gymnasium ",
+      "team1": "Elysian Charter White 5",
+      "team2": "Stevens Red 5",
+      "team1key": "EW5MI",
+      "team2key": "SR5MI",
+      "type": "Game",
+      "team1score": "na",
+      "team2score": "na",
+      "league": "middle"
+    }]
+  }
+]

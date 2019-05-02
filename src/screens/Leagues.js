@@ -101,7 +101,7 @@ export default class LeaguesScreen extends React.Component {
                             <Icon button key={100+index*30+index2} name="chevron-right" color="#0000EE" size={30}
                               onPress={() => this.props.navigation.navigate('TeamHome', {teamKey: item2.key})}>
                             </Icon>
-                          </Right>
+                          </Right> 
                         </CardItem>
                       </Card>
                       )
