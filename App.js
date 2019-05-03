@@ -25,7 +25,8 @@ import _retrieveData from "./src/actions/actions"
 import NavigationService from "./src/actions/NavigationService"
 import SideBar from "./src/components/SideBar"
 import CityResources from "./src/screens/CityResources"
-
+import ContactList from "./src/screens/ContactList"
+import ParkInfo from "./src/screens/ParkInfo"
 //import ScheduleCards from "./src/components/scheduleCards";
 
 //import getTheme from './native-base-theme/components';
@@ -119,6 +120,8 @@ const AppNavigator =  createStackNavigator(
     EventDetails: EventDetailsScreen,
     Roster: RosterScreen,
     Resources: CityResources,
+    CityContacts: ContactList,
+    Parks: ParkInfo,
     /*Calendar: CalendarScreen,*/
   },
   {
@@ -126,7 +129,7 @@ const AppNavigator =  createStackNavigator(
   },
 );
 
-const DrawerNav = createDrawerNavigator({
+{/*const DrawerNav = createDrawerNavigator({
   Nav: {screen: AppNavigator},
 },{
     initialRouteName: 'Nav',
@@ -135,8 +138,7 @@ const DrawerNav = createDrawerNavigator({
     drawerOpenRoute: 'DrawerOpen',
     drawerCloseRoute: 'DrawerClose',
     drawerToggleRoute: 'DrawerToggle',
-})
-//export default createAppContainer(AppNavigator);
+})*/}
 const App = createAppContainer(AppNavigator);
 export default () =>
   <Root>

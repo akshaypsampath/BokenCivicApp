@@ -8,11 +8,11 @@ import { Font, AppLoading } from "expo";
 import styles from "./../styles";
 import Icon from "react-native-vector-icons/FontAwesome"
 
-export default class CityResources extends React.Component {
+export default class ParkInfo extends React.Component {
 
   static navigationOptions = ({ navigation }) => {
     return{
-      title: 'Additional Resources',
+      title: 'Parks',
       headerStyle: {
         backgroundColor: '#1b97b2',
       },
@@ -22,7 +22,6 @@ export default class CityResources extends React.Component {
       },
     };
   };
-
   constructor(props){
     super(props);
   }
@@ -31,29 +30,32 @@ export default class CityResources extends React.Component {
     return(
       <Container>
         <Card>
-          <CardItem bordered button
-            onPress={() => {this.props.navigation.navigate('CityContacts')}}>
-            <Text style={{justifyContent:'center'}}>Contacts</Text>
+          <CardItem bordered style={{justifyContent: 'center'}}>
+            <Body>
+              <Text style={{fontSize: 22}}>Castle Point Skate Park</Text>
+              <Text>Location: On Sinatra Drive near 8th Street</Text>
+              <Text>Uses: Skateboarding Only</Text>
+            </Body>
           </CardItem>
         </Card>
         <Card>
-          <CardItem bordered button
-            onPress={() => {this.props.navigation.navigate('Parks')}}>
-            <Text style={{justifyContent:'center'}}>Parks</Text>
+          <CardItem bordered>
+            <Body>
+              <Text style={{fontSize: 22}}>Director: Human Services</Text>
+              <Text>Leo Pellegrini</Text>
+              <Text>(201) 420-2012</Text>
+              <Text style={{color:'blue'}}>lpellegrini@hobokennj.gov</Text>
+            </Body>
           </CardItem>
         </Card>
-
         <Card>
-          <CardItem bordered button
-            onPress={() => {this.props.navigation.navigate('CityContacts')}}>
-            <Text style={{justifyContent:'center'}}>Fields & Facilities</Text>
-          </CardItem>
-        </Card>
-
-        <Card>
-          <CardItem bordered button
-            onPress={() => {this.props.navigation.navigate('CityContacts')}}>
-            <Text style={{justifyContent:'center'}}>Athletic Programs</Text>
+          <CardItem bordered>
+            <Body>
+              <Text style={{fontSize: 22}}>Superintendent: Recreation</Text>
+              <Text>Ed Miller</Text>
+              <Text>(201) 420-2094</Text>
+              <Text style={{color:'blue'}}>emiller@hobokennj.gov</Text>
+            </Body>
           </CardItem>
         </Card>
       </Container>
