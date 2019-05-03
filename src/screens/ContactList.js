@@ -44,32 +44,32 @@ export default class ContactListScreen extends React.Component {
     return(
       <Container>
         <Card>
-          <CardItem bordered>
+          <CardItem>
             <Body>
-              <Text style={{fontSize: 22}}>Environmental Services Director</Text>
+              <Text style={{fontWeight:'bold'}}>Environmental Services Director</Text>
               <Text>Jennifer Gonzalez</Text>
-              <Text>(201) 420-2000 x4000</Text>
-              <Text style={{color:'blue'}}>jgonzalez@hobokennj.gov</Text>
+              <Text note>(201) 420-2000 x4000</Text>
+              <Text note style={{color:'blue'}}>jgonzalez@hobokennj.gov</Text>
             </Body>
           </CardItem>
         </Card>
         <Card>
-          <CardItem bordered>
+          <CardItem>
             <Body>
-              <Text style={{fontSize: 22}}>Director: Human Services</Text>
+              <Text style={{fontWeight:'bold'}}>Director: Human Services</Text>
               <Text>Leo Pellegrini</Text>
-              <Text>(201) 420-2012</Text>
-              <Text style={{color:'blue'}}>lpellegrini@hobokennj.gov</Text>
+              <Text note>(201) 420-2012</Text>
+              <Text note style={{color:'blue'}}>lpellegrini@hobokennj.gov</Text>
             </Body>
           </CardItem>
         </Card>
         <Card>
-          <CardItem bordered>
+          <CardItem>
             <Body>
-              <Text style={{fontSize: 22}}>Superintendent: Recreation</Text>
+              <Text style={{fontWeight:'bold'}}>Superintendent: Recreation</Text>
               <Text>Ed Miller</Text>
-              <Text>(201) 420-2094</Text>
-              <Text style={{color:'blue'}}>emiller@hobokennj.gov</Text>
+              <Text note>(201) 420-2094</Text>
+              <Text note style={{color:'blue'}}>emiller@hobokennj.gov</Text>
             </Body>
           </CardItem>
         </Card>

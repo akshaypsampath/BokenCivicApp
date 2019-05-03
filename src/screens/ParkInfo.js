@@ -45,128 +45,128 @@ export default class ParkInfoScreens extends React.Component {
       <Container>
         <Content>
           <Card>
-            <CardItem bordered style={{justifyContent: 'center'}}>
+            <CardItem style={{justifyContent: 'center'}}>
               <Body>
-                <Text style={{fontSize: 22}}>Castle Point Skate Park</Text>
-                <Text>Location: On Sinatra Drive near 8th Street</Text>
-                <Text>Uses: Skateboarding Only</Text>
+                <Text style={{fontWeight:'bold'}}>Castle Point Skate Park</Text>
+                <Text note  note>Location: On Sinatra Drive near 8th Street</Text>
+                <Text note>Uses: Skateboarding Only</Text>
               </Body>
             </CardItem>
           </Card>
           <Card>
-            <CardItem bordered>
+            <CardItem >
               <Body>
-                <Text style={{fontSize: 22}}>Church Square Park</Text>
-                <Text>Location: On Garden St. Btw 4th & 5th St.</Text>
-                <Text>Uses: Basketball Courts</Text>
+                <Text style={{fontWeight:'bold'}}>Church Square Park</Text>
+                <Text note>Location: On Garden St. Btw 4th & 5th St.</Text>
+                <Text note>Uses: Basketball Courts</Text>
               </Body>
             </CardItem>
           </Card>
           <Card>
-            <CardItem bordered>
+            <CardItem >
               <Body>
-                <Text style={{fontSize: 22}}>Columbus Park</Text>
-                <Text>Location: On Clinton St. Btw 9th & 10th St.</Text>
-                <Text>Uses: Basketball Courts, Tennis Courts</Text>
+                <Text style={{fontWeight:'bold'}}>Columbus Park</Text>
+                <Text note>Location: On Clinton St. Btw 9th & 10th St.</Text>
+                <Text note>Uses: Basketball Courts, Tennis Courts</Text>
               </Body>
             </CardItem>
           </Card>
           <Card>
-            <CardItem bordered>
+            <CardItem >
               <Body>
-                <Text style={{fontSize: 22}}>Community Garden</Text>
-                <Text>Location: On Jackson St. and 3rd St.</Text>
+                <Text style={{fontWeight:'bold'}}>Community Garden</Text>
+                <Text note>Location: On Jackson St. and 3rd St.</Text>
               </Body>
             </CardItem>
           </Card>
           <Card>
-            <CardItem bordered>
+            <CardItem >
               <Body>
-                <Text style={{fontSize: 22}}>Elysian Park</Text>
-                <Text>Location: On Hudson St. Btw 10th & 11th St.</Text>
-                <Text>Uses: Basketball Courts</Text>
+                <Text style={{fontWeight:'bold'}}>Elysian Park</Text>
+                <Text note>Location: On Hudson St. Btw 10th & 11th St.</Text>
+                <Text note>Uses: Basketball Courts</Text>
               </Body>
             </CardItem>
           </Card>
           <Card>
-            <CardItem bordered>
+            <CardItem >
               <Body>
-                <Text style={{fontSize: 22}}>Gateway Park</Text>
-                <Text>Location: On the corner of Newark St. & Jackson St.</Text>
+                <Text style={{fontWeight:'bold'}}>Gateway Park</Text>
+                <Text note>Location: On the corner of Newark St. & Jackson St.</Text>
               </Body>
             </CardItem>
           </Card>
           <Card>
-            <CardItem bordered>
+            <CardItem >
               <Body>
-                <Text style={{fontSize: 22}}>JFK Field</Text>
-                <Text>Location: On Jefferson St. Btw 10th & 11th St.</Text>
-                <Text>Uses: Football Field, Baseball Field, Soccer Field, Track</Text>
+                <Text style={{fontWeight:'bold'}}>JFK Field</Text>
+                <Text note>Location: On Jefferson St. Btw 10th & 11th St.</Text>
+                <Text note>Uses: Football Field, Baseball Field, Soccer Field, Track</Text>
               </Body>
             </CardItem>
           </Card>
           <Card>
-            <CardItem bordered>
+            <CardItem >
               <Body>
-                <Text style={{fontSize: 22}}>Jefferson Park</Text>
-                <Text>Location: 1st and Jefferson St.</Text>
+                <Text style={{fontWeight:'bold'}}>Jefferson Park</Text>
+                <Text note>Location: 1st and Jefferson St.</Text>
               </Body>
             </CardItem>
           </Card>
           <Card>
-            <CardItem bordered>
+            <CardItem >
               <Body>
-                <Text style={{fontSize: 22}}>Legion Park</Text>
-                <Text>Location: 1225 Willow Ave</Text>
+                <Text style={{fontWeight:'bold'}}>Legion Park</Text>
+                <Text note>Location: 1225 Willow Ave</Text>
               </Body>
             </CardItem>
           </Card>
           <Card>
-            <CardItem bordered>
+            <CardItem >
               <Body>
-                <Text style={{fontSize: 22}}>Madison St. Park</Text>
-                <Text>Location: 300 Madison St.</Text>
+                <Text style={{fontWeight:'bold'}}>Madison St. Park</Text>
+                <Text note>Location: 300 Madison St.</Text>
               </Body>
             </CardItem>
           </Card>
           <Card>
-            <CardItem bordered>
+            <CardItem >
               <Body>
-                <Text style={{fontSize: 22}}>Maxwell Place Park</Text>
-                <Text>Location: 1 11th St.</Text>
+                <Text style={{fontWeight:'bold'}}>Maxwell Place Park</Text>
+                <Text note>Location: 1 11th St.</Text>
               </Body>
             </CardItem>
           </Card>
           <Card>
-            <CardItem bordered>
+            <CardItem >
               <Body>
-                <Text style={{fontSize: 22}}>Pier A Park</Text>
-                <Text>Location: 100 Sinatra Dr.</Text>
+                <Text style={{fontWeight:'bold'}}>Pier A Park</Text>
+                <Text note>Location: 100 Sinatra Dr.</Text>
               </Body>
             </CardItem>
           </Card>
           <Card>
-            <CardItem bordered>
+            <CardItem >
               <Body>
-                <Text style={{fontSize: 22}}>Pier C Park</Text>
-                <Text>Location: 340 Sinatra Drive</Text>
-                <Text>Uses: Fishing Pier, Play Area, Promenade</Text>
+                <Text style={{fontWeight:'bold'}}>Pier C Park</Text>
+                <Text note>Location: 340 Sinatra Drive</Text>
+                <Text note>Uses: Fishing Pier, Play Area, Promenade</Text>
               </Body>
             </CardItem>
           </Card>
           <Card>
-            <CardItem bordered>
+            <CardItem >
               <Body>
-                <Text style={{fontSize: 22}}>Shipyard Park</Text>
-                <Text>Location: 1 14th St.</Text>
+                <Text style={{fontWeight:'bold'}}>Shipyard Park</Text>
+                <Text note>Location: 1 14th St.</Text>
               </Body>
             </CardItem>
           </Card>
           <Card>
-            <CardItem bordered>
+            <CardItem >
               <Body>
-                <Text style={{fontSize: 22}}>Southwest Park</Text>
-                <Text>Location: 58 Jackson St.</Text>
+                <Text style={{fontWeight:'bold'}}>Southwest Park</Text>
+                <Text note>Location: 58 Jackson St.</Text>
               </Body>
             </CardItem>
           </Card>

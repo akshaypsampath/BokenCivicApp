@@ -45,17 +45,6 @@ export default class CityResourcesScreen extends React.Component {
           <Grid style={styles.grid}>
           <Card>
             <CardItem button header
-              onPress={() => this.props.navigation.navigate('CityContacts')}>
-              <Body>
-                <Text style={{fontWeight:'bold', justifyContent:'center'}}>Hoboken Recreation Contacts</Text>
-              </Body>
-              <Right>
-                <Icon name="chevron-right" size={20}/>
-              </Right>
-            </CardItem>
-          </Card>
-          <Card>
-            <CardItem button header
               onPress={() => this.props.navigation.navigate('Parks')}>
               <Body>
                 <Text style={{fontWeight:'bold', justifyContent:'center'}}>Hoboken Parks</Text>
@@ -81,6 +70,17 @@ export default class CityResourcesScreen extends React.Component {
               onPress={() => this.props.navigation.navigate('RecSportsInfo')}>
               <Body>
                 <Text style={{fontWeight:'bold', justifyContent:'center'}}>Registering for Rec Sports</Text>
+              </Body>
+              <Right>
+                <Icon name="chevron-right" size={20}/>
+              </Right>
+            </CardItem>
+          </Card>
+          <Card>
+            <CardItem button header
+              onPress={() => this.props.navigation.navigate('CityContacts')}>
+              <Body>
+                <Text style={{fontWeight:'bold', justifyContent:'center'}}>Hoboken Recreation Contacts</Text>
               </Body>
               <Right>
                 <Icon name="chevron-right" size={20}/>
