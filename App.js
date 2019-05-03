@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Alert, Component, TouchableOpacity, Image, FlatList, ScrollView, TouchableWithoutFeedback, AsyncStorage, Clipboard} from 'react-native';
-import { createStackNavigator, createAppContainer} from "react-navigation";
+import { createStackNavigator, createAppContainer, createDrawerNavigator, DrawerNavigation} from "react-navigation";
 import { Container, Header, Content, List, ListItem, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Root, Toast, Accordion, Footer, FooterTab} from "native-base";
 import { Row, Grid } from 'react-native-easy-grid';
 import { Font, AppLoading } from "expo";
@@ -23,8 +23,8 @@ import RosterScreen from "./src/screens/Roster"
 import _storeData from "./src/actions/actions"
 import _retrieveData from "./src/actions/actions"
 import NavigationService from "./src/actions/NavigationService"
-
-
+import SideBar from "./src/components/SideBar"
+import CityResources from "./src/screens/CityResources"
 
 //import ScheduleCards from "./src/components/scheduleCards";
 
@@ -118,12 +118,24 @@ const AppNavigator =  createStackNavigator(
     ViewMyTeams: ViewMyTeamsScreen,
     EventDetails: EventDetailsScreen,
     Roster: RosterScreen,
+    Resources: CityResources,
     /*Calendar: CalendarScreen,*/
   },
   {
     initialRouteName: 'Home',
-  }
+  },
 );
+
+const DrawerNav = createDrawerNavigator({
+  Nav: {screen: AppNavigator},
+},{
+    initialRouteName: 'Nav',
+    drawerPosition: 'left',
+    //contentComponent: SideBar,
+    drawerOpenRoute: 'DrawerOpen',
+    drawerCloseRoute: 'DrawerClose',
+    drawerToggleRoute: 'DrawerToggle',
+})
 //export default createAppContainer(AppNavigator);
 const App = createAppContainer(AppNavigator);
 export default () =>

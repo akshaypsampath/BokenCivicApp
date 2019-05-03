@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, ScrollView, AsyncStorage, Clipboard} from 'react-native';
 import { createStackNavigator, createAppContainer} from "react-navigation";
-import { Container, Header, Content, List, ListItem, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Root, Toast, Accordion, Footer, FooterTab} from "native-base";
+import { Container, Header, Content, List, ListItem, Card, CardItem, Text, Button, Left, Right, Badge, Body, Title, Subtitle, Root, Toast, Accordion, Footer, FooterTab, Drawer} from "native-base";
 import { Row, Grid } from 'react-native-easy-grid';
 import { Font, AppLoading } from "expo";
 
@@ -41,10 +41,11 @@ export default class HomeScreen extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { loading: true,
-                    sched: [],
-                    myTeams: [],
-                  };
+    this.state = {
+      loading: true,
+      sched: [],
+      myTeams: [],
+    };
   }
 
   async componentWillMount() {
@@ -65,7 +66,10 @@ export default class HomeScreen extends React.Component {
     });
   }
 
-
+  _pressIcon = () =>{
+    console.log("Icon pressed");
+    this.props.navigation.navigate('DrawerOpen');
+  }
 
   render() {
     AsyncStorage.getItem('subbedTeams').then((value) => {
@@ -85,8 +89,25 @@ export default class HomeScreen extends React.Component {
       return (
         <Container>
           <Grid style={styles.grid}>
+
+          <Card>
+            <CardItem button header
+              onPress={() => this.props.navigation.navigate('Resources')}>
+              <Body>
+                <Text style={{fontWeight:'bold'}}>View more resources</Text>
+              </Body>
+              <Right>
+                <Icon name="chevron-right" size={20}/>
+              </Right>
+            </CardItem>
+          </Card>
+
           <Card>
             <CardItem header>
+              {/*<Left style={{flexDirection: 'row' }}>
+                <Icon button onPress={() => this._pressIcon()}
+                  name="bars" style={{color:'black'}} size={20}/>
+              </Left>*/}
               <Text>My Upcoming Games</Text>
             </CardItem>
           </Card>

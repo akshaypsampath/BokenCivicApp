@@ -78,7 +78,7 @@ export default class TeamHomeScreen extends React.Component {
               <CardItem button
                   onPress={() => this.props.navigation.navigate('Schedule', {teamKey: teamObj.key})}>
                 <Body style={{justifyContent:'center'}}>
-                  <Text style={{fontSize:18, fontWeight:'bold', color:"#0000EE"}}>{teamObj.name} Schedule</Text>
+                  <Text style={{fontSize:18, fontWeight:'bold'}}>{teamObj.name} Schedule</Text>
                 </Body>
                 <Right>
                   <Icon name="chevron-right" size={40} color="#0000EE" />
@@ -89,7 +89,7 @@ export default class TeamHomeScreen extends React.Component {
               <CardItem button
                 onPress={() => this.props.navigation.navigate('Roster', {teamKey: teamObj.key})}>
                 <Body style={{justifyContent: 'center'}}>
-                  <Text bold>Roster</Text>
+                  <Text style={{fontSize: 18, fontWeight:'bold'}}>Roster</Text>
                 </Body>
                 <Right>
                   <Icon name="chevron-right" size={40} color="#0000EE" />
@@ -100,11 +100,11 @@ export default class TeamHomeScreen extends React.Component {
 
 
               <CardItem footer button onPress={() => this.props.navigation.navigate('Stats', {teamName: teamObj.name})}>
-
-                  <Text bold>Click to view detailed stats</Text>
-
+                <Body style={{justifyContent: 'center'}}>
+                  <Text style={{fontSize: 18, fontWeight:'bold'}}>Click to view detailed stats</Text>
+                </Body>
                 <Right>
-                  <Icon name="chevron-right" size={30} color="#0000EE" />
+                  <Icon name="chevron-right" size={40} color="#0000EE" />
                 </Right>
               </CardItem>
             </Card>
