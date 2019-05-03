@@ -13,6 +13,7 @@ import _getTimeAmPm from "./../actions/actions";
 import _isFutureEvent from "./../actions/actions"; //remove later
 import _isDisplayEvent from "./../actions/actions";
 import _checkEvent from "./../actions/actions";
+import _str2upper from "./../actions/actions";
 
 //var Data = require('./../../data/basketballData.json');
 import _compareEventsbyTime from "./../actions/actions";
@@ -22,7 +23,7 @@ function ScheduleCards({data, guideKey, myTeams}) {
 
 //console.log("scheduleCards");
 //console.log(data);
-//console.log(guideKey)
+// console.log(_str2upper("hello"))
 
 
   return(
@@ -65,7 +66,7 @@ function ScheduleCards({data, guideKey, myTeams}) {
                      <Body>
                        <Text>{eventItem.team1} vs. {eventItem.team2}</Text>
                        <Text note>{eventItem.location} </Text>
-                       <Text>{eventItem.league}</Text>
+                       <Text>{this._str2upper(eventItem.league)} League</Text>
                      </Body>
 
                     </CardItem>

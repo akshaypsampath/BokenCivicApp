@@ -24,9 +24,12 @@ import _storeData from "./src/actions/actions"
 import _retrieveData from "./src/actions/actions"
 import NavigationService from "./src/actions/NavigationService"
 import SideBar from "./src/components/SideBar"
+
 import CityResourcesScreen from "./src/screens/CityResources"
 import ContactListScreen from "./src/screens/ContactList"
 import ParkInfoScreen from "./src/screens/ParkInfo"
+import FacilitiesScreen from "./src/screens/Facilities"
+import RecSportsInfoScreen from "./src/screens/RecSportsInfo"
 //import ScheduleCards from "./src/components/scheduleCards";
 
 //import getTheme from './native-base-theme/components';
@@ -122,6 +125,8 @@ const AppNavigator =  createStackNavigator(
     Resources: CityResourcesScreen,
     CityContacts: ContactListScreen,
     Parks: ParkInfoScreen,
+    Facilities: FacilitiesScreen,
+    RecSportsInfo: RecSportsInfoScreen
     /*Calendar: CalendarScreen,*/
   },
   {

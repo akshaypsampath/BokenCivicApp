@@ -284,7 +284,7 @@ export function _isMyTeam(myTeams,teamKey){
   }
 }
 
-_str2upper = (str) => {
+_str2upper = (str) =>{
   return str.charAt(0).toUpperCase() + str.slice(1);
 
 }
