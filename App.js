@@ -24,9 +24,9 @@ import _storeData from "./src/actions/actions"
 import _retrieveData from "./src/actions/actions"
 import NavigationService from "./src/actions/NavigationService"
 import SideBar from "./src/components/SideBar"
-import CityResources from "./src/screens/CityResources"
-import ContactList from "./src/screens/ContactList"
-import ParkInfo from "./src/screens/ParkInfo"
+import CityResourcesScreen from "./src/screens/CityResources"
+import ContactListScreen from "./src/screens/ContactList"
+import ParkInfoScreen from "./src/screens/ParkInfo"
 //import ScheduleCards from "./src/components/scheduleCards";
 
 //import getTheme from './native-base-theme/components';
@@ -119,9 +119,9 @@ const AppNavigator =  createStackNavigator(
     ViewMyTeams: ViewMyTeamsScreen,
     EventDetails: EventDetailsScreen,
     Roster: RosterScreen,
-    Resources: CityResources,
-    CityContacts: ContactList,
-    Parks: ParkInfo,
+    Resources: CityResourcesScreen,
+    CityContacts: ContactListScreen,
+    Parks: ParkInfoScreen,
     /*Calendar: CalendarScreen,*/
   },
   {

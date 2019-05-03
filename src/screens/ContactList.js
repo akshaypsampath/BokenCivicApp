@@ -8,7 +8,7 @@ import { Font, AppLoading } from "expo";
 import styles from "./../styles";
 import Icon from "react-native-vector-icons/FontAwesome"
 
-export default class ContactList extends React.Component {
+export default class ContactListScreen extends React.Component {
 
   static navigationOptions = ({ navigation }) => {
     return{
@@ -24,9 +24,23 @@ export default class ContactList extends React.Component {
   };
   constructor(props){
     super(props);
+    this.state={
+      loading: true,
+    }
+  }
+
+  async componentWillMount() {
+    await Font.loadAsync({
+      Roboto: require("native-base/Fonts/Roboto.ttf"),
+      Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
+    });
+    this.setState({
+      loading: false,
+    });
   }
 
   render(){
+    if (!this.state.loading) {
     return(
       <Container>
         <Card>
@@ -62,4 +76,7 @@ export default class ContactList extends React.Component {
       </Container>
     )
   }
-}
+  else{
+    return(null);
+  }
+}}

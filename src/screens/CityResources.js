@@ -8,7 +8,7 @@ import { Font, AppLoading } from "expo";
 import styles from "./../styles";
 import Icon from "react-native-vector-icons/FontAwesome"
 
-export default class CityResources extends React.Component {
+export default class CityResourcesScreen extends React.Component {
 
   static navigationOptions = ({ navigation }) => {
     return{
